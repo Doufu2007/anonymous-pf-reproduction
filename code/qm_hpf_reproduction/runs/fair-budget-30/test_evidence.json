@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python",
+    "-m",
+    "unittest",
+    "test_budget_benchmark",
+    "-v"
+  ],
+  "exit_code": 0,
+  "test_count": 6,
+  "mathematical_tests": [
+    "full transition plus likelihood MH density ratio and reverse detailed balance",
+    "analytic linear-observation conditional Gaussian agreement",
+    "joint ancestor/state/cached-likelihood resampling",
+    "low-set generation cap without forced budget expenditure",
+    "likelihood cap and normalization",
+    "same-seed same-environment deterministic values excluding timing"
+  ]
+}

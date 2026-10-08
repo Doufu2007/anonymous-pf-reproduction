@@ -1,0 +1,26 @@
+{
+  "same_environment_only": true,
+  "checks": [
+    {
+      "method": "bootstrap_200",
+      "estimate_and_non_timing_metrics_identical": true,
+      "reference_run": "runs\\seed-00\\bootstrap_200",
+      "replay_estimate_sha256": "bda677cd6fe343a4e4d7a65a1b80a26b2a12105ffdf63b8c91969c96990998ad",
+      "reference_estimate_sha256": "bda677cd6fe343a4e4d7a65a1b80a26b2a12105ffdf63b8c91969c96990998ad"
+    },
+    {
+      "method": "resample_move_100",
+      "estimate_and_non_timing_metrics_identical": true,
+      "reference_run": "runs\\seed-00\\resample_move_100",
+      "replay_estimate_sha256": "02b6e43808466ec621061a60321d9080f117d6d2e764322ad2ecd12ced84f01a",
+      "reference_estimate_sha256": "02b6e43808466ec621061a60321d9080f117d6d2e764322ad2ecd12ced84f01a"
+    },
+    {
+      "method": "qm_hpf_like_100",
+      "estimate_and_non_timing_metrics_identical": true,
+      "reference_run": "runs\\seed-00\\qm_hpf_like_100",
+      "replay_estimate_sha256": "06016a51de6fdad492f7a29ee444acaeb11f344656cba0995f14aa3869275d68",
+      "reference_estimate_sha256": "06016a51de6fdad492f7a29ee444acaeb11f344656cba0995f14aa3869275d68"
+    }
+  ]
+}

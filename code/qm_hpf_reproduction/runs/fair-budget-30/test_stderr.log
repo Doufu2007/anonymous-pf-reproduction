@@ -1,0 +1,11 @@
+test_fixed_seed_same_environment_reproducibility (test_budget_benchmark.BudgetBenchmarkTests.test_fixed_seed_same_environment_reproducibility) ... ok
+test_full_mh_density_ratio_gold_and_reverse (test_budget_benchmark.BudgetBenchmarkTests.test_full_mh_density_ratio_gold_and_reverse) ... ok
+test_mh_target_agrees_with_analytic_conditional_gaussian (test_budget_benchmark.BudgetBenchmarkTests.test_mh_target_agrees_with_analytic_conditional_gaussian) ... ok
+test_qm_low_set_does_not_force_budget_or_exceed_generation_cap (test_budget_benchmark.BudgetBenchmarkTests.test_qm_low_set_does_not_force_budget_or_exceed_generation_cap) ... ok
+test_resampling_preserves_ancestor_state_and_likelihood_pairs (test_budget_benchmark.BudgetBenchmarkTests.test_resampling_preserves_ancestor_state_and_likelihood_pairs) ... ok
+test_step_budget_count_normalization_finite_metrics (test_budget_benchmark.BudgetBenchmarkTests.test_step_budget_count_normalization_finite_metrics) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.164s
+
+OK

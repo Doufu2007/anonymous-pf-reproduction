@@ -1,0 +1,7 @@
+# Ignore local caches and generated temporary files
+__pycache__/
+*.pyc
+.venv/
+
+# Keep reruns in a separate local directory; archived evidence is immutable.
+**/*-rerun/

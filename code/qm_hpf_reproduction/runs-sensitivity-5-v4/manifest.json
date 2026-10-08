@@ -1,0 +1,37 @@
+{
+  "schema": "qm_hpf.sensitivity.v1",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "generations": [
+    5,
+    20,
+    40
+  ],
+  "bit_lengths": [
+    8,
+    16
+  ],
+  "state_ranges": [
+    [
+      -5.0,
+      5.0
+    ],
+    [
+      -10.0,
+      10.0
+    ]
+  ],
+  "model": {
+    "horizon": 200,
+    "initial_state": 1.0,
+    "observation_variance": 1.0,
+    "gamma_shape": 0.5,
+    "gamma_base_scale": 0.5
+  },
+  "interpretation": "Exploratory sensitivity to source-omitted implementation settings; not a replacement for the main predeclared run."
+}

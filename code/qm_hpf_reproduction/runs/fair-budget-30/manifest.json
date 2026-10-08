@@ -1,0 +1,89 @@
+{
+  "schema": "particle-filter.budget-audit.v1",
+  "status": "completed",
+  "started_at": "2026-10-09T00:03:10.815441+08:00",
+  "analysis_mode": "exploratory supplemental comparison",
+  "argv": [
+    "run_budget_benchmark.py"
+  ],
+  "plan_sha256": "60eacb8f7d6a84db7f849dbcdc5a1d38bfa281262fc043bb497dc8c359dd2254",
+  "code_sha256": {
+    "budget_benchmark.py": "1187944daeb3fca937e2bd6dd7552b13ee05aaf81a9f12bc6fde155863a0ae27",
+    "run_budget_benchmark.py": "6459c318724be6d48ead5111eaa8d661e372e222d4db3d6092abf7c4c31b8e81",
+    "test_budget_benchmark.py": "12bd48a6c6eca56f7e3c73454047eb27d102771ade59b4d5f8e0337d7c237cf1",
+    "analyze_budget_benchmark.py": "a31b8fae61e91d4ed51312b7117c99097fcbdc342084bebd46f0c4d632b36b10",
+    "qm_hpf.py": "d39bfd4f6697f2ca94782d74661bbaa10ad3ee3d3fd6e6909994e850416e3609"
+  },
+  "source_sha256": {
+    "source_paper_zqm_2025_not_distributed": "8efbcc44d530dcd867b3522bc822dbea746820ab0cedf0a84266f6ee76ba4cf2",
+    "source_text_extract_zqm_not_distributed": "9823d0148a680d5588051c97791d9cd3f352db38c962960257785d2264a7e1d0"
+  },
+  "git_status": {
+    "exit_code": 128,
+    "stdout": "",
+    "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+  },
+  "environment_sha256": "53622f78a1af413b67eaec2bc2189942483c696b89b5597fc2bf155843a9bc6b",
+  "model": {
+    "horizon": 200,
+    "initial_state": 1.0,
+    "observation_variance": 1.0,
+    "gamma_shape": 0.5,
+    "gamma_base_scale": 0.5
+  },
+  "filter_defaults": {
+    "particle_count": 100,
+    "initial_particle_std": 1.0,
+    "generation_count": 20,
+    "bit_length": 16,
+    "state_min": -10.0,
+    "state_max": 10.0,
+    "rotation_angle_max_pi": 0.04,
+    "rotation_angle_min_pi": 0.01
+  },
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "methods": [
+    "bootstrap_200",
+    "resample_move_100",
+    "qm_hpf_like_100"
+  ],
+  "likelihood_cap_per_step": 200,
+  "likelihood_cap_per_run": 40000,
+  "allowance": "local CPU only; user-authorized supplementary fair comparison; no tuning or seed exclusions",
+  "ended_at": "2026-10-09T00:04:03.180361+08:00",
+  "completed_runs": 90,
+  "excluded_runs": 0,
+  "raw_metrics_sha256": "6cb51c16acc2bce6023a9086ae117e8faafce02e01eb39baa494d1306002d871",
+  "fixed_repro_evidence_sha256": "a0fc86e9bb86ebbb272a15844955a0d334435bdfabc757f9630767552ab1ad53"
+}

@@ -1,0 +1,33 @@
+{
+  "method": "resample_move_100",
+  "seed": 28,
+  "truth_rng_seed": 28,
+  "algorithm_rng_seed": 2000034,
+  "model": {
+    "horizon": 200,
+    "initial_state": 1.0,
+    "observation_variance": 1.0,
+    "gamma_shape": 0.5,
+    "gamma_base_scale": 0.5
+  },
+  "process_variance": 1.0,
+  "process_family": "Gaussian",
+  "particle_count": 100,
+  "initial_particles": "Normal(1,1 variance)",
+  "proposal_std": 0.1,
+  "filter": {
+    "particle_count": 100,
+    "initial_particle_std": 1.0,
+    "generation_count": 20,
+    "bit_length": 16,
+    "state_min": -10.0,
+    "state_max": 10.0,
+    "rotation_angle_max_pi": 0.04,
+    "rotation_angle_min_pi": 0.01
+  },
+  "pre_move_estimate": true,
+  "qm_round_robin_candidate_cap": 100,
+  "qm_max_generations_per_low_particle": 20,
+  "counting": "scalar likelihood evaluations; cached old states; no dummy calls",
+  "native_like_kernel": "heuristic: likelihood-only acceptance and weight-ratio update, not posterior invariant"
+}

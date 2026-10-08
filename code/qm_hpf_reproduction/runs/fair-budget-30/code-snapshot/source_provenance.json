@@ -1,0 +1,8 @@
+{
+  "schema": "source-provenance.v1",
+  "distribution": "Source papers and extracted text are not redistributed in this anonymous repository.",
+  "artifacts": {
+    "source_paper_zqm_2025_not_distributed": "8efbcc44d530dcd867b3522bc822dbea746820ab0cedf0a84266f6ee76ba4cf2",
+    "source_text_extract_zqm_not_distributed": "9823d0148a680d5588051c97791d9cd3f352db38c962960257785d2264a7e1d0"
+  }
+}

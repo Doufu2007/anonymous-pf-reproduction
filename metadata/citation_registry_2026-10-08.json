@@ -1,0 +1,1302 @@
+{
+  "schema": "citation.registry.v1",
+  "checked_at": "2026-10-08",
+  "records": [
+    {
+      "doi": "10.1007/978-1-4757-3437-9_12",
+      "status": "CONFIRMED_CROSSREF",
+      "source": "Crossref REST API",
+      "checked_at": "2026-10-08",
+      "metadata": {
+        "title": [
+          "Improving Regularised Particle Filters"
+        ],
+        "author": [
+          {
+            "given": "Christian",
+            "family": "Musso",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Nadia",
+            "family": "Oudjane",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Francois",
+            "family": "Gland",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Sequential Monte Carlo Methods in Practice"
+        ],
+        "volume": null,
+        "issue": null,
+        "page": "247-271",
+        "published": {
+          "date-parts": [
+            [
+              2001
+            ]
+          ]
+        },
+        "publisher": "Springer New York"
+      }
+    },
+    {
+      "doi": "10.1016/j.isatra.2023.02.010",
+      "status": "CONFIRMED_CROSSREF",
+      "source": "Crossref REST API",
+      "checked_at": "2026-10-08",
+      "metadata": {
+        "title": [
+          "Abrupt moving target tracking based on quantum enhanced particle filter"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-7688-7347",
+            "authenticated-orcid": false,
+            "given": "Jiawang",
+            "family": "Wan",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-1624-5494",
+            "authenticated-orcid": false,
+            "given": "Cheng",
+            "family": "Xu",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Weizhao",
+            "family": "Chen",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-9530-8838",
+            "authenticated-orcid": false,
+            "given": "Ran",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Xiaotong",
+            "family": "Zhang",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "ISA Transactions"
+        ],
+        "volume": "138",
+        "issue": null,
+        "page": "254-261",
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              7
+            ]
+          ]
+        },
+        "publisher": "Elsevier BV"
+      }
+    },
+    {
+      "doi": "10.1023/A:1008935410038",
+      "status": "CONFIRMED_CROSSREF",
+      "source": "Crossref REST API",
+      "checked_at": "2026-10-08",
+      "metadata": {
+        "title": [
+          "On sequential Monte Carlo sampling methods for Bayesian filtering"
+        ],
+        "author": [
+          {
+            "given": "Arnaud",
+            "family": "Doucet",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Simon",
+            "family": "Godsill",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Christophe",
+            "family": "Andrieu",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Statistics and Computing"
+        ],
+        "volume": "10",
+        "issue": "3",
+        "page": "197-208",
+        "published": {
+          "date-parts": [
+            [
+              2000,
+              7
+            ]
+          ]
+        },
+        "publisher": "Springer Science and Business Media LLC"
+      }
+    },
+    {
+      "doi": "10.1049/el.2015.1013",
+      "status": "CONFIRMED_CROSSREF",
+      "source": "Crossref REST API",
+      "checked_at": "2026-10-08",
+      "metadata": {
+        "title": [
+          "Quantum particle filter: a multiple mode method for low delay abrupt pedestrian motion tracking"
+        ],
+        "author": [
+          {
+            "given": "A.",
+            "family": "Khalili",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Faculty of Computing Engineering and Technology, Staffordshire University Stoke on Trent United Kingdom"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "A.A.",
+            "family": "Soliman",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Faculty of Computing Engineering and Technology, Staffordshire University Stoke on Trent United Kingdom"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "M.",
+            "family": "Asaduzzaman",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Faculty of Computing Engineering and Technology, Staffordshire University Stoke on Trent United Kingdom"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Electronics Letters"
+        ],
+        "volume": "51",
+        "issue": "16",
+        "page": "1251-1253",
+        "published": {
+          "date-parts": [
+            [
+              2015,
+              8
+            ]
+          ]
+        },
+        "publisher": "Institution of Engineering and Technology (IET)"
+      }
+    },
+    {
+      "doi": "10.1049/ip-f-2.1993.0015",
+      "status": "CONFIRMED_CROSSREF",
+      "source": "Crossref REST API",
+      "checked_at": "2026-10-08",
+      "metadata": {
+        "title": [
+          "Novel approach to nonlinear/non-Gaussian Bayesian state estimation"
+        ],
+        "author": [
+          {
+            "given": "N.J.",
+            "family": "Gordon",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "D.J.",
+            "family": "Salmond",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "A.F.M.",
+            "family": "Smith",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "IEE Proceedings F Radar and Signal Processing"
+        ],
+        "volume": "140",
+        "issue": "2",
+        "page": "107",
+        "published": {
+          "date-parts": [
+            [
+              1993
+            ]
+          ]
+        },
+        "publisher": "Institution of Engineering and Technology (IET)"
+      }
+    },
+    {
+      "doi": "10.1080/01621459.1998.10473765",
+      "status": "CONFIRMED_CROSSREF",
+      "source": "Crossref REST API",
+      "checked_at": "2026-10-08",
+      "metadata": {
+        "title": [
+          "Sequential Monte Carlo Methods for Dynamic Systems"
+        ],
+        "author": [
+          {
+            "given": "Jun S.",
+            "family": "Liu",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Rong",
+            "family": "Chen",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Journal of the American Statistical Association"
+        ],
+        "volume": "93",
+        "issue": "443",
+        "page": "1032-1044",
+        "published": {
+          "date-parts": [
+            [
+              1998,
+              9
+            ]
+          ]
+        },
+        "publisher": "Informa UK Limited"
+      }
+    },
+    {
+      "doi": "10.1080/01621459.1999.10474153",
+      "status": "CONFIRMED_CROSSREF",
+      "source": "Crossref REST API",
+      "checked_at": "2026-10-08",
+      "metadata": {
+        "title": [
+          "Filtering via Simulation: Auxiliary Particle Filters"
+        ],
+        "author": [
+          {
+            "given": "Michael K.",
+            "family": "Pitt",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Neil",
+            "family": "Shephard",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Journal of the American Statistical Association"
+        ],
+        "volume": "94",
+        "issue": "446",
+        "page": "590-599",
+        "published": {
+          "date-parts": [
+            [
+              1999,
+              6
+            ]
+          ]
+        },
+        "publisher": "Informa UK Limited"
+      }
+    },
+    {
+      "doi": "10.1080/10618600.1996.10474692",
+      "status": "CONFIRMED_CROSSREF",
+      "source": "Crossref REST API",
+      "checked_at": "2026-10-08",
+      "metadata": {
+        "title": [
+          "Monte Carlo Filter and Smoother for Non-Gaussian Nonlinear State Space Models"
+        ],
+        "author": [
+          {
+            "given": "Genshiro",
+            "family": "Kitagawa",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Journal of Computational and Graphical Statistics"
+        ],
+        "volume": "5",
+        "issue": "1",
+        "page": "1-25",
+        "published": {
+          "date-parts": [
+            [
+              1996,
+              3
+            ]
+          ]
+        },
+        "publisher": "Informa UK Limited"
+      }
+    },
+    {
+      "doi": "10.1109/78.978374",
+      "status": "CONFIRMED_CROSSREF",
+      "source": "Crossref REST API",
+      "checked_at": "2026-10-08",
+      "metadata": {
+        "title": [
+          "A tutorial on particle filters for online nonlinear/non-Gaussian Bayesian tracking"
+        ],
+        "author": [
+          {
+            "given": "M.S.",
+            "family": "Arulampalam",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "S.",
+            "family": "Maskell",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "N.",
+            "family": "Gordon",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "T.",
+            "family": "Clapp",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "IEEE Transactions on Signal Processing"
+        ],
+        "volume": "50",
+        "issue": "2",
+        "page": "174-188",
+        "published": {
+          "date-parts": [
+            [
+              2002
+            ]
+          ]
+        },
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)"
+      }
+    },
+    {
+      "doi": "10.1109/78.984773",
+      "status": "CONFIRMED_CROSSREF",
+      "source": "Crossref REST API",
+      "checked_at": "2026-10-08",
+      "metadata": {
+        "title": [
+          "A survey of convergence results on particle filtering methods for practitioners"
+        ],
+        "author": [
+          {
+            "given": "D.",
+            "family": "Crisan",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "A.",
+            "family": "Doucet",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "IEEE Transactions on Signal Processing"
+        ],
+        "volume": "50",
+        "issue": "3",
+        "page": "736-746",
+        "published": {
+          "date-parts": [
+            [
+              2002,
+              3
+            ]
+          ]
+        },
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)"
+      }
+    },
+    {
+      "doi": "10.1109/CEC.2000.870809",
+      "status": "CONFIRMED_CROSSREF",
+      "source": "Crossref REST API",
+      "checked_at": "2026-10-08",
+      "metadata": {
+        "title": [
+          "Genetic quantum algorithm and its application to combinatorial optimization problem"
+        ],
+        "author": [
+          {
+            "family": "Kuk-Hyun Han",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "family": "Jong-Hwan Kim",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Proceedings of the 2000 Congress on Evolutionary Computation. CEC00 (Cat. No.00TH8512)"
+        ],
+        "volume": "2",
+        "issue": null,
+        "page": "1354-1360",
+        "published": null,
+        "publisher": "IEEE"
+      }
+    },
+    {
+      "doi": "10.1109/ICC45855.2022.9838405",
+      "status": "CONFIRMED_CROSSREF",
+      "source": "Crossref REST API",
+      "checked_at": "2026-10-08",
+      "metadata": {
+        "title": [
+          "Diversity-preserving quantum-enhanced particle filter for abrupt-motion tracking"
+        ],
+        "author": [
+          {
+            "given": "Jiawang",
+            "family": "Wan",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "University of Science and Technology,School of Computer and Communication Engineering,Beijing"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Cheng",
+            "family": "Xu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of Science and Technology,School of Computer and Communication Engineering,Beijing"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Weizhao",
+            "family": "Chen",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of Science and Technology,School of Computer and Communication Engineering,Beijing"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Xiaotong",
+            "family": "Zhang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of Science and Technology,School of Computer and Communication Engineering,Beijing"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "ICC 2022 - IEEE International Conference on Communications"
+        ],
+        "volume": null,
+        "issue": null,
+        "page": "3263-3268",
+        "published": {
+          "date-parts": [
+            [
+              2022,
+              5,
+              16
+            ]
+          ]
+        },
+        "publisher": "IEEE"
+      }
+    },
+    {
+      "doi": "10.1109/ICCIS.2004.1460396",
+      "status": "CONFIRMED_CROSSREF",
+      "source": "Crossref REST API",
+      "checked_at": "2026-10-08",
+      "metadata": {
+        "title": [
+          "A global search strategy of quantum-behaved particle swarm optimization"
+        ],
+        "author": [
+          {
+            "family": "Jun Sun",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "family": "Wenbo Xu",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "family": "Bin Feng",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "IEEE Conference on Cybernetics and Intelligent Systems, 2004."
+        ],
+        "volume": "1",
+        "issue": null,
+        "page": "111-116",
+        "published": null,
+        "publisher": "IEEE"
+      }
+    },
+    {
+      "doi": "10.1109/ISPA.2005.195385",
+      "status": "CONFIRMED_CROSSREF",
+      "source": "Crossref REST API",
+      "checked_at": "2026-10-08",
+      "metadata": {
+        "title": [
+          "Comparison of resampling schemes for particle filtering"
+        ],
+        "author": [
+          {
+            "given": "R.",
+            "family": "Douc",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "O.",
+            "family": "Cappe",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "ISPA 2005. Proceedings of the 4th International Symposium on Image and Signal Processing and Analysis, 2005."
+        ],
+        "volume": null,
+        "issue": null,
+        "page": "64-69",
+        "published": {
+          "date-parts": [
+            [
+              2005
+            ]
+          ]
+        },
+        "publisher": "IEEE"
+      }
+    },
+    {
+      "doi": "10.1109/JSEN.2021.3113364",
+      "status": "CONFIRMED_CROSSREF",
+      "source": "Crossref REST API",
+      "checked_at": "2026-10-08",
+      "metadata": {
+        "title": [
+          "Error Constraint Enhanced Particle Filter Using Quantum Particle Swarm Optimization"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-7688-7347",
+            "authenticated-orcid": false,
+            "given": "Jiawang",
+            "family": "Wan",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-1624-5494",
+            "authenticated-orcid": false,
+            "given": "Cheng",
+            "family": "Xu",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Yidan",
+            "family": "Qiao",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-7600-7231",
+            "authenticated-orcid": false,
+            "given": "Xiaotong",
+            "family": "Zhang",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "IEEE Sensors Journal"
+        ],
+        "volume": "21",
+        "issue": "21",
+        "page": "24431-24439",
+        "published": {
+          "date-parts": [
+            [
+              2021,
+              11,
+              1
+            ]
+          ]
+        },
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)"
+      }
+    },
+    {
+      "doi": "10.1109/TSP.2016.2563387",
+      "status": "CONFIRMED_CROSSREF",
+      "source": "Crossref REST API",
+      "checked_at": "2026-10-08",
+      "metadata": {
+        "title": [
+          "An Introduction to Twisted Particle Filters and Parameter Estimation in Non-Linear State-Space Models"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-8060-8881",
+            "authenticated-orcid": false,
+            "given": "Juha",
+            "family": "Ala-Luhtala",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Nick",
+            "family": "Whiteley",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Kari",
+            "family": "Heine",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Robert",
+            "family": "Piche",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "IEEE Transactions on Signal Processing"
+        ],
+        "volume": "64",
+        "issue": "18",
+        "page": "4875-4890",
+        "published": {
+          "date-parts": [
+            [
+              2016,
+              9,
+              15
+            ]
+          ]
+        },
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)"
+      }
+    },
+    {
+      "doi": "10.1111/1467-9868.00280",
+      "status": "CONFIRMED_CROSSREF",
+      "source": "Crossref REST API",
+      "checked_at": "2026-10-08",
+      "metadata": {
+        "title": [
+          "Following a Moving Target—Monte Carlo Inference for Dynamic Bayesian Models"
+        ],
+        "author": [
+          {
+            "given": "Walter R.",
+            "family": "Gilks",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Medical Research Council Biostatistics Unit , Cambridge , UK"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Carlo",
+            "family": "Berzuini",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of Pavia , Italy"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Journal of the Royal Statistical Society Series B: Statistical Methodology"
+        ],
+        "volume": "63",
+        "issue": "1",
+        "page": "127-146",
+        "published": {
+          "date-parts": [
+            [
+              2001,
+              1,
+              1
+            ]
+          ]
+        },
+        "publisher": "Oxford University Press (OUP)"
+      }
+    },
+    {
+      "doi": "10.1214/009053605000000426",
+      "status": "CONFIRMED_CROSSREF",
+      "source": "Crossref REST API",
+      "checked_at": "2026-10-08",
+      "metadata": {
+        "title": [
+          "Recursive Monte Carlo filters: Algorithms and theoretical analysis"
+        ],
+        "author": [
+          {
+            "given": "Hans R.",
+            "family": "Künsch",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "The Annals of Statistics"
+        ],
+        "volume": "33",
+        "issue": "5",
+        "page": null,
+        "published": {
+          "date-parts": [
+            [
+              2005,
+              10,
+              1
+            ]
+          ]
+        },
+        "publisher": "Institute of Mathematical Statistics"
+      }
+    },
+    {
+      "doi": "10.13195/j.kzyjc.2025.1074",
+      "status": "UNRESOLVED",
+      "source": "Crossref REST API",
+      "checked_at": "2026-10-08",
+      "metadata": {
+        "title": null,
+        "author": null,
+        "container-title": null,
+        "volume": null,
+        "issue": null,
+        "page": null,
+        "published": null,
+        "publisher": null
+      }
+    },
+    {
+      "doi": "10.1371/journal.pone.0248266",
+      "status": "CONFIRMED_CROSSREF",
+      "source": "Crossref REST API",
+      "checked_at": "2026-10-08",
+      "metadata": {
+        "title": [
+          "A hybrid particle-ensemble Kalman filter for problems with medium nonlinearity"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-4678-7203",
+            "authenticated-orcid": true,
+            "given": "Ian",
+            "family": "Grooms",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Gregor",
+            "family": "Robinson",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "PLOS ONE"
+        ],
+        "volume": "16",
+        "issue": "3",
+        "page": "e0248266",
+        "published": {
+          "date-parts": [
+            [
+              2021,
+              3,
+              11
+            ]
+          ]
+        },
+        "publisher": "Public Library of Science (PLoS)"
+      }
+    },
+    {
+      "doi": "10.16526/j.cnki.11-4762/tp.2021.04.050",
+      "status": "UNRESOLVED",
+      "source": "Crossref REST API",
+      "checked_at": "2026-10-08",
+      "metadata": {
+        "title": null,
+        "author": null,
+        "container-title": null,
+        "volume": null,
+        "issue": null,
+        "page": null,
+        "published": null,
+        "publisher": null
+      }
+    },
+    {
+      "doi": "10.48550/arXiv.1502.07532",
+      "status": "CONFIRMED_ARXIV_API",
+      "source": "arXiv export API",
+      "checked_at": "2026-10-08",
+      "metadata": {
+        "title": "The chopthin algorithm for resampling",
+        "author": null,
+        "container-title": null,
+        "volume": null,
+        "issue": null,
+        "page": null,
+        "published": "2015-02-26",
+        "publisher": null,
+        "authors": [
+          "Axel Gandy",
+          "F. Din-Houn Lau"
+        ],
+        "arxiv_id": "1502.07532"
+      }
+    },
+    {
+      "doi": "10.48550/arXiv.1702.05198",
+      "status": "CONFIRMED_ARXIV_API",
+      "source": "arXiv export API",
+      "checked_at": "2026-10-08",
+      "metadata": {
+        "title": "Moment Preserving Constrained Resampling with Applications to Particle-in-Cell Methods",
+        "author": null,
+        "container-title": null,
+        "volume": null,
+        "issue": null,
+        "page": null,
+        "published": "2017-02-17",
+        "publisher": null,
+        "authors": [
+          "Danial Faghihi",
+          "Varis Carey",
+          "Craig Michoski",
+          "Robert Hager",
+          "Salomon Janhunen",
+          "Choong-Seock Chang",
+          "Robert Moser"
+        ],
+        "arxiv_id": "1702.05198"
+      }
+    },
+    {
+      "doi": "10.48550/arXiv.2106.10314",
+      "status": "CONFIRMED_ARXIV_API",
+      "source": "arXiv export API",
+      "checked_at": "2026-10-08",
+      "metadata": {
+        "title": "Differentiable Particle Filtering without Modifying the Forward Pass",
+        "author": null,
+        "container-title": null,
+        "volume": null,
+        "issue": null,
+        "page": null,
+        "published": "2021-06-18",
+        "publisher": null,
+        "authors": [
+          "Adam Ścibior",
+          "Frank Wood"
+        ],
+        "arxiv_id": "2106.10314"
+      }
+    }
+  ],
+  "summary": {
+    "CONFIRMED_CROSSREF": 19,
+    "UNRESOLVED": 2,
+    "CONFIRMED_ARXIV_API": 3
+  }
+}

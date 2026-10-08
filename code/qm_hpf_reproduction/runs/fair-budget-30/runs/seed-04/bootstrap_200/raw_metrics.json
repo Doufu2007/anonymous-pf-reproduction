@@ -1,0 +1,18 @@
+{
+  "rmse": 0.9729650208118154,
+  "mae": 0.7703917560411456,
+  "mean_ess": 160.86460539876623,
+  "mean_distinct": 160.4,
+  "runtime_s": 0.03300949999538716,
+  "ess_per_second": 4873.2820982216,
+  "particle_count": 200,
+  "final_weight_sum": 0.9999999999999998,
+  "budget_shortfall_steps": 0,
+  "likelihood_cap": 40000,
+  "likelihood_evals": 40000,
+  "proposal_attempts": 0,
+  "candidate_evals": 0,
+  "accepts": 0,
+  "rotation_proposals": 0,
+  "crossover_proposals": 0
+}

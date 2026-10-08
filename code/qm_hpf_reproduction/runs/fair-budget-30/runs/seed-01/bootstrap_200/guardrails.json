@@ -1,0 +1,8 @@
+{
+  "finite_metrics": true,
+  "budget_cap_pass": true,
+  "step_cap_pass": true,
+  "equal_full_expenditure": true,
+  "normalized_weights": true,
+  "interpretation": "valid cap; report shortfalls without dropping runs or forcing candidates"
+}

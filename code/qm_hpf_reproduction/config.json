@@ -1,0 +1,38 @@
+{
+  "source": {
+    "doi": "10.13195/j.kzyjc.2025.1074",
+    "pdf_sha256": "8EFBCC44D530DCD867B3522BC822DBEA746820AB0CEDF0A84266F6EE76BA4CF2",
+    "paper_date": "2026-01-27",
+    "source_equations": ["21", "22", "23"]
+  },
+  "model": {
+    "horizon": 200,
+    "initial_state": 1.0,
+    "observation_variance": 1.0,
+    "gaussian_process_variances": [1.0, 2.0, 3.0],
+    "non_gaussian_cases": [
+      {"gaussian_variance": 1.0, "gamma_scale": 0.1},
+      {"gaussian_variance": 1.0, "gamma_scale": 0.5},
+      {"gaussian_variance": 3.0, "gamma_scale": 0.1},
+      {"gaussian_variance": 3.0, "gamma_scale": 0.5}
+    ],
+    "gamma_shape": 0.5,
+    "gamma_base_scale": 0.5
+  },
+  "filter": {
+    "particle_count": 100,
+    "initial_particle_std": 1.0,
+    "generation_count": 20,
+    "bit_length": 16,
+    "state_min": -10.0,
+    "state_max": 10.0,
+    "final_resampler": "systematic",
+    "rotation_angle_max_pi": 0.04,
+    "rotation_angle_min_pi": 0.01
+  },
+  "evaluation": {
+    "pilot_seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+    "main_seed_range": [0, 29],
+    "metrics": ["rmse", "mae", "mean_ess", "mean_distinct", "runtime_s"]
+  }
+}

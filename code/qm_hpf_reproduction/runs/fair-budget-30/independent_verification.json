@@ -1,0 +1,19 @@
+{
+  "schema": "particle-filter.audit-verification.v1",
+  "verified_at": "2026-10-09T00:07:32.868968+08:00",
+  "per_run_manifests_hash_verified": 90,
+  "raw_RMSE_recomputed": 90,
+  "step_counters_verified": 90,
+  "qm_like_actual_count_min": 38360,
+  "qm_like_actual_count_max": 39220,
+  "errors": [],
+  "code_snapshots_sha256": {
+    "analyze_budget_benchmark.py": "a31b8fae61e91d4ed51312b7117c99097fcbdc342084bebd46f0c4d632b36b10",
+    "budget_benchmark.py": "1187944daeb3fca937e2bd6dd7552b13ee05aaf81a9f12bc6fde155863a0ae27",
+    "fair_budget_plan.json": "60eacb8f7d6a84db7f849dbcdc5a1d38bfa281262fc043bb497dc8c359dd2254",
+    "qm_hpf.py": "d39bfd4f6697f2ca94782d74661bbaa10ad3ee3d3fd6e6909994e850416e3609",
+    "run_budget_benchmark.py": "6459c318724be6d48ead5111eaa8d661e372e222d4db3d6092abf7c4c31b8e81",
+    "test_budget_benchmark.py": "12bd48a6c6eca56f7e3c73454047eb27d102771ade59b4d5f8e0337d7c237cf1"
+  },
+  "interpretation": "Same upper cap, not equal actual expenditure; old native outputs are unmodified."
+}
