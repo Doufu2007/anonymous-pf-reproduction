@@ -8,15 +8,16 @@ of the complete QM-HPF, QGPF or EC-QPF source algorithms.
 ## Version boundary
 
 Historical baseline: `v1.0.0-submission`; its tag and archived results are retained.
-Release version: `v1.1.0-audit-update`; resolve the exact commit with
-`git rev-parse 'v1.1.0-audit-update^{}'`.
+The current revision is `v1.2.0-q2-review`; resolve the exact commit with
+`git rev-parse 'v1.2.0-q2-review^{}'`. The preceding audit release
+`v1.1.0-audit-update` is retained for comparison.
 
 The manuscript revision dated 2026-10-09 is staged under
 `code/revision_20261009/` and `metadata/revision-2026-10-09/`. It contains the
 stable/retention QGPF-like audits, the EC-QPF probability-convention audit,
 their manifests, raw arrays, analysis tables, operation definitions and
-same-environment replay checks. These files are added in the subsequent
-versioned release; the manuscript must cite the resulting commit rather than
+same-environment replay checks. These files are part of the current versioned
+release; the manuscript should cite the `v1.2.0-q2-review` commit rather than
 the historical `v1.1.0-audit-update` tag.
 
 The update adds the 30-seed EC-QPF selection-module audit, fair-likelihood-cap
