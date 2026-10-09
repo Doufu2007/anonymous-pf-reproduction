@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "completed_seeds": [
+    0
+  ],
+  "all_seeds_reported": true,
+  "wall_s_including_IO_and_reuse_verification": 6.771515200001886,
+  "summary_sha256": "d8529839b0abdddb2591b039aa89ee9f5b2ae452241f14f523ca08f3b7bda947",
+  "protocol_sha256": "1cb51324a113927017e27af1cb4db7ff99d20936d00e837e4cf3ca872198b650"
+}

@@ -11,6 +11,14 @@ Historical baseline: `v1.0.0-submission`; its tag and archived results are retai
 Release version: `v1.1.0-audit-update`; resolve the exact commit with
 `git rev-parse 'v1.1.0-audit-update^{}'`.
 
+The manuscript revision dated 2026-10-09 is staged under
+`code/revision_20261009/` and `metadata/revision-2026-10-09/`. It contains the
+stable/retention QGPF-like audits, the EC-QPF probability-convention audit,
+their manifests, raw arrays, analysis tables, operation definitions and
+same-environment replay checks. These files are added in the subsequent
+versioned release; the manuscript must cite the resulting commit rather than
+the historical `v1.1.0-audit-update` tag.
+
 The update adds the 30-seed EC-QPF selection-module audit, fair-likelihood-cap
 code/configuration and analysis evidence, refreshed screening/citation metadata,
 operation-count reporting and profiling evidence. Its final commit is identified
@@ -42,6 +50,9 @@ manuscript passed a new full semantic review.
 - `code/audit_reporting/`: operation-count aggregation and descriptive
   three-seed profiling, with retained per-run evidence and measurement limits.
   See `COUNTER_README.md` and `profile_README.md` in that directory.
+- `code/revision_20261009/`: revision batches for the QGPF-like numerical and
+  retention contracts and the EC-QPF interpreted probability convention.
+- `metadata/revision-2026-10-09/`: wrapper provenance for the revision release.
 - `metadata/search_ledger.csv`: search and screening ledger.
 - `metadata/citation_registry_2026-10-08.json`: historical registry export.
 - `metadata/citation_registry_2026-10-09.json`: refreshed registry export.

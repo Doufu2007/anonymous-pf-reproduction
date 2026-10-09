@@ -1,0 +1,39 @@
+{
+  "schema": "EC.revision.completion.v1",
+  "status": "PASS",
+  "n_datasets": 30,
+  "updates_per_dataset": 20,
+  "primary_family": 3,
+  "bootstrap": 20000,
+  "signflip": 50000,
+  "code_sha256": {
+    "ecqpf_interpreted.py": "9d28fe38b1c7ff5fc80424ba31e51cb70347cfb0fb1866ec8b2481d3ab674e75",
+    "run_revision.py": "f4d016c0fe707945d749a841e8cc11b8af5b30751a06566ad2ae7e18a9601c4c",
+    "test_interpreted.py": "ab9fca10568f49489b0ffa960b866ef2ce531c1a8136b27ebb832793db514a5f",
+    "analyze_revision.py": "a8b3c6bdf7cf145f2e7c8907b82d778a99207ca574b856afef820348992f7883",
+    "compare_replay.py": "7945596675f1185379005080886effcf0a8a1b3d2d310b8a07c4a50d628a57eb",
+    "verify_completed.py": "e70cd67a5eb34bf82f1fb52dd76040ac87efef64a8e234233a946dc009fac85f"
+  },
+  "evidence_sha256": {
+    "runs-consistent-30-v2/batch_manifest.json": "47bd24765c0eb6c3a4abad7b25d69497feceadd356ba58eb4848ac25203fe9ad",
+    "analysis-consistent-30-v2/analysis.json": "0afccf2a6bd2a63054b141b63a24d90eb25149d8223b2d6a6949678e7e517e57",
+    "analysis-consistent-30-v2/analysis_manifest.json": "7920f23101cf738e861fb27a6277fdadcddf20393f087777bbdfd93c30f972c5",
+    "readonly-verification.json": "ae1bbdda0169f56dee389c360642dc42259a41abea961c27c9b075cb913d307a",
+    "replay-comparison.json": "7bfc7a5349b7cd6cc359fe2eaf060200e2926074c2c3a8bcd1936d7fa52cfbd5",
+    "completion-report.md": "d7bb0bfe99a18dfb98e87124a3afacb37b66c0460a311a76e33bc4d2ad41d407",
+    "runs-consistent-30/batch_failure.json": "231196d7b72251c2a11869708e21714212f9f3456fcb62eefd8e092e6608377a",
+    "analysis-launch.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "verification-launch.log": "7bf782bd4afb18d866b9ccc51ba274cd4e6988d341e2ea72d78e4d86bd758770",
+    "replay-a-launch.log": "3b4cee55fc1ec57e72e3a95717f8e15ab20879d75145382ed474a4bfeca9d917",
+    "replay-b-launch.log": "a0ce6bf96ec0d7014952d66b7a1263a212ae274e46e361378791fc088f512a1f"
+  },
+  "analysis_environment": {
+    "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.4.2",
+    "scipy": "1.17.1",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "no_seeds_excluded": true,
+  "gate": "M1 complete before EC; M2 technically complete; M3 can proceed",
+  "retained_failure": "NumPy build-config capture API before any scientific update; pure environment capture fix then full30 rerun in new directory"
+}

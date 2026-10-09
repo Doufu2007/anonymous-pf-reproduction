@@ -1,0 +1,16 @@
+{
+  "likelihood_evals": "One scalar state log-likelihood evaluation. Counts base, initial old, candidate and final updated scores.",
+  "candidate_evals": "One candidate score; a subset of likelihood_evals.",
+  "fitness_evals": "Same candidate score as candidate_evals, overlapping label; no added work.",
+  "proposal_chromosome_events": "One nonelite chromosome selected for its complete G-generation update; historical proposal_attempts unit.",
+  "proposal_candidate_attempts": "One generation candidate, same event as candidate_evals.",
+  "rotation_calls": "One conditional scalar probability-rotation invocation; not a hardware gate.",
+  "measurement_bit_observations": "One scalar Bernoulli bit observation; two per coordinate-bit per candidate.",
+  "probability_entry_updates": "Same conditional event as rotation_calls; overlapping work.",
+  "crossover_operations": "Explicit crossover absent in this QGPF-like contract; exact zero.",
+  "would_zero_tie_probability_domain": "On this stable trajectory, both old/new exp(logpdf) are zero; hypothetical probability-domain tie, not a tie in stable acceptance.",
+  "stable_vs_probability_decision_disagreements": "Stable ratio vs old floor-rule evaluated for the same old/new logpdf and same uniform on stable trajectory; NOT differences from historical trajectory.",
+  "base_all_zero_density_steps": "All base exp(logpdf) would be zero; stable relative log weights remain defined.",
+  "addition_rule": "Candidate/fitness/proposal labels overlap likelihood scoring; rotations overlap probability updates. Never add these labels into a total operation cost.",
+  "unavailable": "Physical quantum gate counts/hardware measurements and fully exclusive operation-time attribution: unavailable; classical CPU implementation only."
+}

@@ -1,0 +1,10 @@
+{
+  "suite": "code/revision_20261009/qgpf/test_stable.py",
+  "suite_sha256": "463643ef1115d7cc69f4c607d8dabb48c8e92929dda77804bf14b0baa4ae339a",
+  "green_log": "code/revision_20261009/qgpf/test-green-attempt-02.log",
+  "green_log_sha256": "ca4eb22c6f49c8f36c81d9b174d4e13309e869f7e43fd1666c4bbbd4df4bf1db",
+  "green_exit_code": 0,
+  "test_count": 11,
+  "tests_run_before_science": true,
+  "framework": "stdlib unittest + seeded generated properties; not Hypothesis"
+}

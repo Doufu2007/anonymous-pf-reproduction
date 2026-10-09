@@ -1,0 +1,206 @@
+{
+  "status": "PASS",
+  "truth_used_only_by_evaluator": true,
+  "checks": [
+    {
+      "update": 0,
+      "identical_shared_ellipse_variance_and_optimum": true,
+      "historical_indices_in_same_ellipse": true,
+      "finite_estimate": true,
+      "fitness_bounded_by_exact": true,
+      "new_indices_in_same_ellipse": true,
+      "fitness_count_contract": true,
+      "binary_count_contract": true
+    },
+    {
+      "update": 1,
+      "identical_shared_ellipse_variance_and_optimum": true,
+      "historical_indices_in_same_ellipse": true,
+      "finite_estimate": true,
+      "fitness_bounded_by_exact": true,
+      "new_indices_in_same_ellipse": true,
+      "fitness_count_contract": true,
+      "binary_count_contract": true
+    },
+    {
+      "update": 2,
+      "identical_shared_ellipse_variance_and_optimum": true,
+      "historical_indices_in_same_ellipse": true,
+      "finite_estimate": true,
+      "fitness_bounded_by_exact": true,
+      "new_indices_in_same_ellipse": true,
+      "fitness_count_contract": true,
+      "binary_count_contract": true
+    },
+    {
+      "update": 3,
+      "identical_shared_ellipse_variance_and_optimum": true,
+      "historical_indices_in_same_ellipse": true,
+      "finite_estimate": true,
+      "fitness_bounded_by_exact": true,
+      "new_indices_in_same_ellipse": true,
+      "fitness_count_contract": true,
+      "binary_count_contract": true
+    },
+    {
+      "update": 4,
+      "identical_shared_ellipse_variance_and_optimum": true,
+      "historical_indices_in_same_ellipse": true,
+      "finite_estimate": true,
+      "fitness_bounded_by_exact": true,
+      "new_indices_in_same_ellipse": true,
+      "fitness_count_contract": true,
+      "binary_count_contract": true
+    },
+    {
+      "update": 5,
+      "identical_shared_ellipse_variance_and_optimum": true,
+      "historical_indices_in_same_ellipse": true,
+      "finite_estimate": true,
+      "fitness_bounded_by_exact": true,
+      "new_indices_in_same_ellipse": true,
+      "fitness_count_contract": true,
+      "binary_count_contract": true
+    },
+    {
+      "update": 6,
+      "identical_shared_ellipse_variance_and_optimum": true,
+      "historical_indices_in_same_ellipse": true,
+      "finite_estimate": true,
+      "fitness_bounded_by_exact": true,
+      "new_indices_in_same_ellipse": true,
+      "fitness_count_contract": true,
+      "binary_count_contract": true
+    },
+    {
+      "update": 7,
+      "identical_shared_ellipse_variance_and_optimum": true,
+      "historical_indices_in_same_ellipse": true,
+      "finite_estimate": true,
+      "fitness_bounded_by_exact": true,
+      "new_indices_in_same_ellipse": true,
+      "fitness_count_contract": true,
+      "binary_count_contract": true
+    },
+    {
+      "update": 8,
+      "identical_shared_ellipse_variance_and_optimum": true,
+      "historical_indices_in_same_ellipse": true,
+      "finite_estimate": true,
+      "fitness_bounded_by_exact": true,
+      "new_indices_in_same_ellipse": true,
+      "fitness_count_contract": true,
+      "binary_count_contract": true
+    },
+    {
+      "update": 9,
+      "identical_shared_ellipse_variance_and_optimum": true,
+      "historical_indices_in_same_ellipse": true,
+      "finite_estimate": true,
+      "fitness_bounded_by_exact": true,
+      "new_indices_in_same_ellipse": true,
+      "fitness_count_contract": true,
+      "binary_count_contract": true
+    },
+    {
+      "update": 10,
+      "identical_shared_ellipse_variance_and_optimum": true,
+      "historical_indices_in_same_ellipse": true,
+      "finite_estimate": true,
+      "fitness_bounded_by_exact": true,
+      "new_indices_in_same_ellipse": true,
+      "fitness_count_contract": true,
+      "binary_count_contract": true
+    },
+    {
+      "update": 11,
+      "identical_shared_ellipse_variance_and_optimum": true,
+      "historical_indices_in_same_ellipse": true,
+      "finite_estimate": true,
+      "fitness_bounded_by_exact": true,
+      "new_indices_in_same_ellipse": true,
+      "fitness_count_contract": true,
+      "binary_count_contract": true
+    },
+    {
+      "update": 12,
+      "identical_shared_ellipse_variance_and_optimum": true,
+      "historical_indices_in_same_ellipse": true,
+      "finite_estimate": true,
+      "fitness_bounded_by_exact": true,
+      "new_indices_in_same_ellipse": true,
+      "fitness_count_contract": true,
+      "binary_count_contract": true
+    },
+    {
+      "update": 13,
+      "identical_shared_ellipse_variance_and_optimum": true,
+      "historical_indices_in_same_ellipse": true,
+      "finite_estimate": true,
+      "fitness_bounded_by_exact": true,
+      "new_indices_in_same_ellipse": true,
+      "fitness_count_contract": true,
+      "binary_count_contract": true
+    },
+    {
+      "update": 14,
+      "identical_shared_ellipse_variance_and_optimum": true,
+      "historical_indices_in_same_ellipse": true,
+      "finite_estimate": true,
+      "fitness_bounded_by_exact": true,
+      "new_indices_in_same_ellipse": true,
+      "fitness_count_contract": true,
+      "binary_count_contract": true
+    },
+    {
+      "update": 15,
+      "identical_shared_ellipse_variance_and_optimum": true,
+      "historical_indices_in_same_ellipse": true,
+      "finite_estimate": true,
+      "fitness_bounded_by_exact": true,
+      "new_indices_in_same_ellipse": true,
+      "fitness_count_contract": true,
+      "binary_count_contract": true
+    },
+    {
+      "update": 16,
+      "identical_shared_ellipse_variance_and_optimum": true,
+      "historical_indices_in_same_ellipse": true,
+      "finite_estimate": true,
+      "fitness_bounded_by_exact": true,
+      "new_indices_in_same_ellipse": true,
+      "fitness_count_contract": true,
+      "binary_count_contract": true
+    },
+    {
+      "update": 17,
+      "identical_shared_ellipse_variance_and_optimum": true,
+      "historical_indices_in_same_ellipse": true,
+      "finite_estimate": true,
+      "fitness_bounded_by_exact": true,
+      "new_indices_in_same_ellipse": true,
+      "fitness_count_contract": true,
+      "binary_count_contract": true
+    },
+    {
+      "update": 18,
+      "identical_shared_ellipse_variance_and_optimum": true,
+      "historical_indices_in_same_ellipse": true,
+      "finite_estimate": true,
+      "fitness_bounded_by_exact": true,
+      "new_indices_in_same_ellipse": true,
+      "fitness_count_contract": true,
+      "binary_count_contract": true
+    },
+    {
+      "update": 19,
+      "identical_shared_ellipse_variance_and_optimum": true,
+      "historical_indices_in_same_ellipse": true,
+      "finite_estimate": true,
+      "fitness_bounded_by_exact": true,
+      "new_indices_in_same_ellipse": true,
+      "fitness_count_contract": true,
+      "binary_count_contract": true
+    }
+  ]
+}

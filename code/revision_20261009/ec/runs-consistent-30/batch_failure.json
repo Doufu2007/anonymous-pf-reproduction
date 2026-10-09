@@ -1,0 +1,7 @@
+{
+  "exception": "TypeError",
+  "message": "show_config() got an unexpected keyword argument 'stream'",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\\u90d1\u5085\u97ec\\Desktop\\\u5927\u5b66\u751f\u6d3b\\\u8bba\u6587\\\u91cf\u5b50\u7c92\u5b50\u6ee4\u6ce2\\anonymous-repro-repo\\code\\revision_20261009\\ec\\run_revision.py\", line 326, in main\n    summaries += run_seed(seed, root, args.role, protocol, freeze, cfg)\n                 ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\\u90d1\u5085\u97ec\\Desktop\\\u5927\u5b66\u751f\u6d3b\\\u8bba\u6587\\\u91cf\u5b50\u7c92\u5b50\u6ee4\u6ce2\\anonymous-repro-repo\\code\\revision_20261009\\ec\\run_revision.py\", line 184, in run_seed\n    np.show_config(stream=fp); environment['numpy_build_config'] = fp.getvalue()\n    ~~~~~~~~~~~~~~^^^^^^^^^^^\nTypeError: show_config() got an unexpected keyword argument 'stream'\n",
+  "completed_summary_rows": [],
+  "no_seed_exclusions_or_replacements": true
+}

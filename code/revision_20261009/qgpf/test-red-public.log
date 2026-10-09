@@ -1,0 +1,20 @@
+test_stable (unittest.loader._FailedTest.test_stable) ... ERROR
+
+======================================================================
+ERROR: test_stable (unittest.loader._FailedTest.test_stable)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_stable
+Traceback (most recent call last):
+  File "<python-runtime>\Lib\unittest\loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+  File "<revision-qgpf>\test_stable.py", line 12, in <module>
+    from qgpf_stable import (ModelConfig, FilterConfig, log_likelihood,
+                            normalize_logweights, accept_log_candidate,
+                            rotate_probability, run_filter)
+ModuleNotFoundError: No module named 'qgpf_stable'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)

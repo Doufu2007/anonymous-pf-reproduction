@@ -1,0 +1,172 @@
+{
+  "schema": "particle_filter.authorized_revision_protocol.v1",
+  "frozen_at": "2026-10-09T08:10:36.860991+00:00",
+  "user_authorization": "按照这里面的说法，以及里面给出的顺序，依次解决这里面提出来的需要解决的问题和缺陷",
+  "status": "FROZEN_FOR_LOCAL_EXECUTION",
+  "source_plan": {
+    "path": "category4-journal-draft/投稿前完整修订与验收方案_2026-10-09.md",
+    "sha256": "ae4bd34d48dfbb439fadb6ef1c4692d864b9f63c3c8060855e47d481bc4df9a8"
+  },
+  "historical_freeze": {
+    "path": "revision-2026-10-09/historical-freeze.json",
+    "sha256": "1baf07d3a3a0865f8b3ed2f3f9ffc393c39056033c837429cb0ccbbb44c212c2"
+  },
+  "interpretation": "Exploratory revision on previously observed archived synthetic inputs, not a new confirmatory dataset or retrospective preregistration",
+  "order": [
+    "QGPF-stability-30",
+    "EC-qzero-consistent-30",
+    "QGPF-source-retention-30",
+    "analysis-and-writing",
+    "typesetting-and-review"
+  ],
+  "QGPF": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "T": 100,
+    "N": 200,
+    "bits": 10,
+    "G": 4,
+    "elite_fraction": 0.2,
+    "fixed": "All existing bounds/noise/initial law/archive truth-observations/pre-estimate/proposal and weight-target convention, except declared factor",
+    "new_variants": [
+      "Q-stable",
+      "B-stable",
+      "Q-stable-retain"
+    ],
+    "primary": "sqrt(mean over time and position coordinates of squared error)",
+    "comparisons": [
+      "Q-stable minus Q-old",
+      "Q-stable minus B-stable",
+      "Q-stable-retain minus Q-stable"
+    ],
+    "multiplicity": "Holm over all three predeclared primary comparisons",
+    "statistics": {
+      "unit": "30 trajectories, not time steps",
+      "bootstrap": 10000,
+      "CI": "paired t and seed-level percentile bootstrap 95%",
+      "effect": "paired dz"
+    },
+    "secondary": [
+      "position MAE",
+      "velocity RMSE",
+      "pre-move ESS/N",
+      "distinct positions",
+      "acceptance counts",
+      "likelihood/candidate/proposal/rotation/crossover/measurement/fitness counts",
+      "initialization-inclusive runtime",
+      "exploratory pre/post endpoint readings without state feedback"
+    ],
+    "failure": "Nonfinite estimates/invalid weight normalization/contract mismatch stops and records failure; repair version recorded; no seed exclusions"
+  },
+  "EC": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "updates_per_dataset": 20,
+    "N": 500,
+    "population": 500,
+    "alpha": 0.8,
+    "c1": 0.2,
+    "c2": 0.2,
+    "iteration_limit": 20,
+    "unchanged_best_stop": 10,
+    "variant": "q=P(bit0); best mapping alpha*(1-D)+(1-alpha)*D; measurement bit1 if q<u",
+    "fixed": "Archived clouds/centres/truth, ellipse, positive subset-independent V and duplication rules",
+    "primary": "sqrt(mean over 20 updates of squared 2D Euclidean error)",
+    "comparisons": [
+      "consistent minus literal",
+      "consistent minus exact",
+      "consistent minus systematic"
+    ],
+    "statistics": {
+      "unit": "30 datasets, not 600 updates",
+      "bootstrap": 20000,
+      "sign_flip": 50000,
+      "multiplicity": "Holm family3",
+      "effect": "paired dz"
+    },
+    "secondary": [
+      "logfitness gap",
+      "subset size",
+      "distinct count",
+      "generation/fitness/binary and operation counts",
+      "initialization-inclusive runtime"
+    ],
+    "failure": "Invalid q range/index or fitness above exact bound stops and records failure; no dataset exclusions"
+  },
+  "tests": [
+    "known underflow gold examples",
+    "normalization common-offset property",
+    "stable/ordinary agreement in safe range",
+    "EC one-bit direction gold",
+    "EC fixed-best and qone equivalence",
+    "fitness exact upper bound",
+    "same-environment fixed-seed two independent scientific runs"
+  ],
+  "budget": {
+    "compute": "local CPU only, no paid or remote runs",
+    "matrix": "Q stable60 + ECconsistent30 + Qretain30, plus meaningful fixed-seed replay/tests",
+    "scope": "No large parameter scan; no new algorithms or tuning"
+  },
+  "external_actions": "No emails, consultation or manuscript submission; repository publication only after final verification within existing authorization",
+  "success_criterion": "Complete validated raw evidence and calibrated claims; does not depend on significant or favorable effects"
+}

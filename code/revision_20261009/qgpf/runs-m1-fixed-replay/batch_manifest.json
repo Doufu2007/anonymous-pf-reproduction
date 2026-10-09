@@ -1,0 +1,45 @@
+{
+  "schema": "revision.qgpf.batch.v1",
+  "protocol_sha256": "1cb51324a113927017e27af1cb4db7ff99d20936d00e837e4cf3ca872198b650",
+  "methods": [
+    "B-stable",
+    "Q-stable"
+  ],
+  "seeds": [
+    0
+  ],
+  "completed": 2,
+  "failed": 0,
+  "scheduler": {
+    "kind": "independent-fixed-seed-replay",
+    "max_independent_processes": 1,
+    "blas_threads_per_process": 1,
+    "runtime_comparison_allowed": false
+  },
+  "run_manifests": [
+    "B-stable/seed-00/manifest.json",
+    "Q-stable/seed-00/manifest.json"
+  ],
+  "code_sha256": {
+    "qgpf_stable.py": "01d14e073da2b5ff4c10a5f9edaa51c7cfac24d458e12b8ad30de78d5c348dac",
+    "run_revision.py": "a4275dbe112661304b287d1f0286a3ef70b7adcdce418f050b310a099dfa8576",
+    "test_stable.py": "463643ef1115d7cc69f4c607d8dabb48c8e92929dda77804bf14b0baa4ae339a"
+  },
+  "raw_metrics_csv_sha256": "1c1e1898c8c641eb981802049686a90966a2ff1ebda52026bab56444c2d6004a",
+  "counter_definitions": {
+    "likelihood_evals": "One scalar state log-likelihood evaluation. Counts base, initial old, candidate and final updated scores.",
+    "candidate_evals": "One candidate score; a subset of likelihood_evals.",
+    "fitness_evals": "Same candidate score as candidate_evals, overlapping label; no added work.",
+    "proposal_chromosome_events": "One nonelite chromosome selected for its complete G-generation update; historical proposal_attempts unit.",
+    "proposal_candidate_attempts": "One generation candidate, same event as candidate_evals.",
+    "rotation_calls": "One conditional scalar probability-rotation invocation; not a hardware gate.",
+    "measurement_bit_observations": "One scalar Bernoulli bit observation; two per coordinate-bit per candidate.",
+    "probability_entry_updates": "Same conditional event as rotation_calls; overlapping work.",
+    "crossover_operations": "Explicit crossover absent in this QGPF-like contract; exact zero.",
+    "would_zero_tie_probability_domain": "On this stable trajectory, both old/new exp(logpdf) are zero; hypothetical probability-domain tie, not a tie in stable acceptance.",
+    "stable_vs_probability_decision_disagreements": "Stable ratio vs old floor-rule evaluated for the same old/new logpdf and same uniform on stable trajectory; NOT differences from historical trajectory.",
+    "base_all_zero_density_steps": "All base exp(logpdf) would be zero; stable relative log weights remain defined.",
+    "addition_rule": "Candidate/fitness/proposal labels overlap likelihood scoring; rotations overlap probability updates. Never add these labels into a total operation cost.",
+    "unavailable": "Physical quantum gate counts/hardware measurements and fully exclusive operation-time attribution: unavailable; classical CPU implementation only."
+  }
+}

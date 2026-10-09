@@ -1,0 +1,333 @@
+{
+  "schema": "revision.qgpf.serial-timing.v1",
+  "rows": [
+    {
+      "method": "B-stable",
+      "seed": 0,
+      "runtime_s": 0.06595819999347441,
+      "initialization_runtime_s": 0.00018039999122265726,
+      "cpu": "AMD Ryzen 9 7940H w/ Radeon 780M Graphics",
+      "pid": 16852,
+      "scope": "initialization + filtering + diagnostics; excluding I/O and evaluation metrics"
+    },
+    {
+      "method": "B-stable",
+      "seed": 1,
+      "runtime_s": 0.044323699999949895,
+      "initialization_runtime_s": 0.00018300001102034003,
+      "cpu": "AMD Ryzen 9 7940H w/ Radeon 780M Graphics",
+      "pid": 16852,
+      "scope": "initialization + filtering + diagnostics; excluding I/O and evaluation metrics"
+    },
+    {
+      "method": "B-stable",
+      "seed": 2,
+      "runtime_s": 0.04428120001102798,
+      "initialization_runtime_s": 0.00014130001363810152,
+      "cpu": "AMD Ryzen 9 7940H w/ Radeon 780M Graphics",
+      "pid": 16852,
+      "scope": "initialization + filtering + diagnostics; excluding I/O and evaluation metrics"
+    },
+    {
+      "method": "Q-stable",
+      "seed": 0,
+      "runtime_s": 17.689496500010137,
+      "initialization_runtime_s": 0.00020450000010896474,
+      "cpu": "AMD Ryzen 9 7940H w/ Radeon 780M Graphics",
+      "pid": 16852,
+      "scope": "initialization + filtering + diagnostics; excluding I/O and evaluation metrics"
+    },
+    {
+      "method": "Q-stable",
+      "seed": 1,
+      "runtime_s": 16.506857600004878,
+      "initialization_runtime_s": 0.00014229999214876443,
+      "cpu": "AMD Ryzen 9 7940H w/ Radeon 780M Graphics",
+      "pid": 16852,
+      "scope": "initialization + filtering + diagnostics; excluding I/O and evaluation metrics"
+    },
+    {
+      "method": "Q-stable",
+      "seed": 2,
+      "runtime_s": 17.179271900007734,
+      "initialization_runtime_s": 0.00016700000560376793,
+      "cpu": "AMD Ryzen 9 7940H w/ Radeon 780M Graphics",
+      "pid": 16852,
+      "scope": "initialization + filtering + diagnostics; excluding I/O and evaluation metrics"
+    },
+    {
+      "method": "Q-stable-retain",
+      "seed": 0,
+      "runtime_s": 17.51761219999753,
+      "initialization_runtime_s": 0.00015110000094864517,
+      "cpu": "AMD Ryzen 9 7940H w/ Radeon 780M Graphics",
+      "pid": 16852,
+      "scope": "initialization + filtering + diagnostics; excluding I/O and evaluation metrics"
+    },
+    {
+      "method": "Q-stable-retain",
+      "seed": 1,
+      "runtime_s": 16.919286100004683,
+      "initialization_runtime_s": 0.00013840000610798597,
+      "cpu": "AMD Ryzen 9 7940H w/ Radeon 780M Graphics",
+      "pid": 16852,
+      "scope": "initialization + filtering + diagnostics; excluding I/O and evaluation metrics"
+    },
+    {
+      "method": "Q-stable-retain",
+      "seed": 2,
+      "runtime_s": 17.84956860000966,
+      "initialization_runtime_s": 0.00013630000466946512,
+      "cpu": "AMD Ryzen 9 7940H w/ Radeon 780M Graphics",
+      "pid": 16852,
+      "scope": "initialization + filtering + diagnostics; excluding I/O and evaluation metrics"
+    }
+  ],
+  "summaries": {
+    "B-stable": {
+      "n": 3,
+      "mean_s": 0.051521033334817425,
+      "sd_s": 0.012502971143277994,
+      "median_s": 0.044323699999949895,
+      "min_s": 0.04428120001102798,
+      "max_s": 0.06595819999347441
+    },
+    "Q-stable": {
+      "n": 3,
+      "mean_s": 17.12520866667425,
+      "sd_s": 0.593170141570077,
+      "median_s": 17.179271900007734,
+      "min_s": 16.506857600004878,
+      "max_s": 17.689496500010137
+    },
+    "Q-stable-retain": {
+      "n": 3,
+      "mean_s": 17.428822300003958,
+      "sd_s": 0.47145425781249367,
+      "median_s": 17.51761219999753,
+      "min_s": 16.919286100004683,
+      "max_s": 17.84956860000966
+    }
+  },
+  "checks": [
+    {
+      "method": "B-stable",
+      "seed": 0,
+      "scientific_arrays_equal": {
+        "truth": true,
+        "observations": true,
+        "initial_particles": true,
+        "initial_weights": true,
+        "estimate_pre": true,
+        "estimate_post": true,
+        "final_particles": true,
+        "final_weights": true,
+        "particles_pre": true,
+        "particles_post": true,
+        "weights_pre": true,
+        "weights_post": true,
+        "step_counters": true,
+        "step_ess": true,
+        "step_distinct": true
+      },
+      "non_timer_metrics_and_rng_equal": true,
+      "file_hashes_passed": true,
+      "one_worker_one_BLAS_thread": true
+    },
+    {
+      "method": "B-stable",
+      "seed": 1,
+      "scientific_arrays_equal": {
+        "truth": true,
+        "observations": true,
+        "initial_particles": true,
+        "initial_weights": true,
+        "estimate_pre": true,
+        "estimate_post": true,
+        "final_particles": true,
+        "final_weights": true,
+        "particles_pre": true,
+        "particles_post": true,
+        "weights_pre": true,
+        "weights_post": true,
+        "step_counters": true,
+        "step_ess": true,
+        "step_distinct": true
+      },
+      "non_timer_metrics_and_rng_equal": true,
+      "file_hashes_passed": true,
+      "one_worker_one_BLAS_thread": true
+    },
+    {
+      "method": "B-stable",
+      "seed": 2,
+      "scientific_arrays_equal": {
+        "truth": true,
+        "observations": true,
+        "initial_particles": true,
+        "initial_weights": true,
+        "estimate_pre": true,
+        "estimate_post": true,
+        "final_particles": true,
+        "final_weights": true,
+        "particles_pre": true,
+        "particles_post": true,
+        "weights_pre": true,
+        "weights_post": true,
+        "step_counters": true,
+        "step_ess": true,
+        "step_distinct": true
+      },
+      "non_timer_metrics_and_rng_equal": true,
+      "file_hashes_passed": true,
+      "one_worker_one_BLAS_thread": true
+    },
+    {
+      "method": "Q-stable",
+      "seed": 0,
+      "scientific_arrays_equal": {
+        "truth": true,
+        "observations": true,
+        "initial_particles": true,
+        "initial_weights": true,
+        "estimate_pre": true,
+        "estimate_post": true,
+        "final_particles": true,
+        "final_weights": true,
+        "particles_pre": true,
+        "particles_post": true,
+        "weights_pre": true,
+        "weights_post": true,
+        "step_counters": true,
+        "step_ess": true,
+        "step_distinct": true
+      },
+      "non_timer_metrics_and_rng_equal": true,
+      "file_hashes_passed": true,
+      "one_worker_one_BLAS_thread": true
+    },
+    {
+      "method": "Q-stable",
+      "seed": 1,
+      "scientific_arrays_equal": {
+        "truth": true,
+        "observations": true,
+        "initial_particles": true,
+        "initial_weights": true,
+        "estimate_pre": true,
+        "estimate_post": true,
+        "final_particles": true,
+        "final_weights": true,
+        "particles_pre": true,
+        "particles_post": true,
+        "weights_pre": true,
+        "weights_post": true,
+        "step_counters": true,
+        "step_ess": true,
+        "step_distinct": true
+      },
+      "non_timer_metrics_and_rng_equal": true,
+      "file_hashes_passed": true,
+      "one_worker_one_BLAS_thread": true
+    },
+    {
+      "method": "Q-stable",
+      "seed": 2,
+      "scientific_arrays_equal": {
+        "truth": true,
+        "observations": true,
+        "initial_particles": true,
+        "initial_weights": true,
+        "estimate_pre": true,
+        "estimate_post": true,
+        "final_particles": true,
+        "final_weights": true,
+        "particles_pre": true,
+        "particles_post": true,
+        "weights_pre": true,
+        "weights_post": true,
+        "step_counters": true,
+        "step_ess": true,
+        "step_distinct": true
+      },
+      "non_timer_metrics_and_rng_equal": true,
+      "file_hashes_passed": true,
+      "one_worker_one_BLAS_thread": true
+    },
+    {
+      "method": "Q-stable-retain",
+      "seed": 0,
+      "scientific_arrays_equal": {
+        "truth": true,
+        "observations": true,
+        "initial_particles": true,
+        "initial_weights": true,
+        "estimate_pre": true,
+        "estimate_post": true,
+        "final_particles": true,
+        "final_weights": true,
+        "particles_pre": true,
+        "particles_post": true,
+        "weights_pre": true,
+        "weights_post": true,
+        "step_counters": true,
+        "step_ess": true,
+        "step_distinct": true
+      },
+      "non_timer_metrics_and_rng_equal": true,
+      "file_hashes_passed": true,
+      "one_worker_one_BLAS_thread": true
+    },
+    {
+      "method": "Q-stable-retain",
+      "seed": 1,
+      "scientific_arrays_equal": {
+        "truth": true,
+        "observations": true,
+        "initial_particles": true,
+        "initial_weights": true,
+        "estimate_pre": true,
+        "estimate_post": true,
+        "final_particles": true,
+        "final_weights": true,
+        "particles_pre": true,
+        "particles_post": true,
+        "weights_pre": true,
+        "weights_post": true,
+        "step_counters": true,
+        "step_ess": true,
+        "step_distinct": true
+      },
+      "non_timer_metrics_and_rng_equal": true,
+      "file_hashes_passed": true,
+      "one_worker_one_BLAS_thread": true
+    },
+    {
+      "method": "Q-stable-retain",
+      "seed": 2,
+      "scientific_arrays_equal": {
+        "truth": true,
+        "observations": true,
+        "initial_particles": true,
+        "initial_weights": true,
+        "estimate_pre": true,
+        "estimate_post": true,
+        "final_particles": true,
+        "final_weights": true,
+        "particles_pre": true,
+        "particles_post": true,
+        "weights_pre": true,
+        "weights_post": true,
+        "step_counters": true,
+        "step_ess": true,
+        "step_distinct": true
+      },
+      "non_timer_metrics_and_rng_equal": true,
+      "file_hashes_passed": true,
+      "one_worker_one_BLAS_thread": true
+    }
+  ],
+  "sample_selection": "Reserved seeds 0–2; not additional independent scientific samples",
+  "inference": "Three single-load samples per new variant; descriptive instrumented CPU time only; no historical or physical quantum speed comparison",
+  "batch_sha256": "e9e7a56417ddf1a94d9ce3528bda9629a09ea86245cd55beea82e68f29bd6f6d"
+}

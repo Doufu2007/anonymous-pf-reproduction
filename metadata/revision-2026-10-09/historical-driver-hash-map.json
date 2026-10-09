@@ -1,0 +1,22 @@
+{
+  "schema": "particle_filter.wrapper_provenance_map.v1",
+  "historical_run_manifest_preserved": true,
+  "original_driver_artifact_retained_in_private_project": "latex-scnu/code/qm_hpf_reproduction/run_budget_benchmark.py",
+  "source_historical_commit": "de1e5f1ba101adf562000914f808b924404b18cb",
+  "driver_maps": [
+    {
+      "published_path": "code/qm_hpf_reproduction/run_budget_benchmark.py",
+      "published_sha256": "382ee42eaa28c9bd23207c23b84c6c0c41324a0a24fd0b31819bfdf093614e2c",
+      "original_run_sha256": "6459c318724be6d48ead5111eaa8d661e372e222d4db3d6092abf7c4c31b8e81",
+      "transformation": "ROOT/source-provenance packaging adaptation, comments and line endings; scientific kernel unchanged"
+    },
+    {
+      "published_path": "code/qm_hpf_reproduction/runs/fair-budget-30/code-snapshot/run_budget_benchmark.py",
+      "published_sha256": "3b27e43ad68df36310df925381e5643234e260b2b2d2d214b14a15c72c84e7af",
+      "original_run_sha256": "6459c318724be6d48ead5111eaa8d661e372e222d4db3d6092abf7c4c31b8e81",
+      "transformation": "ROOT/source-provenance packaging adaptation, comments and line endings; scientific kernel unchanged"
+    }
+  ],
+  "scientific_kernel_identity": "See unchanged recorded code hashes in historical manifest and independent-review-2026-10-09 verification; driver transforms are packaging, not filter changes",
+  "scope": "Document original and published code identities; never rewrite the original-run hash as the published wrapper hash"
+}

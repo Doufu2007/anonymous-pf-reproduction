@@ -1,0 +1,17 @@
+{
+  "suite": "test_interpreted.py",
+  "tests": 10,
+  "green_exit_code": 0,
+  "red_missing_module": {
+    "path": "test-red.log",
+    "sha256": "afe32561ba9887d8e53873d44401bfb3661aa36e5792d9cd9a3dafcfbb79af50"
+  },
+  "red_literal_direction_and_fixed_point": {
+    "path": "test-direction-red.log",
+    "sha256": "078804b90d3b0d4077dd4ec77481d544c91d2ae57de9005dece8f996b987e86b",
+    "failures": 3
+  },
+  "red_operator_sha256": "178ea3e6a6d4d79d9969787d37866c45a5da09974cd415eb50cd9b9a53f433f3",
+  "green_log_sha256": "959d86b35a51278bc857a81f5293f54db2f45b17844bf938e253264bcc4304c3",
+  "scope": "Meaningful gold/property/contract tests, not full-source algorithm validation"
+}

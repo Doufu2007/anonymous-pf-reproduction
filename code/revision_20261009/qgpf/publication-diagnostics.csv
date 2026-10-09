@@ -1,0 +1,19 @@
+method,metric,n,mean,sd,median,q1,q3,iqr,min,max,skewness_sample,applicability
+B-stable,candidate_zero_density_diagnostics,30,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,applicable
+B-stable,old_zero_density_diagnostics,30,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,applicable
+B-stable,would_zero_tie_probability_domain,30,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,applicable
+B-stable,stable_vs_probability_decision_disagreements,30,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,NOT_APPLICABLE; initialized counter zero does not imply agreement
+B-stable,base_zero_density_diagnostics,30,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,applicable
+B-stable,base_all_zero_density_steps,30,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,applicable
+Q-stable,candidate_zero_density_diagnostics,30,58585.36666666667,462.88737613863026,58521.5,58257.25,58712.25,455.0,57811.0,59907.0,1.2553838265357047,applicable
+Q-stable,old_zero_density_diagnostics,30,39737.6,1877.4511077705765,39652.0,38344.25,41158.75,2814.5,36406.0,43615.0,0.11091306326597428,applicable
+Q-stable,would_zero_tie_probability_domain,30,36414.76666666667,2022.6988915177478,36234.0,34935.0,37787.25,2852.25,32915.0,41103.0,0.2675154150016389,applicable
+Q-stable,stable_vs_probability_decision_disagreements,30,32905.4,2078.2810635980745,32721.5,31400.25,34305.75,2905.5,29492.0,38076.0,0.4161268745890678,applicable
+Q-stable,base_zero_density_diagnostics,30,11153.6,429.7387016829388,11138.5,10795.25,11445.5,650.25,10391.0,11927.0,0.08107928308938944,applicable
+Q-stable,base_all_zero_density_steps,30,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,applicable
+Q-stable-retain,candidate_zero_density_diagnostics,30,58589.3,463.72466191584584,58571.0,58288.25,58762.0,473.75,57785.0,59907.0,1.1056912523894082,applicable
+Q-stable-retain,old_zero_density_diagnostics,30,39859.5,1899.4354469792806,39781.0,38392.0,41431.5,3039.5,36204.0,43353.0,-0.057209011452476186,applicable
+Q-stable-retain,would_zero_tie_probability_domain,30,36522.86666666667,2060.8969211341528,36468.0,35038.75,38192.5,3153.75,32521.0,40315.0,0.034568101083112326,applicable
+Q-stable-retain,stable_vs_probability_decision_disagreements,30,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,NOT_APPLICABLE; initialized counter zero does not imply agreement
+Q-stable-retain,base_zero_density_diagnostics,30,11201.066666666668,433.2336260179301,11163.5,10895.0,11593.25,698.25,10423.0,12012.0,-0.009430954246507936,applicable
+Q-stable-retain,base_all_zero_density_steps,30,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,applicable

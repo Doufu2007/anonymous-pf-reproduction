@@ -1,0 +1,69 @@
+{
+  "schema": "EC.same_environment_replay.v1",
+  "status": "PASS",
+  "same_environment": true,
+  "first": "replay-consistent-a\\seed-00",
+  "second": "replay-consistent-b\\seed-00",
+  "records": [
+    {
+      "path": "truth.npy",
+      "first_sha256": "8791ea7cb861b5fd9c131a68fc550f828ea645c5a2ae541be3204fbe15b6a6ef",
+      "second_sha256": "8791ea7cb861b5fd9c131a68fc550f828ea645c5a2ae541be3204fbe15b6a6ef",
+      "equal": true
+    },
+    {
+      "path": "centers.npy",
+      "first_sha256": "14c3315cfb92843fc289154e24e1c62bd5694fcd1692b6c520d661f4d7e84e2a",
+      "second_sha256": "14c3315cfb92843fc289154e24e1c62bd5694fcd1692b6c520d661f4d7e84e2a",
+      "equal": true
+    },
+    {
+      "path": "particles.npy",
+      "first_sha256": "ae6495507a5b2bdb239607f26f37179020347c7680ba2c835ac797ac30b68ea4",
+      "second_sha256": "ae6495507a5b2bdb239607f26f37179020347c7680ba2c835ac797ac30b68ea4",
+      "equal": true
+    },
+    {
+      "path": "ec_qzero_consistent_estimates.npy",
+      "first_sha256": "ef2319352403647b94f0032c50ee24d09e465981b06525867a9e9dda29bcf26e",
+      "second_sha256": "ef2319352403647b94f0032c50ee24d09e465981b06525867a9e9dda29bcf26e",
+      "equal": true
+    },
+    {
+      "path": "ec_qzero_consistent_indices.npy",
+      "first_sha256": "2b8a622a1085e6ecb324de2063801a0b0a8e4e5a65e9fdf545a8100d7942c9eb",
+      "second_sha256": "2b8a622a1085e6ecb324de2063801a0b0a8e4e5a65e9fdf545a8100d7942c9eb",
+      "equal": true
+    },
+    {
+      "path": "raw_metrics.jsonl",
+      "first_sha256": "ab978fab29b1de7f06645fe3ff57ca53d2cf80a1c61cfcae1dd78d4db30cb01f",
+      "second_sha256": "ab978fab29b1de7f06645fe3ff57ca53d2cf80a1c61cfcae1dd78d4db30cb01f",
+      "equal": true
+    },
+    {
+      "path": "generation_history.json",
+      "first_sha256": "22568acacf863bc2f3b500eb1cf4019f950777951678eccee5da4ef9de2a2236",
+      "second_sha256": "22568acacf863bc2f3b500eb1cf4019f950777951678eccee5da4ef9de2a2236",
+      "equal": true
+    },
+    {
+      "path": "guardrails.json",
+      "first_sha256": "53c358133b3e368490639305eb150566a38c9e8e32680dccedf95188bea89f7f",
+      "second_sha256": "53c358133b3e368490639305eb150566a38c9e8e32680dccedf95188bea89f7f",
+      "equal": true
+    },
+    {
+      "path": "predictions.csv",
+      "first_sha256": "e06d58c845e862c8732c3c3f34aeebd0e8c8f56c957c6a7a36591a6094c357fa",
+      "second_sha256": "e06d58c845e862c8732c3c3f34aeebd0e8c8f56c957c6a7a36591a6094c357fa",
+      "equal": true
+    }
+  ],
+  "excluded": [
+    "costs.json",
+    "seed_summary.json runtime fields",
+    "timestamps and provenance paths"
+  ],
+  "scope": "Two independent directories/processes in this environment; no claim of cross-hardware reproducibility"
+}

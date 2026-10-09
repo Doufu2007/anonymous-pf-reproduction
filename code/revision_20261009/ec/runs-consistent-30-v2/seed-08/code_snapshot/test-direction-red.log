@@ -1,0 +1,108 @@
+test_contract_history_mean_ellipse_and_operation_counts (test_interpreted.InterpretedOperatorTests.test_contract_history_mean_ellipse_and_operation_counts) ... ok
+test_duplication_balanced_indices_and_actual_mean (test_interpreted.InterpretedOperatorTests.test_duplication_balanced_indices_and_actual_mean) ... ok
+test_fixed_best_converges_to_alpha (test_interpreted.InterpretedOperatorTests.test_fixed_best_converges_to_alpha) ... FAIL
+test_literal_and_interpreted_direction_gold (test_interpreted.InterpretedOperatorTests.test_literal_and_interpreted_direction_gold) ... FAIL
+test_measurement_probability_boundaries (test_interpreted.InterpretedOperatorTests.test_measurement_probability_boundaries) ... ok
+test_nonempty_fitness_is_bounded_by_nearest_singleton (test_interpreted.InterpretedOperatorTests.test_nonempty_fitness_is_bounded_by_nearest_singleton) ... ok
+test_probability_shape_and_coefficient_guards (test_interpreted.InterpretedOperatorTests.test_probability_shape_and_coefficient_guards) ... ok
+test_qone_representation_is_equivalent_including_ties (test_interpreted.InterpretedOperatorTests.test_qone_representation_is_equivalent_including_ties) ... FAIL
+test_same_rng_same_scientific_output (test_interpreted.InterpretedOperatorTests.test_same_rng_same_scientific_output) ... ok
+test_unchanged_best_stop_preserves_update_branch_count (test_interpreted.InterpretedOperatorTests.test_unchanged_best_stop_preserves_update_branch_count) ... ok
+
+======================================================================
+FAIL: test_fixed_best_converges_to_alpha (test_interpreted.InterpretedOperatorTests.test_fixed_best_converges_to_alpha)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\֣���\Desktop\��ѧ����\����\���������˲�\anonymous-repro-repo\code\revision_20261009\ec\test_interpreted.py", line 51, in test_fixed_best_converges_to_alpha
+    np.testing.assert_allclose(np.where(best == 0, q, 1-q), .8, rtol=0, atol=2e-15)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\֣���\AppData\Roaming\Python\Python313\site-packages\numpy\testing\_private\utils.py", line 1768, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         verbose=verbose, header=header, equal_nan=equal_nan,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         strict=strict)
+                         ^^^^^^^^^^^^^^
+  File "C:\Users\֣���\AppData\Roaming\Python\Python313\site-packages\numpy\testing\_private\utils.py", line 983, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=0, atol=2e-15
+
+Mismatched elements: 4 / 4 (100%)
+Mismatch at indices:
+ [0, 0]: 0.19999999999999998 (ACTUAL), 0.8 (DESIRED)
+ [0, 1]: 0.19999999999999984 (ACTUAL), 0.8 (DESIRED)
+ [0, 2]: 0.2 (ACTUAL), 0.8 (DESIRED)
+ [0, 3]: 0.19999999999999984 (ACTUAL), 0.8 (DESIRED)
+Max absolute difference among violations: 0.6
+Max relative difference among violations: 0.75
+ ACTUAL: array([[0.2, 0.2, 0.2, 0.2]])
+ DESIRED: array(0.8)
+
+======================================================================
+FAIL: test_literal_and_interpreted_direction_gold (test_interpreted.InterpretedOperatorTests.test_literal_and_interpreted_direction_gold)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\֣���\Desktop\��ѧ����\����\���������˲�\anonymous-repro-repo\code\revision_20261009\ec\test_interpreted.py", line 40, in test_literal_and_interpreted_direction_gold
+    np.testing.assert_allclose(new_q, [[.74, .26]], rtol=0, atol=1e-15)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\֣���\AppData\Roaming\Python\Python313\site-packages\numpy\testing\_private\utils.py", line 1768, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         verbose=verbose, header=header, equal_nan=equal_nan,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         strict=strict)
+                         ^^^^^^^^^^^^^^
+  File "C:\Users\֣���\AppData\Roaming\Python\Python313\site-packages\numpy\testing\_private\utils.py", line 983, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=0, atol=1e-15
+
+Mismatched elements: 2 / 2 (100%)
+Mismatch at indices:
+ [0, 0]: 0.26 (ACTUAL), 0.74 (DESIRED)
+ [0, 1]: 0.7400000000000001 (ACTUAL), 0.26 (DESIRED)
+Max absolute difference among violations: 0.48
+Max relative difference among violations: 1.84615385
+ ACTUAL: array([[0.26, 0.74]])
+ DESIRED: array([[0.74, 0.26]])
+
+======================================================================
+FAIL: test_qone_representation_is_equivalent_including_ties (test_interpreted.InterpretedOperatorTests.test_qone_representation_is_equivalent_including_ties)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\֣���\Desktop\��ѧ����\����\���������˲�\anonymous-repro-repo\code\revision_20261009\ec\test_interpreted.py", line 61, in test_qone_representation_is_equivalent_including_ties
+    np.testing.assert_allclose(1-update_swarm_consistent(qzero, pbest, gbest, self.cfg), qone_next, rtol=0, atol=3e-16)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\֣���\AppData\Roaming\Python\Python313\site-packages\numpy\testing\_private\utils.py", line 1768, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         verbose=verbose, header=header, equal_nan=equal_nan,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         strict=strict)
+                         ^^^^^^^^^^^^^^
+  File "C:\Users\֣���\AppData\Roaming\Python\Python313\site-packages\numpy\testing\_private\utils.py", line 983, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=0, atol=3e-16
+
+Mismatched elements: 35 / 35 (100%)
+First 5 mismatches are at indices:
+ [0, 0]: 0.28975643925422534 (ACTUAL), 0.5297564392542254 (DESIRED)
+ [0, 1]: 0.6806889423654472 (ACTUAL), 0.20068894236544726 (DESIRED)
+ [0, 2]: 0.610635487553622 (ACTUAL), 0.37063548755362197 (DESIRED)
+ [0, 3]: 0.6725129925257662 (ACTUAL), 0.43251299252576636 (DESIRED)
+ [0, 4]: 0.7468147090676462 (ACTUAL), 0.26681470906764615 (DESIRED)
+Max absolute difference among violations: 0.48
+Max relative difference among violations: 2.53467868
+ ACTUAL: array([[0.289756, 0.680689, 0.610635, 0.672513, 0.746815, 0.277771,
+        0.274202],
+       [0.182562, 0.669373, 0.596037, 0.671343, 0.619397, 0.394822,...
+ DESIRED: array([[0.529756, 0.200689, 0.370635, 0.432513, 0.266815, 0.757771,
+        0.754202],
+       [0.662562, 0.189373, 0.356037, 0.431343, 0.379397, 0.634822,...
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.711s
+
+FAILED (failures=3)

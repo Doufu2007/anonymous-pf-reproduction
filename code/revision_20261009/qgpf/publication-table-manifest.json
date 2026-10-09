@@ -1,0 +1,19 @@
+{
+  "schema": "revision.qgpf.publication-tables.v1",
+  "analysis_sha256": "d3724ed1c342a46e7021d98deed88ee8d1ae568bf97037de31ac2d69ce495f57",
+  "export_code_sha256": "adf77d79de228893e58eda9028a586bc4578ee49f24d388002c1661886b32f66",
+  "files_sha256": {
+    "publication-descriptive.csv": "eb6624454fe1aad90eabaabe8ff165af5c732d87102eb3c2c2c4b3633559baba",
+    "publication-counts.csv": "8dd27dcd5ce745f8d54e7dde5e532caff86fe27f18b29a1da2b001750f2bcd3c",
+    "publication-diagnostics.csv": "f07db39d6db74e2c7e783727d1749c05e30c858dea6e653987eda9afcda64413",
+    "publication-family3.csv": "9fdc364219004d851e9c1656b7e84fe5db0a4addd87e905b019aa5d691837387"
+  },
+  "notes": [
+    "Primary is coordinate position RMSE; no mixing with Euclidean RMSE",
+    "candidate/fitness/proposal scoring labels overlap likelihood; rotation and probability updates overlap",
+    "Diagnostics apply to stable trajectories, not historical paired candidate paths",
+    "stable_vs_probability_decision_disagreements applies only to ratio Q-stable; other initialized zeros are not agreement evidence",
+    "Secondary and post endpoint summaries are exploratory descriptive; no added Holm families",
+    "Runtime is omitted; separately reserved single-load samples only"
+  ]
+}

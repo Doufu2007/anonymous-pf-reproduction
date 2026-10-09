@@ -1,0 +1,9 @@
+{
+  "schema": "revision.qgpf.public-log-conversion.v1",
+  "source_local_only": "code/revision_20261009/qgpf/test-red.log",
+  "source_sha256": "a08946b74cb3eb1bc16e14470611343a2b7e0ff61e4bae377a5d04000ed30615",
+  "public_copy": "code/revision_20261009/qgpf/test-red-public.log",
+  "public_sha256": "044c8057b3a6fba308b9f43a93a4b1517ce554e64b0d995d90bfe8e34bdad787",
+  "transformation": "Absolute revision/repository and Python-runtime path prefixes replaced with neutral tokens; original source bytes not changed",
+  "original_must_be_excluded_from_publication": true
+}

@@ -1,0 +1,82 @@
+{
+  "method": "Q-stable-retain",
+  "seed": 19,
+  "seed_role": "trajectory randomness, not independent time samples",
+  "stream_seed": 2000025,
+  "model": {
+    "horizon": 100,
+    "initial_truth": [
+      70.0,
+      5.0,
+      23.0,
+      8.0
+    ],
+    "process_std": [
+      1.5,
+      1.5,
+      0.9,
+      0.03
+    ],
+    "observation_std": 1.0
+  },
+  "filter": {
+    "particle_count": 200,
+    "initial_mean": [
+      71.0,
+      8.66,
+      18.9,
+      7.8
+    ],
+    "initial_std": [
+      8.0,
+      1.0,
+      5.0,
+      1.0
+    ],
+    "state_min": [
+      -1000.0,
+      -100.0,
+      -1000.0,
+      -100.0
+    ],
+    "state_max": [
+      1000.0,
+      100.0,
+      1000.0,
+      100.0
+    ],
+    "bit_length": 10,
+    "generation_count": 4,
+    "elite_fraction": 0.2,
+    "rotation_angle_max_pi": 0.08,
+    "rotation_angle_min_pi": 0.01
+  },
+  "primary_metric": "sqrt(mean over k=1..T and coordinates x,y of squared error)",
+  "state_order": [
+    "x",
+    "vx",
+    "y",
+    "vy"
+  ],
+  "estimate_timing": "pre weighted-move estimate; post is read-only diagnostic",
+  "retention": "strict log-likelihood improvement only",
+  "protocol_sha256": "1cb51324a113927017e27af1cb4db7ff99d20936d00e837e4cf3ca872198b650",
+  "historical_freeze_sha256": "1baf07d3a3a0865f8b3ed2f3f9ffc393c39056033c837429cb0ccbbb44c212c2",
+  "historical_archive_sha256": "57b26ffa0404a5462077bbb46be5f317b57276cd2c4de8cdf0921fbbe6f91de2",
+  "counter_definitions": {
+    "likelihood_evals": "One scalar state log-likelihood evaluation. Counts base, initial old, candidate and final updated scores.",
+    "candidate_evals": "One candidate score; a subset of likelihood_evals.",
+    "fitness_evals": "Same candidate score as candidate_evals, overlapping label; no added work.",
+    "proposal_chromosome_events": "One nonelite chromosome selected for its complete G-generation update; historical proposal_attempts unit.",
+    "proposal_candidate_attempts": "One generation candidate, same event as candidate_evals.",
+    "rotation_calls": "One conditional scalar probability-rotation invocation; not a hardware gate.",
+    "measurement_bit_observations": "One scalar Bernoulli bit observation; two per coordinate-bit per candidate.",
+    "probability_entry_updates": "Same conditional event as rotation_calls; overlapping work.",
+    "crossover_operations": "Explicit crossover absent in this QGPF-like contract; exact zero.",
+    "would_zero_tie_probability_domain": "On this stable trajectory, both old/new exp(logpdf) are zero; hypothetical probability-domain tie, not a tie in stable acceptance.",
+    "stable_vs_probability_decision_disagreements": "Stable ratio vs old floor-rule evaluated for the same old/new logpdf and same uniform on stable trajectory; NOT differences from historical trajectory.",
+    "base_all_zero_density_steps": "All base exp(logpdf) would be zero; stable relative log weights remain defined.",
+    "addition_rule": "Candidate/fitness/proposal labels overlap likelihood scoring; rotations overlap probability updates. Never add these labels into a total operation cost.",
+    "unavailable": "Physical quantum gate counts/hardware measurements and fully exclusive operation-time attribution: unavailable; classical CPU implementation only."
+  }
+}

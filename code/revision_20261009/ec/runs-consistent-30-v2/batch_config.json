@@ -1,0 +1,46 @@
+{
+  "protocol_sha256": "1cb51324a113927017e27af1cb4db7ff99d20936d00e837e4cf3ca872198b650",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "role": "randomness_estimation",
+  "analysis_rng_seeds": {
+    "bootstrap": 9301,
+    "sign_flip": 9302
+  },
+  "max_wall_s": 900,
+  "historical_raw_reuse": [
+    "source_ecqpf_operator",
+    "ellipse_exact_fitness",
+    "ellipse_systematic_fitness"
+  ]
+}

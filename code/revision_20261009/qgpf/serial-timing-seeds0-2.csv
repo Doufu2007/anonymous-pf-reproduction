@@ -1,0 +1,10 @@
+method,seed,runtime_s,initialization_runtime_s,cpu,pid,scope
+B-stable,0,0.06595819999347441,0.00018039999122265726,AMD Ryzen 9 7940H w/ Radeon 780M Graphics,16852,initialization + filtering + diagnostics; excluding I/O and evaluation metrics
+B-stable,1,0.044323699999949895,0.00018300001102034003,AMD Ryzen 9 7940H w/ Radeon 780M Graphics,16852,initialization + filtering + diagnostics; excluding I/O and evaluation metrics
+B-stable,2,0.04428120001102798,0.00014130001363810152,AMD Ryzen 9 7940H w/ Radeon 780M Graphics,16852,initialization + filtering + diagnostics; excluding I/O and evaluation metrics
+Q-stable,0,17.689496500010137,0.00020450000010896474,AMD Ryzen 9 7940H w/ Radeon 780M Graphics,16852,initialization + filtering + diagnostics; excluding I/O and evaluation metrics
+Q-stable,1,16.506857600004878,0.00014229999214876443,AMD Ryzen 9 7940H w/ Radeon 780M Graphics,16852,initialization + filtering + diagnostics; excluding I/O and evaluation metrics
+Q-stable,2,17.179271900007734,0.00016700000560376793,AMD Ryzen 9 7940H w/ Radeon 780M Graphics,16852,initialization + filtering + diagnostics; excluding I/O and evaluation metrics
+Q-stable-retain,0,17.51761219999753,0.00015110000094864517,AMD Ryzen 9 7940H w/ Radeon 780M Graphics,16852,initialization + filtering + diagnostics; excluding I/O and evaluation metrics
+Q-stable-retain,1,16.919286100004683,0.00013840000610798597,AMD Ryzen 9 7940H w/ Radeon 780M Graphics,16852,initialization + filtering + diagnostics; excluding I/O and evaluation metrics
+Q-stable-retain,2,17.84956860000966,0.00013630000466946512,AMD Ryzen 9 7940H w/ Radeon 780M Graphics,16852,initialization + filtering + diagnostics; excluding I/O and evaluation metrics

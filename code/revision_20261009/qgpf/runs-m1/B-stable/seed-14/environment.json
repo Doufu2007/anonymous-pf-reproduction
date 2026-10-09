@@ -1,0 +1,36 @@
+{
+  "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.4.2",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cpu": "AMD Ryzen 9 7940H w/ Radeon 780M Graphics",
+  "logical_cpu_count": 16,
+  "pid": 15940,
+  "device": "CPU",
+  "dtype": "float64",
+  "AMP": "not applicable",
+  "threads": {
+    "PYTHONHASHSEED": "0",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "scheduler": {
+    "kind": "independent-seed-batch",
+    "max_independent_processes": 4,
+    "blas_threads_per_process": 1,
+    "runtime_comparison_allowed": false
+  },
+  "timer_scope": "initialization + filtering + diagnostics; excludes loading and file I/O",
+  "runtime_inference": "Parallel execution runtime is operational logging only; no speed comparison",
+  "git": {
+    "commit": "de1e5f1ba101adf562000914f808b924404b18cb",
+    "dirty": true,
+    "status_repo_relative": [
+      "?? code/revision_20261009/",
+      "?? metadata/revision-2026-10-09/"
+    ],
+    "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "untracked_code_content": "covered by exact code_sha256; tracked diff hash excludes untracked files"
+  }
+}

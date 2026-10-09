@@ -1,0 +1,15 @@
+test_contract_history_mean_ellipse_and_operation_counts (test_interpreted.InterpretedOperatorTests.test_contract_history_mean_ellipse_and_operation_counts) ... ok
+test_duplication_balanced_indices_and_actual_mean (test_interpreted.InterpretedOperatorTests.test_duplication_balanced_indices_and_actual_mean) ... ok
+test_fixed_best_converges_to_alpha (test_interpreted.InterpretedOperatorTests.test_fixed_best_converges_to_alpha) ... ok
+test_literal_and_interpreted_direction_gold (test_interpreted.InterpretedOperatorTests.test_literal_and_interpreted_direction_gold) ... ok
+test_measurement_probability_boundaries (test_interpreted.InterpretedOperatorTests.test_measurement_probability_boundaries) ... ok
+test_nonempty_fitness_is_bounded_by_nearest_singleton (test_interpreted.InterpretedOperatorTests.test_nonempty_fitness_is_bounded_by_nearest_singleton) ... ok
+test_probability_shape_and_coefficient_guards (test_interpreted.InterpretedOperatorTests.test_probability_shape_and_coefficient_guards) ... ok
+test_qone_representation_is_equivalent_including_ties (test_interpreted.InterpretedOperatorTests.test_qone_representation_is_equivalent_including_ties) ... ok
+test_same_rng_same_scientific_output (test_interpreted.InterpretedOperatorTests.test_same_rng_same_scientific_output) ... ok
+test_unchanged_best_stop_preserves_update_branch_count (test_interpreted.InterpretedOperatorTests.test_unchanged_best_stop_preserves_update_branch_count) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.305s
+
+OK

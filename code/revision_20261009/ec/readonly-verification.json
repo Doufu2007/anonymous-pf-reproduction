@@ -1,0 +1,204 @@
+{
+  "schema": "EC.revision.readonly_verification.v1",
+  "status": "PASS",
+  "datasets": [
+    {
+      "seed": 0,
+      "status": "PASS",
+      "manifest_sha256": "5de58641c7bb0b44659c2db0d8ebe2d9e2b7eca29f89be70cf6fe25cd7d15e35",
+      "raw_metrics_sha256": "ab978fab29b1de7f06645fe3ff57ca53d2cf80a1c61cfcae1dd78d4db30cb01f"
+    },
+    {
+      "seed": 1,
+      "status": "PASS",
+      "manifest_sha256": "566f0c70cbb102e8f94e8c2ea96541e4f7616e50dae2e08978fd0c51ea3ec494",
+      "raw_metrics_sha256": "6949e08e81f979574d8329291e44d963d088ab63cde23810eec1770c5dc41db6"
+    },
+    {
+      "seed": 2,
+      "status": "PASS",
+      "manifest_sha256": "4a589e4195451296fa4c815a27e4f1e4a0da79cc26fad4b6f68bfa388323bdd0",
+      "raw_metrics_sha256": "11aab78b71cf20c3296182866e795a485037072db10bb9bdacb2352e767d24a3"
+    },
+    {
+      "seed": 3,
+      "status": "PASS",
+      "manifest_sha256": "009b8f683ce686cdbb5a7c2d316ca71e1cbedf30d91f5a19748e3a774eb960e6",
+      "raw_metrics_sha256": "e6009e0b40b49f86118de650d44122d75b5a284663661906bc75dd0bb0323251"
+    },
+    {
+      "seed": 4,
+      "status": "PASS",
+      "manifest_sha256": "0fd0c7a03547419123ac33b70ab6e88b6100a9bbd604305875af241cc7cdacaa",
+      "raw_metrics_sha256": "61bbb59309eece765a6e655817b3f8024d3b4b50db11a4db5b342b6a5bd1ca81"
+    },
+    {
+      "seed": 5,
+      "status": "PASS",
+      "manifest_sha256": "48ff7d8f6aa2da769490135fce9d22b2f34138e0ce1d1123ad9f0b048d438f4a",
+      "raw_metrics_sha256": "d6c76b7e2d5249b95b788eaf6f551b87ba56b74cc35ee346e5bebb1076da2d35"
+    },
+    {
+      "seed": 6,
+      "status": "PASS",
+      "manifest_sha256": "97db763ac62c791b6b1feef5d6bab120afb9879920a8d06609588397993dedac",
+      "raw_metrics_sha256": "54f928bd66e7b80168261aa33360cf79d2c7994e4f9449f8e74f112a3031d851"
+    },
+    {
+      "seed": 7,
+      "status": "PASS",
+      "manifest_sha256": "abb52aa3edaee0fc00444a3cb4051aba0ffaaab22ab3f5019b14327397299840",
+      "raw_metrics_sha256": "74f62a74fe2c419562f7e5d662bf295ffd704a8d1d763bf5aed4ff933304c6ba"
+    },
+    {
+      "seed": 8,
+      "status": "PASS",
+      "manifest_sha256": "8bfebe3b456e1f930f84dc1988ee57652ff9a87b4a137271eacb801703f2a755",
+      "raw_metrics_sha256": "dd38a883f81b562a9c8e240cd7098426a25b7c5d3a1c7b1dd8fae4a66ece8628"
+    },
+    {
+      "seed": 9,
+      "status": "PASS",
+      "manifest_sha256": "ebb634aa71282809f2c38d7007a1560a33322bb1c687ddfa869b69039d90515c",
+      "raw_metrics_sha256": "e0b2e1e07360439d21bb29a93550afd3b1fef6e6032d10f97a12498ff59fa5f2"
+    },
+    {
+      "seed": 10,
+      "status": "PASS",
+      "manifest_sha256": "92f2109852befe9f44c76e80d2dc3239a27130a32e8d519f05c02f9875eb8282",
+      "raw_metrics_sha256": "160e2e0e6b68463ae92caea453f7dc33cce08ea3258621f6d7f8db582247a6df"
+    },
+    {
+      "seed": 11,
+      "status": "PASS",
+      "manifest_sha256": "e34c55a99ed41d6e3c1411a9d04ea9b5a5ea3a5bda97f596f65cf8438da7d5cc",
+      "raw_metrics_sha256": "daaa0b27c7dc836aece64f742d563a9d50165fb429c950768402e69afc4fcf22"
+    },
+    {
+      "seed": 12,
+      "status": "PASS",
+      "manifest_sha256": "ca4dee055d9ccd817738a78c570e7b0096f8f5e1456b2ba7d89bacb61e4d213c",
+      "raw_metrics_sha256": "709446fa2e268c288bf1b8132413a99a05292c171614c3f66d125f51cde9020f"
+    },
+    {
+      "seed": 13,
+      "status": "PASS",
+      "manifest_sha256": "53715d8c0427bedae0d4e0ed14d6572a02a51a5ffef5e36c80efcdb298b601cc",
+      "raw_metrics_sha256": "434b4a1423806f870776ddf377a1fbeda67a21d2dda004066db7b9206ab30ea5"
+    },
+    {
+      "seed": 14,
+      "status": "PASS",
+      "manifest_sha256": "d151ac65b86e887a91aea6318f371ea7dd4e4e17cfb72920673acf8bdd5bea42",
+      "raw_metrics_sha256": "81cc6894e83e801d7f2f298c7d3012d63978640490f9ae61210fee23d3c26b88"
+    },
+    {
+      "seed": 15,
+      "status": "PASS",
+      "manifest_sha256": "b1b8ee3f6be5ccc9f97b323e99da381c0faaf7a50f50cb5144618376df2d79e1",
+      "raw_metrics_sha256": "6345e0a6ec5fad71a5b2e931f67513d5a896eb42b5e2b37edba230ac22e193a7"
+    },
+    {
+      "seed": 16,
+      "status": "PASS",
+      "manifest_sha256": "a38f3f995ad3efef3e501719fe0502192ad7fd7e961238f32488f077325360c9",
+      "raw_metrics_sha256": "7b8fb59e17b77c336ab9149878cf5195132cf0c91c5328dcffa2d78fbc6a470f"
+    },
+    {
+      "seed": 17,
+      "status": "PASS",
+      "manifest_sha256": "390c78ff47469eb350434de4f7311d45e3c7f39341d9c33aeca8c57791d76e2c",
+      "raw_metrics_sha256": "ad1135e89e1f3f7ad855553840677777d326b46d7b43995337bc16d04256212a"
+    },
+    {
+      "seed": 18,
+      "status": "PASS",
+      "manifest_sha256": "101d444d990acaa94d617785d49f2bddfcb2aab2524041cc4126849070fab02b",
+      "raw_metrics_sha256": "f5755b709b346cc535b54cd1790a0dd3d5dbc192a82707e08e269bfc2b86d3c5"
+    },
+    {
+      "seed": 19,
+      "status": "PASS",
+      "manifest_sha256": "951e2cbdf9223d552ecea57a604f07b0fb20e4d40f481a8df06ae6cf20af6bc7",
+      "raw_metrics_sha256": "c00af67e78bf8c9f358ee57b24fe0305568b26d3e9e36ba649f40af44903401b"
+    },
+    {
+      "seed": 20,
+      "status": "PASS",
+      "manifest_sha256": "b24ba79001f6997334d9c6438a65f3570c5e0673e7127a072d59e5de3e03d1d2",
+      "raw_metrics_sha256": "9d977b0212bca5d3cd5aa8a3df510756590594113adb3d1c9c6c0b6f0993434c"
+    },
+    {
+      "seed": 21,
+      "status": "PASS",
+      "manifest_sha256": "088e1fa98719c3e4c541c3d9c9a7f93f0f78cd2638de32185822ee4e00da839f",
+      "raw_metrics_sha256": "df85e5d071a872a00a0a402252e490e50853971cba01fcc856b0a04a05eb3779"
+    },
+    {
+      "seed": 22,
+      "status": "PASS",
+      "manifest_sha256": "658d1e3f9ee17e6a25c30de7520e03398e58c8d8374bd66594bff076839febfe",
+      "raw_metrics_sha256": "5f723ba1caaf6fe0cea2438e61a23007972bc54cd3c63e87faa19e22bb59aa98"
+    },
+    {
+      "seed": 23,
+      "status": "PASS",
+      "manifest_sha256": "6d7b6b1e89f58dd6091c9ba29be92ebc80fe7540542e125ddeb84005bacf11ca",
+      "raw_metrics_sha256": "6d6d1399bbf4e6cef9d670b3d66f2dea6b2c29cd72a7cc8f2c6889834811511d"
+    },
+    {
+      "seed": 24,
+      "status": "PASS",
+      "manifest_sha256": "cb60384f39d5c0ed984313764a82f60bb7228d22a3cec77c0ea148eac0884fc8",
+      "raw_metrics_sha256": "493364ca6ebac40dab945ebe70bbf3fa11b5c2470acc9668bccbeacda5eb69c8"
+    },
+    {
+      "seed": 25,
+      "status": "PASS",
+      "manifest_sha256": "22747555adc5f647353de509a3f9641684eba7eccc6868d404c3021e129eb2fc",
+      "raw_metrics_sha256": "7ea7a8e42fff6acab9a957b9a31fcc6c3a08f63fbb98a5bc313e180ed1884ef2"
+    },
+    {
+      "seed": 26,
+      "status": "PASS",
+      "manifest_sha256": "a5d367dcc56ae439b45887151393fc48068ceaf96ce25c8b0c06e7fb80458247",
+      "raw_metrics_sha256": "e1a313e36e76a7a78fe115e6542a21672101a1ae427d5f5049bc69d724732ad5"
+    },
+    {
+      "seed": 27,
+      "status": "PASS",
+      "manifest_sha256": "14fccd8c63285c8c76ae476bd1113378c0928ded12024721241baab0cdfbb342",
+      "raw_metrics_sha256": "577cf2b49db607b6a61c9ddb1b66d306842c4ec908edb0edf8c61b4643506622"
+    },
+    {
+      "seed": 28,
+      "status": "PASS",
+      "manifest_sha256": "f5720f0bd902503b84852ac2c2a22e134d86f4acd10877ee626b4545f1644726",
+      "raw_metrics_sha256": "ccb44e4f5ba8179ba4d3516a94140160ae5315cac57f3324e4d78fa803248436"
+    },
+    {
+      "seed": 29,
+      "status": "PASS",
+      "manifest_sha256": "ae1881c8633e26fc2cffc16c963e43c255f56ac6e611d31b4ad6024f4a27e9b2",
+      "raw_metrics_sha256": "a4b45fb6fc6b9e9d4308c303c15b5c20ac52915ec8cf2e71ee1ec3785bf05589"
+    }
+  ],
+  "n_datasets": 30,
+  "new_updates_verified": 600,
+  "reused_update_rows_verified": 1800,
+  "manifest_output_files_checked": 990,
+  "historical_input_records_checked": 450,
+  "checks": [
+    "all manifest output-file hashes",
+    "historical provenance hashes",
+    "identical copied arrays",
+    "actual returned ensemble means",
+    "truth-only RMSE recalculation",
+    "all fitness values and exact upper bound",
+    "eligible ellipse/V equality",
+    "operation count contracts",
+    "monotonic global-best histories"
+  ],
+  "scientific_unit": "30 datasets, not600 updates",
+  "no_failures_or_exclusions": true
+}

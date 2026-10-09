@@ -1,0 +1,16 @@
+test_counts_and_same_seed_repro (test_stable.MinimalRunProperties.test_counts_and_same_seed_repro) ... ok
+test_post_endpoint_recording_has_no_state_feedback_or_calls (test_stable.MinimalRunProperties.test_post_endpoint_recording_has_no_state_feedback_or_calls) ... ok
+test_density_hand_computable (test_stable.StableGold.test_density_hand_computable) ... ok
+test_four_real_underflow_examples (test_stable.StableGold.test_four_real_underflow_examples) ... ok
+test_nonfinite_and_outside_support (test_stable.StableGold.test_nonfinite_and_outside_support) ... ok
+test_retention_is_strict_improvement_only (test_stable.StableGold.test_retention_is_strict_improvement_only) ... ok
+test_safe_range_acceptance_matches_ordinary (test_stable.StableGold.test_safe_range_acceptance_matches_ordinary) ... ok
+test_density_agrees_with_ordinary_in_safe_range (test_stable.StableProperties.test_density_agrees_with_ordinary_in_safe_range) ... ok
+test_extreme_finite_density_has_no_probability_floor (test_stable.StableProperties.test_extreme_finite_density_has_no_probability_floor) ... ok
+test_normalization_common_offset_and_permutation (test_stable.StableProperties.test_normalization_common_offset_and_permutation) ... ok
+test_scalar_rotation_matches_unchanged_module_exactly (test_stable.StableProperties.test_scalar_rotation_matches_unchanged_module_exactly) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.398s
+
+OK

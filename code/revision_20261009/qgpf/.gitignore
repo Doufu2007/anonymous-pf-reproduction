@@ -1,0 +1,4 @@
+# Original local traceback evidence is preserved but excluded from publication.
+test-red.log
+__pycache__/
+*.pyc

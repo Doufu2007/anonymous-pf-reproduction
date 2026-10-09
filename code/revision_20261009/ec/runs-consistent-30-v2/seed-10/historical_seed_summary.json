@@ -1,0 +1,62 @@
+[
+  {
+    "seed": 10,
+    "method": "source_ecqpf_operator",
+    "rmse": 5.263438084271355,
+    "mae_euclidean": 4.833716416798905,
+    "posterior_mean_rmse": 5.220219090237259,
+    "mean_distinct_count": 165.95,
+    "runtime_s": 1.3226055999984965,
+    "fitness_evaluations": 111500,
+    "likelihood_evaluations": 0,
+    "candidate_distance_evaluations": 6744,
+    "binary_dimensions_processed": 37678500,
+    "mean_sampling_ess": null,
+    "mean_logfitness_gap": 0.21663017095362797
+  },
+  {
+    "seed": 10,
+    "method": "ellipse_exact_fitness",
+    "rmse": 1.8242603700475086,
+    "mae_euclidean": 1.6218035248237637,
+    "posterior_mean_rmse": 0.7971679018506042,
+    "mean_distinct_count": 1.0,
+    "runtime_s": 0.01290479997987859,
+    "fitness_evaluations": 6744,
+    "likelihood_evaluations": 0,
+    "candidate_distance_evaluations": 6744,
+    "binary_dimensions_processed": 0,
+    "mean_sampling_ess": null,
+    "mean_logfitness_gap": 0.0
+  },
+  {
+    "seed": 10,
+    "method": "ellipse_systematic_fitness",
+    "rmse": 5.4672792894925335,
+    "mae_euclidean": 5.054297916078831,
+    "posterior_mean_rmse": 5.428265953263297,
+    "mean_distinct_count": 336.75,
+    "runtime_s": 0.010463399987202138,
+    "fitness_evaluations": 6744,
+    "likelihood_evaluations": 0,
+    "candidate_distance_evaluations": 6744,
+    "binary_dimensions_processed": 0,
+    "mean_sampling_ess": 334.7032311743175,
+    "mean_logfitness_gap": 0.23170158044696737
+  },
+  {
+    "seed": 10,
+    "method": "full_systematic_likelihood",
+    "rmse": 1.719248166559997,
+    "mae_euclidean": 1.5470190392872403,
+    "posterior_mean_rmse": 0.4062005703936274,
+    "mean_distinct_count": 32.95,
+    "runtime_s": 0.002863499990780838,
+    "fitness_evaluations": 0,
+    "likelihood_evaluations": 10000,
+    "candidate_distance_evaluations": 10000,
+    "binary_dimensions_processed": 0,
+    "mean_sampling_ess": 13.708343519652749,
+    "mean_logfitness_gap": null
+  }
+]
