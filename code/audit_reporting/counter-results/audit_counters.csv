@@ -1,0 +1,211 @@
+audit,method,seed_datasets,updates_per_seed,operation,mean,sd,min,max,status,observed_run_count
+native,bootstrap,30,200,likelihood_evaluations,20000.0,0.0,20000,20000,RECORDED,30
+native,bootstrap,30,200,candidate_evaluations,0.0,0.0,0,0,RECORDED,30
+native,bootstrap,30,200,proposal_attempts,0.0,0.0,0,0,RECORDED,30
+native,bootstrap,30,200,rotation_bit_routine_calls,0.0,0.0,0,0,CONFIRMED_ZERO,30
+native,bootstrap,30,200,crossover_proposals,0.0,0.0,0,0,CONFIRMED_ZERO,30
+native,bootstrap,30,200,bit_measurements,0.0,0.0,0,0,CONFIRMED_ZERO,30
+native,bootstrap,30,200,persistent_probability_entry_updates,0.0,0.0,0,0,CONFIRMED_ZERO,30
+native,bootstrap,30,200,fitness_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+native,bootstrap,30,200,candidate_distance_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+native,bootstrap,30,200,generation_iterations,0.0,0.0,0,0,DERIVED,30
+native,mh,30,200,likelihood_evaluations,191597.3,10566.366250252864,165140,213110,RECORDED,30
+native,mh,30,200,candidate_evaluations,83706.0,5154.325000123348,70800,94200,RECORDED,30
+native,mh,30,200,proposal_attempts,83706.0,5154.325000123348,70800,94200,RECORDED,30
+native,mh,30,200,rotation_bit_routine_calls,0.0,0.0,0,0,CONFIRMED_ZERO,30
+native,mh,30,200,crossover_proposals,0.0,0.0,0,0,CONFIRMED_ZERO,30
+native,mh,30,200,bit_measurements,0.0,0.0,0,0,CONFIRMED_ZERO,30
+native,mh,30,200,persistent_probability_entry_updates,0.0,0.0,0,0,CONFIRMED_ZERO,30
+native,mh,30,200,fitness_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+native,mh,30,200,candidate_distance_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+native,mh,30,200,generation_iterations,83706.0,5154.325000123348,70800,94200,DERIVED,30
+native,qm_hpf,30,200,likelihood_evaluations,188997.9,10506.125550987073,161778,211757,RECORDED,30
+native,qm_hpf,30,200,candidate_evaluations,82438.0,5124.939293164426,69160,93540,RECORDED,30
+native,qm_hpf,30,200,proposal_attempts,82438.0,5124.939293164426,69160,93540,RECORDED,30
+native,qm_hpf,30,200,rotation_bit_routine_calls,,,,,UNAVAILABLE,0
+native,qm_hpf,30,200,crossover_proposals,,,,,UNAVAILABLE,0
+native,qm_hpf,30,200,bit_measurements,,,,,UNAVAILABLE,0
+native,qm_hpf,30,200,persistent_probability_entry_updates,0.0,0.0,0,0,CONFIRMED_ZERO,30
+native,qm_hpf,30,200,fitness_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+native,qm_hpf,30,200,candidate_distance_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+native,qm_hpf,30,200,generation_iterations,82438.0,5124.939293164426,69160,93540,DERIVED,30
+native,rotation_only,30,200,likelihood_evaluations,193689.66666666666,10690.572031833286,166903,216800,RECORDED,30
+native,rotation_only,30,200,candidate_evaluations,84726.66666666667,5214.91318626014,71660,96000,RECORDED,30
+native,rotation_only,30,200,proposal_attempts,84726.66666666667,5214.91318626014,71660,96000,RECORDED,30
+native,rotation_only,30,200,rotation_bit_routine_calls,1355626.6666666667,83438.61098016224,1146560,1536000,DERIVED,30
+native,rotation_only,30,200,crossover_proposals,0.0,0.0,0,0,CONFIRMED_ZERO,30
+native,rotation_only,30,200,bit_measurements,1355626.6666666667,83438.61098016224,1146560,1536000,DERIVED,30
+native,rotation_only,30,200,persistent_probability_entry_updates,0.0,0.0,0,0,CONFIRMED_ZERO,30
+native,rotation_only,30,200,fitness_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+native,rotation_only,30,200,candidate_distance_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+native,rotation_only,30,200,generation_iterations,84726.66666666667,5214.91318626014,71660,96000,DERIVED,30
+native,crossover_only,30,200,likelihood_evaluations,188564.66666666666,10543.164058659813,163049,212167,RECORDED,30
+native,crossover_only,30,200,candidate_evaluations,82226.66666666667,5143.006857882836,69780,93740,RECORDED,30
+native,crossover_only,30,200,proposal_attempts,82226.66666666667,5143.006857882836,69780,93740,RECORDED,30
+native,crossover_only,30,200,rotation_bit_routine_calls,0.0,0.0,0,0,CONFIRMED_ZERO,30
+native,crossover_only,30,200,crossover_proposals,82226.66666666667,5143.006857882836,69780,93740,DERIVED,30
+native,crossover_only,30,200,bit_measurements,0.0,0.0,0,0,CONFIRMED_ZERO,30
+native,crossover_only,30,200,persistent_probability_entry_updates,0.0,0.0,0,0,CONFIRMED_ZERO,30
+native,crossover_only,30,200,fitness_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+native,crossover_only,30,200,candidate_distance_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+native,crossover_only,30,200,generation_iterations,82226.66666666667,5143.006857882836,69780,93740,DERIVED,30
+fair-budget,bootstrap_200,30,200,likelihood_evaluations,40000.0,0.0,40000,40000,RECORDED,30
+fair-budget,bootstrap_200,30,200,candidate_evaluations,0.0,0.0,0,0,RECORDED,30
+fair-budget,bootstrap_200,30,200,proposal_attempts,0.0,0.0,0,0,RECORDED,30
+fair-budget,bootstrap_200,30,200,rotation_bit_routine_calls,0.0,0.0,0,0,CONFIRMED_ZERO,30
+fair-budget,bootstrap_200,30,200,crossover_proposals,0.0,0.0,0,0,RECORDED,30
+fair-budget,bootstrap_200,30,200,bit_measurements,0.0,0.0,0,0,CONFIRMED_ZERO,30
+fair-budget,bootstrap_200,30,200,persistent_probability_entry_updates,0.0,0.0,0,0,CONFIRMED_ZERO,30
+fair-budget,bootstrap_200,30,200,fitness_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+fair-budget,bootstrap_200,30,200,candidate_distance_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+fair-budget,bootstrap_200,30,200,generation_iterations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+fair-budget,resample_move_100,30,200,likelihood_evaluations,40000.0,0.0,40000,40000,RECORDED,30
+fair-budget,resample_move_100,30,200,candidate_evaluations,20000.0,0.0,20000,20000,RECORDED,30
+fair-budget,resample_move_100,30,200,proposal_attempts,20000.0,0.0,20000,20000,RECORDED,30
+fair-budget,resample_move_100,30,200,rotation_bit_routine_calls,0.0,0.0,0,0,CONFIRMED_ZERO,30
+fair-budget,resample_move_100,30,200,crossover_proposals,0.0,0.0,0,0,RECORDED,30
+fair-budget,resample_move_100,30,200,bit_measurements,0.0,0.0,0,0,CONFIRMED_ZERO,30
+fair-budget,resample_move_100,30,200,persistent_probability_entry_updates,0.0,0.0,0,0,CONFIRMED_ZERO,30
+fair-budget,resample_move_100,30,200,fitness_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+fair-budget,resample_move_100,30,200,candidate_distance_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+fair-budget,resample_move_100,30,200,generation_iterations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+fair-budget,qm_hpf_like_100,30,200,likelihood_evaluations,38831.333333333336,225.94984694248708,38360,39220,RECORDED,30
+fair-budget,qm_hpf_like_100,30,200,candidate_evaluations,18831.333333333332,225.94984694248706,18360,19220,RECORDED,30
+fair-budget,qm_hpf_like_100,30,200,proposal_attempts,18831.333333333332,225.94984694248706,18360,19220,RECORDED,30
+fair-budget,qm_hpf_like_100,30,200,rotation_bit_routine_calls,63852.26666666667,4171.421315152156,51920,72240,DERIVED,30
+fair-budget,qm_hpf_like_100,30,200,crossover_proposals,14840.566666666668,282.7992688052457,14185,15477,RECORDED,30
+fair-budget,qm_hpf_like_100,30,200,bit_measurements,63852.26666666667,4171.421315152156,51920,72240,DERIVED,30
+fair-budget,qm_hpf_like_100,30,200,persistent_probability_entry_updates,0.0,0.0,0,0,CONFIRMED_ZERO,30
+fair-budget,qm_hpf_like_100,30,200,fitness_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+fair-budget,qm_hpf_like_100,30,200,candidate_distance_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+fair-budget,qm_hpf_like_100,30,200,generation_iterations,18831.333333333332,225.94984694248706,18360,19220,DERIVED,30
+QGPF-like,bootstrap,30,100,likelihood_evaluations,20000.0,0.0,20000,20000,RECORDED,30
+QGPF-like,bootstrap,30,100,candidate_evaluations,0.0,0.0,0,0,RECORDED,30
+QGPF-like,bootstrap,30,100,proposal_attempts,0.0,0.0,0,0,RECORDED,30
+QGPF-like,bootstrap,30,100,rotation_bit_routine_calls,0.0,0.0,0,0,CONFIRMED_ZERO,30
+QGPF-like,bootstrap,30,100,crossover_proposals,0.0,0.0,0,0,CONFIRMED_ZERO,30
+QGPF-like,bootstrap,30,100,bit_measurements,0.0,0.0,0,0,CONFIRMED_ZERO,30
+QGPF-like,bootstrap,30,100,persistent_probability_entry_updates,0.0,0.0,0,0,CONFIRMED_ZERO,30
+QGPF-like,bootstrap,30,100,fitness_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+QGPF-like,bootstrap,30,100,candidate_distance_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+QGPF-like,bootstrap,30,100,generation_iterations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+QGPF-like,qgpf,30,100,likelihood_evaluations,120000.0,0.0,120000,120000,RECORDED,30
+QGPF-like,qgpf,30,100,candidate_evaluations,64000.0,0.0,64000,64000,RECORDED,30
+QGPF-like,qgpf,30,100,proposal_attempts,16000.0,0.0,16000,16000,RECORDED,30
+QGPF-like,qgpf,30,100,rotation_bit_routine_calls,,,,,UNAVAILABLE,0
+QGPF-like,qgpf,30,100,crossover_proposals,0.0,0.0,0,0,CONFIRMED_ZERO,30
+QGPF-like,qgpf,30,100,bit_measurements,5120000.0,0.0,5120000,5120000,DERIVED,30
+QGPF-like,qgpf,30,100,persistent_probability_entry_updates,,,,,UNAVAILABLE,0
+QGPF-like,qgpf,30,100,fitness_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+QGPF-like,qgpf,30,100,candidate_distance_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+QGPF-like,qgpf,30,100,generation_iterations,64000.0,0.0,64000,64000,DERIVED,30
+EC-QPF module,source_ecqpf_operator,30,20,likelihood_evaluations,0.0,0.0,0,0,RECORDED,30
+EC-QPF module,source_ecqpf_operator,30,20,candidate_evaluations,111700.0,2191.6770464331803,110000,119000,DERIVED,30
+EC-QPF module,source_ecqpf_operator,30,20,proposal_attempts,,,,,UNAVAILABLE,0
+EC-QPF module,source_ecqpf_operator,30,20,rotation_bit_routine_calls,0.0,0.0,0,0,CONFIRMED_ZERO,30
+EC-QPF module,source_ecqpf_operator,30,20,crossover_proposals,0.0,0.0,0,0,CONFIRMED_ZERO,30
+EC-QPF module,source_ecqpf_operator,30,20,bit_measurements,43031983.333333336,2517492.4082456958,37678500,47316500,RECORDED,30
+EC-QPF module,source_ecqpf_operator,30,20,persistent_probability_entry_updates,39187800.0,2339429.2834821474,34306500,43092000,DERIVED,30
+EC-QPF module,source_ecqpf_operator,30,20,fitness_evaluations,111700.0,2191.6770464331803,110000,119000,RECORDED,30
+EC-QPF module,source_ecqpf_operator,30,20,candidate_distance_evaluations,7717.366666666667,426.9416081639376,6744,8603,RECORDED,30
+EC-QPF module,source_ecqpf_operator,30,20,generation_iterations,223.4,4.383354092866361,220,238,RECORDED,30
+EC-QPF module,ellipse_exact_fitness,30,20,likelihood_evaluations,0.0,0.0,0,0,RECORDED,30
+EC-QPF module,ellipse_exact_fitness,30,20,candidate_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+EC-QPF module,ellipse_exact_fitness,30,20,proposal_attempts,0.0,0.0,0,0,CONFIRMED_ZERO,30
+EC-QPF module,ellipse_exact_fitness,30,20,rotation_bit_routine_calls,0.0,0.0,0,0,CONFIRMED_ZERO,30
+EC-QPF module,ellipse_exact_fitness,30,20,crossover_proposals,0.0,0.0,0,0,CONFIRMED_ZERO,30
+EC-QPF module,ellipse_exact_fitness,30,20,bit_measurements,0.0,0.0,0,0,CONFIRMED_ZERO,30
+EC-QPF module,ellipse_exact_fitness,30,20,persistent_probability_entry_updates,0.0,0.0,0,0,CONFIRMED_ZERO,30
+EC-QPF module,ellipse_exact_fitness,30,20,fitness_evaluations,7717.366666666667,426.9416081639376,6744,8603,RECORDED,30
+EC-QPF module,ellipse_exact_fitness,30,20,candidate_distance_evaluations,7717.366666666667,426.9416081639376,6744,8603,RECORDED,30
+EC-QPF module,ellipse_exact_fitness,30,20,generation_iterations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+EC-QPF module,ellipse_systematic_fitness,30,20,likelihood_evaluations,0.0,0.0,0,0,RECORDED,30
+EC-QPF module,ellipse_systematic_fitness,30,20,candidate_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+EC-QPF module,ellipse_systematic_fitness,30,20,proposal_attempts,0.0,0.0,0,0,CONFIRMED_ZERO,30
+EC-QPF module,ellipse_systematic_fitness,30,20,rotation_bit_routine_calls,0.0,0.0,0,0,CONFIRMED_ZERO,30
+EC-QPF module,ellipse_systematic_fitness,30,20,crossover_proposals,0.0,0.0,0,0,CONFIRMED_ZERO,30
+EC-QPF module,ellipse_systematic_fitness,30,20,bit_measurements,0.0,0.0,0,0,CONFIRMED_ZERO,30
+EC-QPF module,ellipse_systematic_fitness,30,20,persistent_probability_entry_updates,0.0,0.0,0,0,CONFIRMED_ZERO,30
+EC-QPF module,ellipse_systematic_fitness,30,20,fitness_evaluations,7717.366666666667,426.9416081639376,6744,8603,RECORDED,30
+EC-QPF module,ellipse_systematic_fitness,30,20,candidate_distance_evaluations,7717.366666666667,426.9416081639376,6744,8603,RECORDED,30
+EC-QPF module,ellipse_systematic_fitness,30,20,generation_iterations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+EC-QPF module,full_systematic_likelihood,30,20,likelihood_evaluations,10000.0,0.0,10000,10000,RECORDED,30
+EC-QPF module,full_systematic_likelihood,30,20,candidate_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+EC-QPF module,full_systematic_likelihood,30,20,proposal_attempts,0.0,0.0,0,0,CONFIRMED_ZERO,30
+EC-QPF module,full_systematic_likelihood,30,20,rotation_bit_routine_calls,0.0,0.0,0,0,CONFIRMED_ZERO,30
+EC-QPF module,full_systematic_likelihood,30,20,crossover_proposals,0.0,0.0,0,0,CONFIRMED_ZERO,30
+EC-QPF module,full_systematic_likelihood,30,20,bit_measurements,0.0,0.0,0,0,CONFIRMED_ZERO,30
+EC-QPF module,full_systematic_likelihood,30,20,persistent_probability_entry_updates,0.0,0.0,0,0,CONFIRMED_ZERO,30
+EC-QPF module,full_systematic_likelihood,30,20,fitness_evaluations,0.0,0.0,0,0,RECORDED,30
+EC-QPF module,full_systematic_likelihood,30,20,candidate_distance_evaluations,10000.0,0.0,10000,10000,RECORDED,30
+EC-QPF module,full_systematic_likelihood,30,20,generation_iterations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,EKF-N0,30,100,likelihood_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,EKF-N0,30,100,candidate_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,EKF-N0,30,100,proposal_attempts,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,EKF-N0,30,100,rotation_bit_routine_calls,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,EKF-N0,30,100,crossover_proposals,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,EKF-N0,30,100,bit_measurements,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,EKF-N0,30,100,persistent_probability_entry_updates,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,EKF-N0,30,100,fitness_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,EKF-N0,30,100,candidate_distance_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,EKF-N0,30,100,generation_iterations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-SysPF-N50,30,100,likelihood_evaluations,5000.0,0.0,5000,5000,DERIVED,30
+classical contextual,Bootstrap-SysPF-N50,30,100,candidate_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-SysPF-N50,30,100,proposal_attempts,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-SysPF-N50,30,100,rotation_bit_routine_calls,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-SysPF-N50,30,100,crossover_proposals,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-SysPF-N50,30,100,bit_measurements,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-SysPF-N50,30,100,persistent_probability_entry_updates,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-SysPF-N50,30,100,fitness_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-SysPF-N50,30,100,candidate_distance_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-SysPF-N50,30,100,generation_iterations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-StratPF-N50,30,100,likelihood_evaluations,5000.0,0.0,5000,5000,DERIVED,30
+classical contextual,Bootstrap-StratPF-N50,30,100,candidate_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-StratPF-N50,30,100,proposal_attempts,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-StratPF-N50,30,100,rotation_bit_routine_calls,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-StratPF-N50,30,100,crossover_proposals,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-StratPF-N50,30,100,bit_measurements,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-StratPF-N50,30,100,persistent_probability_entry_updates,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-StratPF-N50,30,100,fitness_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-StratPF-N50,30,100,candidate_distance_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-StratPF-N50,30,100,generation_iterations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Regularized-SysPF-N50,30,100,likelihood_evaluations,5000.0,0.0,5000,5000,DERIVED,30
+classical contextual,Regularized-SysPF-N50,30,100,candidate_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Regularized-SysPF-N50,30,100,proposal_attempts,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Regularized-SysPF-N50,30,100,rotation_bit_routine_calls,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Regularized-SysPF-N50,30,100,crossover_proposals,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Regularized-SysPF-N50,30,100,bit_measurements,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Regularized-SysPF-N50,30,100,persistent_probability_entry_updates,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Regularized-SysPF-N50,30,100,fitness_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Regularized-SysPF-N50,30,100,candidate_distance_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Regularized-SysPF-N50,30,100,generation_iterations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-SysPF-N100,30,100,likelihood_evaluations,10000.0,0.0,10000,10000,DERIVED,30
+classical contextual,Bootstrap-SysPF-N100,30,100,candidate_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-SysPF-N100,30,100,proposal_attempts,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-SysPF-N100,30,100,rotation_bit_routine_calls,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-SysPF-N100,30,100,crossover_proposals,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-SysPF-N100,30,100,bit_measurements,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-SysPF-N100,30,100,persistent_probability_entry_updates,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-SysPF-N100,30,100,fitness_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-SysPF-N100,30,100,candidate_distance_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-SysPF-N100,30,100,generation_iterations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-StratPF-N100,30,100,likelihood_evaluations,10000.0,0.0,10000,10000,DERIVED,30
+classical contextual,Bootstrap-StratPF-N100,30,100,candidate_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-StratPF-N100,30,100,proposal_attempts,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-StratPF-N100,30,100,rotation_bit_routine_calls,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-StratPF-N100,30,100,crossover_proposals,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-StratPF-N100,30,100,bit_measurements,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-StratPF-N100,30,100,persistent_probability_entry_updates,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-StratPF-N100,30,100,fitness_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-StratPF-N100,30,100,candidate_distance_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Bootstrap-StratPF-N100,30,100,generation_iterations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Regularized-SysPF-N100,30,100,likelihood_evaluations,10000.0,0.0,10000,10000,DERIVED,30
+classical contextual,Regularized-SysPF-N100,30,100,candidate_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Regularized-SysPF-N100,30,100,proposal_attempts,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Regularized-SysPF-N100,30,100,rotation_bit_routine_calls,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Regularized-SysPF-N100,30,100,crossover_proposals,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Regularized-SysPF-N100,30,100,bit_measurements,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Regularized-SysPF-N100,30,100,persistent_probability_entry_updates,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Regularized-SysPF-N100,30,100,fitness_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Regularized-SysPF-N100,30,100,candidate_distance_evaluations,0.0,0.0,0,0,CONFIRMED_ZERO,30
+classical contextual,Regularized-SysPF-N100,30,100,generation_iterations,0.0,0.0,0,0,CONFIRMED_ZERO,30

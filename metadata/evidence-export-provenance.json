@@ -1,0 +1,55 @@
+{
+  "schema": "jsp.anonymous_evidence_export.v1",
+  "exact_public_metadata_copies": {
+    "search_ledger.csv": "f55a42c7f2b23c39abb119f2887b1591f9a2084a7de76f289241092d6caed8f1",
+    "implementation_audit_2026-10-09.md": "244f9e9f0831d2af85a89cdbad7d69d90a3f182d52ba0eb60f4d3850832dd377",
+    "citation-evidence-2026-10-08/search-quantum-pf.json": "3bd0eb06a6891b319d6c2eef4da70cb2684c4079209bcb3822f44dfc033f2539",
+    "citation-evidence-2026-10-08/search-quantum-inspired-pf.json": "ad1710ae70c7f1af9684824945b9d5e7457ea40dc75f2d311d83f9775d0810d5",
+    "citation-evidence-2026-10-08/search-quantum-genetic-pf.json": "c04804044b4d3b0f49e9370c9acde36ab22725e0bdeb26bb8030f19cb5716149",
+    "citation-evidence-2026-10-08/search-quantum-swarm-pf.json": "0017305a8333b0843db12fbb8ae948cc95a06259af473eee08fa9091a79d4fe8",
+    "citation-evidence-2026-10-09/dash2018-crossref.json": "3df7cead76784881d203dfb90714f1dd461638f5df79bca2e57bf64d3c7bdd49",
+    "citation-evidence-2026-10-09/dash2018-openalex.json": "6800ae18a0b9f52f06b5a59dcc0d98b4cb073267d6e17a9b515ec5233b649460",
+    "citation-evidence-2026-10-09/dash2018-semantic.json": "6efbf6c0045e2cc415846551d007b52c2dd3ac5a91ae55e50477de4d579570b5",
+    "citation-evidence-2026-10-09/smartcity-crossref.json": "679ad98923e9d6f060f58e00d184ea1174e4bd69a730c8965901d75cdf01f359",
+    "citation-evidence-2026-10-09/smartcity-semantic.json": "a2ae9d91b0e43d6ca51108b0345c3f47e0360c3e61a42b05139cb2b522630e11",
+    "citation-evidence-2026-10-09/smartcity-crossref-notices.json": "b057219f9b26c515f4fd142293923aee20766ba07fda3805ef6baa28bb42bf44",
+    "citation-evidence-2026-10-09/smartcity-crossref-title-notices.json": "5cde807b11b484d4963b102bdc6a76d934dfcfa36a5297a67f0b34bef114557d"
+  },
+  "registry_exports": {
+    "citation_registry_2026-10-08.json": {
+      "source_sha256": "a40a363da4bcf643ff1c056e4456dd070d35df9ddba0c2951b992b376438f791",
+      "export_sha256": "c0e0c4fd732721eeb7d85c1caba0e49f5e3cbb98c1a1de90ad4717c668fe5ca8",
+      "redactions": [
+        {
+          "field": "/works/5/source_evidence/3/original_artifact",
+          "kind": "local_absolute_path"
+        },
+        {
+          "field": "/works/6/source_evidence/3/original_artifact",
+          "kind": "local_absolute_path"
+        }
+      ]
+    },
+    "citation_registry_2026-10-09.json": {
+      "source_sha256": "a7896f2cc3aa0c47d990b5f9c45d8853728e2e9430a695a7a943803d28b15efd",
+      "export_sha256": "f27b88a95c0b9348b2121b9da389d84b9b7d736e8a4cf654e7c59ca12b1c97ed",
+      "redactions": [
+        {
+          "field": "/works/5/source_evidence/3/original_artifact",
+          "kind": "local_absolute_path"
+        },
+        {
+          "field": "/works/6/source_evidence/3/original_artifact",
+          "kind": "local_absolute_path"
+        }
+      ]
+    }
+  },
+  "semantic_review_export": {
+    "source_sha256": "b37eaba23cc680ac1011e47d046af8c1e1b7eb8b8083a761ef4e0e7be82930df",
+    "export_sha256": "f2bef1546c5b71aacf8ea1ffeabac38d4b3dc9b6ad2e05e63ea8f914bcb7848c",
+    "record_count": 256,
+    "historical_only": true
+  },
+  "excluded_material": "Third-party full texts, source passages, reviewed-excerpts files, manuscript source/PDF and private submission records."
+}

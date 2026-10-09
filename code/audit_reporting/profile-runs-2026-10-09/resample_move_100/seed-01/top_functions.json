@@ -1,0 +1,222 @@
+[
+  {
+    "file": "code/qm_hpf_reproduction/budget_benchmark.py",
+    "line": 119,
+    "function": "run_budget_filter",
+    "primitive_calls": 1,
+    "total_calls": 1,
+    "exclusive_time_s": 0.0053734,
+    "cumulative_time_s": 0.051634200000000005,
+    "bucket": "other",
+    "exclusive_total_share_percent": 10.363215925725209
+  },
+  {
+    "file": "code/qm_hpf_reproduction/budget_benchmark.py",
+    "line": 47,
+    "function": "resample_move",
+    "primitive_calls": 200,
+    "total_calls": 200,
+    "exclusive_time_s": 0.0043711,
+    "cumulative_time_s": 0.0184721,
+    "bucket": "other",
+    "exclusive_total_share_percent": 8.430165841541195
+  },
+  {
+    "file": "~",
+    "line": 0,
+    "function": "<method 'reduce' of 'numpy.ufunc' objects>",
+    "primitive_calls": 1608,
+    "total_calls": 1608,
+    "exclusive_time_s": 0.0042991,
+    "cumulative_time_s": 0.0042991,
+    "bucket": "other",
+    "exclusive_total_share_percent": 8.291305614003283
+  },
+  {
+    "file": "code/qm_hpf_reproduction/qm_hpf.py",
+    "line": 38,
+    "function": "observation",
+    "primitive_calls": 400,
+    "total_calls": 400,
+    "exclusive_time_s": 0.0036213,
+    "cumulative_time_s": 0.003846,
+    "bucket": "likelihood",
+    "exclusive_total_share_percent": 6.984090860875552
+  },
+  {
+    "file": "<runtime>/site-packages/numpy/_core/numeric.py",
+    "line": 2384,
+    "function": "isclose",
+    "primitive_calls": 200,
+    "total_calls": 200,
+    "exclusive_time_s": 0.0035902000000000004,
+    "cumulative_time_s": 0.008472200000000001,
+    "bucket": "other",
+    "exclusive_total_share_percent": 6.924110957036262
+  },
+  {
+    "file": "<runtime>/site-packages/numpy/lib/_arraysetops_impl.py",
+    "line": 350,
+    "function": "_unique1d",
+    "primitive_calls": 200,
+    "total_calls": 200,
+    "exclusive_time_s": 0.0026212,
+    "cumulative_time_s": 0.0040009,
+    "bucket": "other",
+    "exclusive_total_share_percent": 5.055283728088532
+  },
+  {
+    "file": "code/qm_hpf_reproduction/qm_hpf.py",
+    "line": 79,
+    "function": "particle_logweights",
+    "primitive_calls": 400,
+    "total_calls": 400,
+    "exclusive_time_s": 0.0024703000000000004,
+    "cumulative_time_s": 0.0063978,
+    "bucket": "likelihood",
+    "exclusive_total_share_percent": 4.764255834540325
+  },
+  {
+    "file": "code/qm_hpf_reproduction/budget_benchmark.py",
+    "line": 22,
+    "function": "conditional_log_ratio",
+    "primitive_calls": 200,
+    "total_calls": 200,
+    "exclusive_time_s": 0.0020692,
+    "cumulative_time_s": 0.0030015000000000003,
+    "bucket": "probability_fitness",
+    "exclusive_total_share_percent": 3.990688650297875
+  },
+  {
+    "file": "code/qm_hpf_reproduction/qm_hpf.py",
+    "line": 62,
+    "function": "systematic_resample",
+    "primitive_calls": 200,
+    "total_calls": 200,
+    "exclusive_time_s": 0.0020104000000000003,
+    "cumulative_time_s": 0.0048808,
+    "bucket": "sorting_resampling",
+    "exclusive_total_share_percent": 3.877286131141914
+  },
+  {
+    "file": "code/qm_hpf_reproduction/qm_hpf.py",
+    "line": 70,
+    "function": "normalize_logweights",
+    "primitive_calls": 200,
+    "total_calls": 200,
+    "exclusive_time_s": 0.0018865000000000002,
+    "cumulative_time_s": 0.004820700000000001,
+    "bucket": "probability_fitness",
+    "exclusive_total_share_percent": 3.6383308229204236
+  },
+  {
+    "file": "code/qm_hpf_reproduction/qm_hpf.py",
+    "line": 34,
+    "function": "transition",
+    "primitive_calls": 400,
+    "total_calls": 400,
+    "exclusive_time_s": 0.0016556000000000001,
+    "cumulative_time_s": 0.0016556000000000001,
+    "bucket": "other",
+    "exclusive_total_share_percent": 3.193013787663426
+  },
+  {
+    "file": "<runtime>/site-packages/numpy/_core/fromnumeric.py",
+    "line": 66,
+    "function": "_wrapreduction",
+    "primitive_calls": 601,
+    "total_calls": 601,
+    "exclusive_time_s": 0.0011281000000000002,
+    "cumulative_time_s": 0.0030414,
+    "bucket": "other",
+    "exclusive_total_share_percent": 2.175669759521087
+  },
+  {
+    "file": "~",
+    "line": 0,
+    "function": "<method 'round' of 'numpy.ndarray' objects>",
+    "primitive_calls": 200,
+    "total_calls": 200,
+    "exclusive_time_s": 0.0009404000000000001,
+    "cumulative_time_s": 0.0009404000000000001,
+    "bucket": "other",
+    "exclusive_total_share_percent": 1.813668860786836
+  },
+  {
+    "file": "<runtime>/site-packages/numpy/_core/fromnumeric.py",
+    "line": 86,
+    "function": "_wrapreduction_any_all",
+    "primitive_calls": 400,
+    "total_calls": 400,
+    "exclusive_time_s": 0.0008437000000000001,
+    "cumulative_time_s": 0.0027517,
+    "bucket": "other",
+    "exclusive_total_share_percent": 1.6271718607463352
+  },
+  {
+    "file": "~",
+    "line": 0,
+    "function": "<method 'searchsorted' of 'numpy.ndarray' objects>",
+    "primitive_calls": 200,
+    "total_calls": 200,
+    "exclusive_time_s": 0.0007477,
+    "cumulative_time_s": 0.0007477,
+    "bucket": "sorting_resampling",
+    "exclusive_total_share_percent": 1.4420248906957862
+  },
+  {
+    "file": "code/qm_hpf_reproduction/budget_benchmark.py",
+    "line": 41,
+    "function": "resample_pairs",
+    "primitive_calls": 200,
+    "total_calls": 200,
+    "exclusive_time_s": 0.0007341,
+    "cumulative_time_s": 0.005987800000000001,
+    "bucket": "sorting_resampling",
+    "exclusive_total_share_percent": 1.4157957366052918
+  },
+  {
+    "file": "~",
+    "line": 0,
+    "function": "<method 'cumsum' of 'numpy.ndarray' objects>",
+    "primitive_calls": 200,
+    "total_calls": 200,
+    "exclusive_time_s": 0.0006788,
+    "cumulative_time_s": 0.0006788,
+    "bucket": "other",
+    "exclusive_total_share_percent": 1.30914336739909
+  },
+  {
+    "file": "~",
+    "line": 0,
+    "function": "<method 'all' of 'numpy.generic' objects>",
+    "primitive_calls": 400,
+    "total_calls": 400,
+    "exclusive_time_s": 0.0006648,
+    "cumulative_time_s": 0.0016806000000000002,
+    "bucket": "other",
+    "exclusive_total_share_percent": 1.2821427676000519
+  },
+  {
+    "file": "<runtime>/site-packages/numpy/_core/fromnumeric.py",
+    "line": 48,
+    "function": "_wrapfunc",
+    "primitive_calls": 600,
+    "total_calls": 600,
+    "exclusive_time_s": 0.0006100000000000001,
+    "cumulative_time_s": 0.0031858000000000004,
+    "bucket": "other",
+    "exclusive_total_share_percent": 1.1764547055295302
+  },
+  {
+    "file": "~",
+    "line": 0,
+    "function": "<method 'sort' of 'numpy.ndarray' objects>",
+    "primitive_calls": 200,
+    "total_calls": 200,
+    "exclusive_time_s": 0.0006015,
+    "cumulative_time_s": 0.0006015,
+    "bucket": "sorting_resampling",
+    "exclusive_total_share_percent": 1.160061484222971
+  }
+]

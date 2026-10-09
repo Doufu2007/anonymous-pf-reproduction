@@ -1,0 +1,16 @@
+test_classical_uniform_likelihood_gold (test_operator.SourceOperatorTests.test_classical_uniform_likelihood_gold) ... ERROR
+
+======================================================================
+ERROR: test_classical_uniform_likelihood_gold (test_operator.SourceOperatorTests.test_classical_uniform_likelihood_gold)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_operator.py", line 14, in test_classical_uniform_likelihood_gold
+    result=full_systematic_select(p,np.zeros(2),OperatorConfig(particle_count=4),np.random.default_rng(5),1.)
+  File "ecqpf_operator.py", line 165, in full_systematic_select
+    raise NotImplementedError
+NotImplementedError
+
+----------------------------------------------------------------------
+Ran 1 test in 0.044s
+
+FAILED (errors=1)

@@ -1,0 +1,402 @@
+[
+  {
+    "update": 0,
+    "method": "source_ecqpf_operator",
+    "runtime_s": 0.11102370001026429
+  },
+  {
+    "update": 0,
+    "method": "ellipse_exact_fitness",
+    "runtime_s": 0.0006490999949164689
+  },
+  {
+    "update": 0,
+    "method": "ellipse_systematic_fitness",
+    "runtime_s": 0.00047819998872000724
+  },
+  {
+    "update": 0,
+    "method": "full_systematic_likelihood",
+    "runtime_s": 0.00023530000180471689
+  },
+  {
+    "update": 1,
+    "method": "source_ecqpf_operator",
+    "runtime_s": 0.06987289999960922
+  },
+  {
+    "update": 1,
+    "method": "ellipse_exact_fitness",
+    "runtime_s": 0.0006745999999111518
+  },
+  {
+    "update": 1,
+    "method": "ellipse_systematic_fitness",
+    "runtime_s": 0.00044210000487510115
+  },
+  {
+    "update": 1,
+    "method": "full_systematic_likelihood",
+    "runtime_s": 0.00011609999637585133
+  },
+  {
+    "update": 2,
+    "method": "source_ecqpf_operator",
+    "runtime_s": 0.054596400004811585
+  },
+  {
+    "update": 2,
+    "method": "ellipse_exact_fitness",
+    "runtime_s": 0.0008859999943524599
+  },
+  {
+    "update": 2,
+    "method": "ellipse_systematic_fitness",
+    "runtime_s": 0.0008819999929983169
+  },
+  {
+    "update": 2,
+    "method": "full_systematic_likelihood",
+    "runtime_s": 0.00019289999909233302
+  },
+  {
+    "update": 3,
+    "method": "source_ecqpf_operator",
+    "runtime_s": 0.1102275000012014
+  },
+  {
+    "update": 3,
+    "method": "ellipse_exact_fitness",
+    "runtime_s": 0.0005218999867793173
+  },
+  {
+    "update": 3,
+    "method": "ellipse_systematic_fitness",
+    "runtime_s": 0.0004327000060584396
+  },
+  {
+    "update": 3,
+    "method": "full_systematic_likelihood",
+    "runtime_s": 0.00011079999967478216
+  },
+  {
+    "update": 4,
+    "method": "source_ecqpf_operator",
+    "runtime_s": 0.1096042999997735
+  },
+  {
+    "update": 4,
+    "method": "ellipse_exact_fitness",
+    "runtime_s": 0.0010020000045187771
+  },
+  {
+    "update": 4,
+    "method": "ellipse_systematic_fitness",
+    "runtime_s": 0.0008569999918108806
+  },
+  {
+    "update": 4,
+    "method": "full_systematic_likelihood",
+    "runtime_s": 0.00012599999899975955
+  },
+  {
+    "update": 5,
+    "method": "source_ecqpf_operator",
+    "runtime_s": 0.1062130999926012
+  },
+  {
+    "update": 5,
+    "method": "ellipse_exact_fitness",
+    "runtime_s": 0.0007804000051692128
+  },
+  {
+    "update": 5,
+    "method": "ellipse_systematic_fitness",
+    "runtime_s": 0.0005661999894073233
+  },
+  {
+    "update": 5,
+    "method": "full_systematic_likelihood",
+    "runtime_s": 0.00011809999705292284
+  },
+  {
+    "update": 6,
+    "method": "source_ecqpf_operator",
+    "runtime_s": 0.10617919999640435
+  },
+  {
+    "update": 6,
+    "method": "ellipse_exact_fitness",
+    "runtime_s": 0.0009813000069698319
+  },
+  {
+    "update": 6,
+    "method": "ellipse_systematic_fitness",
+    "runtime_s": 0.0010559000074863434
+  },
+  {
+    "update": 6,
+    "method": "full_systematic_likelihood",
+    "runtime_s": 0.0001947999990079552
+  },
+  {
+    "update": 7,
+    "method": "source_ecqpf_operator",
+    "runtime_s": 0.11808089999249205
+  },
+  {
+    "update": 7,
+    "method": "ellipse_exact_fitness",
+    "runtime_s": 0.0005318999901646748
+  },
+  {
+    "update": 7,
+    "method": "ellipse_systematic_fitness",
+    "runtime_s": 0.0004470999992918223
+  },
+  {
+    "update": 7,
+    "method": "full_systematic_likelihood",
+    "runtime_s": 0.00013590000162366778
+  },
+  {
+    "update": 8,
+    "method": "source_ecqpf_operator",
+    "runtime_s": 0.09983659999852534
+  },
+  {
+    "update": 8,
+    "method": "ellipse_exact_fitness",
+    "runtime_s": 0.0008467000006930903
+  },
+  {
+    "update": 8,
+    "method": "ellipse_systematic_fitness",
+    "runtime_s": 0.0006491000094683841
+  },
+  {
+    "update": 8,
+    "method": "full_systematic_likelihood",
+    "runtime_s": 0.00016849998792167753
+  },
+  {
+    "update": 9,
+    "method": "source_ecqpf_operator",
+    "runtime_s": 0.13940359999833163
+  },
+  {
+    "update": 9,
+    "method": "ellipse_exact_fitness",
+    "runtime_s": 0.001019500006805174
+  },
+  {
+    "update": 9,
+    "method": "ellipse_systematic_fitness",
+    "runtime_s": 0.0005864999984623864
+  },
+  {
+    "update": 9,
+    "method": "full_systematic_likelihood",
+    "runtime_s": 0.00012349999451544136
+  },
+  {
+    "update": 10,
+    "method": "source_ecqpf_operator",
+    "runtime_s": 0.08366220000607427
+  },
+  {
+    "update": 10,
+    "method": "ellipse_exact_fitness",
+    "runtime_s": 0.0007880000048317015
+  },
+  {
+    "update": 10,
+    "method": "ellipse_systematic_fitness",
+    "runtime_s": 0.0006285999988904223
+  },
+  {
+    "update": 10,
+    "method": "full_systematic_likelihood",
+    "runtime_s": 0.00022699999681208283
+  },
+  {
+    "update": 11,
+    "method": "source_ecqpf_operator",
+    "runtime_s": 0.1283850000036182
+  },
+  {
+    "update": 11,
+    "method": "ellipse_exact_fitness",
+    "runtime_s": 0.0005193999968469143
+  },
+  {
+    "update": 11,
+    "method": "ellipse_systematic_fitness",
+    "runtime_s": 0.00045849999878555536
+  },
+  {
+    "update": 11,
+    "method": "full_systematic_likelihood",
+    "runtime_s": 0.00023209999199025333
+  },
+  {
+    "update": 12,
+    "method": "source_ecqpf_operator",
+    "runtime_s": 0.10933279999881051
+  },
+  {
+    "update": 12,
+    "method": "ellipse_exact_fitness",
+    "runtime_s": 0.0006207999977050349
+  },
+  {
+    "update": 12,
+    "method": "ellipse_systematic_fitness",
+    "runtime_s": 0.0005870000022696331
+  },
+  {
+    "update": 12,
+    "method": "full_systematic_likelihood",
+    "runtime_s": 0.00017299999308306724
+  },
+  {
+    "update": 13,
+    "method": "source_ecqpf_operator",
+    "runtime_s": 0.11055779999878723
+  },
+  {
+    "update": 13,
+    "method": "ellipse_exact_fitness",
+    "runtime_s": 0.001076700005796738
+  },
+  {
+    "update": 13,
+    "method": "ellipse_systematic_fitness",
+    "runtime_s": 0.0011362000077497214
+  },
+  {
+    "update": 13,
+    "method": "full_systematic_likelihood",
+    "runtime_s": 0.0002997999981744215
+  },
+  {
+    "update": 14,
+    "method": "source_ecqpf_operator",
+    "runtime_s": 0.22634259999904316
+  },
+  {
+    "update": 14,
+    "method": "ellipse_exact_fitness",
+    "runtime_s": 0.0005176999984541908
+  },
+  {
+    "update": 14,
+    "method": "ellipse_systematic_fitness",
+    "runtime_s": 0.00047289999201893806
+  },
+  {
+    "update": 14,
+    "method": "full_systematic_likelihood",
+    "runtime_s": 0.00012850000348407775
+  },
+  {
+    "update": 15,
+    "method": "source_ecqpf_operator",
+    "runtime_s": 0.049281999992672354
+  },
+  {
+    "update": 15,
+    "method": "ellipse_exact_fitness",
+    "runtime_s": 0.0006815000087954104
+  },
+  {
+    "update": 15,
+    "method": "ellipse_systematic_fitness",
+    "runtime_s": 0.0006277000065892935
+  },
+  {
+    "update": 15,
+    "method": "full_systematic_likelihood",
+    "runtime_s": 0.00019099999917671084
+  },
+  {
+    "update": 16,
+    "method": "source_ecqpf_operator",
+    "runtime_s": 0.10773570000310428
+  },
+  {
+    "update": 16,
+    "method": "ellipse_exact_fitness",
+    "runtime_s": 0.0005354000022634864
+  },
+  {
+    "update": 16,
+    "method": "ellipse_systematic_fitness",
+    "runtime_s": 0.00043400000140536577
+  },
+  {
+    "update": 16,
+    "method": "full_systematic_likelihood",
+    "runtime_s": 0.00011500000255182385
+  },
+  {
+    "update": 17,
+    "method": "source_ecqpf_operator",
+    "runtime_s": 0.1070328000059817
+  },
+  {
+    "update": 17,
+    "method": "ellipse_exact_fitness",
+    "runtime_s": 0.0006988999957684427
+  },
+  {
+    "update": 17,
+    "method": "ellipse_systematic_fitness",
+    "runtime_s": 0.0005247999943094328
+  },
+  {
+    "update": 17,
+    "method": "full_systematic_likelihood",
+    "runtime_s": 0.00021309999283403158
+  },
+  {
+    "update": 18,
+    "method": "source_ecqpf_operator",
+    "runtime_s": 0.14000980000128038
+  },
+  {
+    "update": 18,
+    "method": "ellipse_exact_fitness",
+    "runtime_s": 0.0005750999989686534
+  },
+  {
+    "update": 18,
+    "method": "ellipse_systematic_fitness",
+    "runtime_s": 0.00044830000842921436
+  },
+  {
+    "update": 18,
+    "method": "full_systematic_likelihood",
+    "runtime_s": 0.00011310000263620168
+  },
+  {
+    "update": 19,
+    "method": "source_ecqpf_operator",
+    "runtime_s": 0.13458949999767356
+  },
+  {
+    "update": 19,
+    "method": "ellipse_exact_fitness",
+    "runtime_s": 0.0009874999959720299
+  },
+  {
+    "update": 19,
+    "method": "ellipse_systematic_fitness",
+    "runtime_s": 0.000792499995441176
+  },
+  {
+    "update": 19,
+    "method": "full_systematic_likelihood",
+    "runtime_s": 0.00024360000679735094
+  }
+]

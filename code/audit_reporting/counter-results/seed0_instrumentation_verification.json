@@ -1,0 +1,50 @@
+{
+  "schema": "particle_filter.audit_counter_replay.v1",
+  "checks": [
+    {
+      "audit": "native",
+      "method": "qm_hpf",
+      "seed": 0,
+      "status": "PASS",
+      "algorithm_rng_seed": 3000009,
+      "input_sha256": {
+        "code/qm_hpf_reproduction/runs-main-30-v4/truth_seed0.npy": "fe1255e04a383ea8f3fc4e8fc6a41829f5188755212de24c913661648d7fe4e0",
+        "code/qm_hpf_reproduction/runs-main-30-v4/observations_seed0.npy": "606bc14315404b11015eca556ca9696eb1337b06e918b3a3cd8de96e290ac2d2",
+        "code/qm_hpf_reproduction/runs-main-30-v4/estimate_qm_hpf_seed0.npy": "88e798cf93abca9ef62f81a9850a17f184c4075d6cb1d2c63df74c4c0c79de30"
+      },
+      "source_sha256": "312f3f5d4d9cac0d2758e5a7549ed7aa3fa6bffc832b49fb82ff622c82d89b36",
+      "estimate_exactly_matches_historical_array": true,
+      "historical_counters_match": true,
+      "instrumented_extra_counts": {
+        "crossover_proposals": 53271,
+        "rotation_proposals": 32929,
+        "rotation_bit_routine_calls": 526864,
+        "bit_measurements": 526864,
+        "persistent_probability_entry_updates": 0
+      },
+      "scope": "Supplementary seed-0 transparent-wrapper replay only; never used to fill unavailable historical 30-seed means."
+    },
+    {
+      "audit": "QGPF-like",
+      "method": "qgpf",
+      "seed": 0,
+      "status": "PASS",
+      "algorithm_rng_seed": 2000006,
+      "input_sha256": {
+        "code/qgpf_reproduction/runs-main-30/truth_seed0.npy": "d53af15328d8d7bed9572ad39a762eec66132bd31a7ca259523264b179a1f4a6",
+        "code/qgpf_reproduction/runs-main-30/observations_seed0.npy": "720e90ce1f1844a5e20fb82112c41cbab8cd1acc69318b8fb5339d67f7a50f20",
+        "code/qgpf_reproduction/runs-main-30/estimate_qgpf_seed0.npy": "772a396c7fe33620629fd03538c02961c952bfad16971da634155305db7800b0"
+      },
+      "source_sha256": "89556a29bfdf0e572a77d988f9ce15dc3f3251010214f810ebde2fd174f96829",
+      "estimate_exactly_matches_historical_array": true,
+      "historical_counters_match": true,
+      "instrumented_extra_counts": {
+        "rotation_bit_routine_calls": 950766,
+        "persistent_probability_entry_updates": 950766,
+        "bit_measurements": 5120000
+      },
+      "scope": "Supplementary seed-0 transparent-wrapper replay only; never used to fill unavailable historical 30-seed means."
+    }
+  ],
+  "wrapper_contract": "Wrappers increment integers and call unchanged functions; do not draw random numbers or modify historical files; runtime from this check is not reported as an uninstrumented benchmark."
+}

@@ -1,0 +1,364 @@
+{
+  "schema": "source_aligned_module_analysis.v1",
+  "independent_seed_datasets": 30,
+  "one_step_updates_per_dataset": 20,
+  "successful_updates": 600,
+  "failed_seed_datasets": 0,
+  "plan_sha256": "f3abddfe4d4ce6d2359c7cadb57805eeb6beba14e60fdf209569a43069d41258",
+  "interpretation_scope": "One-step resampling/selection operator only; not source tracking experiment or full PF reproduction; no quantum hardware.",
+  "rmse_recomputed_from_raw_estimates_and_truth": true,
+  "summary": {
+    "source_ecqpf_operator": {
+      "rmse": {
+        "mean": 4.550458324952831,
+        "sd": 0.3931205749190671,
+        "min": 3.649982162692047,
+        "max": 5.3399903720420525
+      },
+      "mae_euclidean": {
+        "mean": 4.182420705530729,
+        "sd": 0.42228280426890175,
+        "min": 3.337048401194837,
+        "max": 5.074728347055229
+      },
+      "posterior_mean_rmse": {
+        "mean": 4.321893419578766,
+        "sd": 0.41907744683481624,
+        "min": 3.324966224472276,
+        "max": 5.220219090237259
+      },
+      "mean_distinct_count": {
+        "mean": 188.13000000000002,
+        "sd": 10.67801964075155,
+        "min": 164.1,
+        "max": 210.75
+      },
+      "runtime_s": {
+        "mean": 1.9595375733348193,
+        "sd": 0.22374857802234555,
+        "min": 1.3226055999984965,
+        "max": 2.3545208999421448
+      },
+      "fitness_evaluations": {
+        "mean": 111700.0,
+        "sd": 2191.6770464331803,
+        "min": 110000.0,
+        "max": 119000.0
+      },
+      "likelihood_evaluations": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "candidate_distance_evaluations": {
+        "mean": 7717.366666666667,
+        "sd": 426.9416081639376,
+        "min": 6744.0,
+        "max": 8603.0
+      },
+      "binary_dimensions_processed": {
+        "mean": 43031983.333333336,
+        "sd": 2517492.4082456958,
+        "min": 37678500.0,
+        "max": 47316500.0
+      },
+      "mean_sampling_ess": null,
+      "mean_logfitness_gap": {
+        "mean": 0.18542069268769365,
+        "sd": 0.01346175892093658,
+        "min": 0.15774199410527642,
+        "max": 0.21663017095362797
+      }
+    },
+    "ellipse_exact_fitness": {
+      "rmse": {
+        "mean": 1.6147820149106014,
+        "sd": 0.23415984143524843,
+        "min": 1.3043669454677584,
+        "max": 2.3782237716634387
+      },
+      "mae_euclidean": {
+        "mean": 1.4107576603511836,
+        "sd": 0.18968517345679606,
+        "min": 1.1225045120405137,
+        "max": 1.935659889093171
+      },
+      "posterior_mean_rmse": {
+        "mean": 0.7105316246248246,
+        "sd": 0.23982745171993522,
+        "min": 0.4166951075690234,
+        "max": 1.2618257650999447
+      },
+      "mean_distinct_count": {
+        "mean": 1.0,
+        "sd": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "runtime_s": {
+        "mean": 0.013903693331909987,
+        "sd": 0.0008762733820515444,
+        "min": 0.012229400002979673,
+        "max": 0.01600860001053661
+      },
+      "fitness_evaluations": {
+        "mean": 7717.366666666667,
+        "sd": 426.9416081639376,
+        "min": 6744.0,
+        "max": 8603.0
+      },
+      "likelihood_evaluations": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "candidate_distance_evaluations": {
+        "mean": 7717.366666666667,
+        "sd": 426.9416081639376,
+        "min": 6744.0,
+        "max": 8603.0
+      },
+      "binary_dimensions_processed": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_sampling_ess": null,
+      "mean_logfitness_gap": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      }
+    },
+    "ellipse_systematic_fitness": {
+      "rmse": {
+        "mean": 4.722362408529074,
+        "sd": 0.40262580525482317,
+        "min": 3.8472398618095376,
+        "max": 5.567616343132206
+      },
+      "mae_euclidean": {
+        "mean": 4.34189896615322,
+        "sd": 0.4381077449618395,
+        "min": 3.407127384755216,
+        "max": 5.306262641989058
+      },
+      "posterior_mean_rmse": {
+        "mean": 4.503632716413104,
+        "sd": 0.4374627991026856,
+        "min": 3.5254157144061886,
+        "max": 5.428265953263297
+      },
+      "mean_distinct_count": {
+        "mean": 385.12833333333333,
+        "sd": 21.098862869069887,
+        "min": 336.75,
+        "max": 428.6
+      },
+      "runtime_s": {
+        "mean": 0.011168936666217632,
+        "sd": 0.0007674923255148308,
+        "min": 0.009410900005605072,
+        "max": 0.012762400074279867
+      },
+      "fitness_evaluations": {
+        "mean": 7717.366666666667,
+        "sd": 426.9416081639376,
+        "min": 6744.0,
+        "max": 8603.0
+      },
+      "likelihood_evaluations": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "candidate_distance_evaluations": {
+        "mean": 7717.366666666667,
+        "sd": 426.9416081639376,
+        "min": 6744.0,
+        "max": 8603.0
+      },
+      "binary_dimensions_processed": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_sampling_ess": {
+        "mean": 383.3027945397104,
+        "sd": 21.345261044873833,
+        "min": 334.7032311743175,
+        "max": 427.6504492293037
+      },
+      "mean_logfitness_gap": {
+        "mean": 0.19918678873150372,
+        "sd": 0.014617449774146852,
+        "min": 0.16928407631591352,
+        "max": 0.23170158044696737
+      }
+    },
+    "full_systematic_likelihood": {
+      "rmse": {
+        "mean": 1.5054249543604947,
+        "sd": 0.23541027906739617,
+        "min": 1.174349913292575,
+        "max": 2.2571926985107322
+      },
+      "mae_euclidean": {
+        "mean": 1.3302713016581287,
+        "sd": 0.18660002218544644,
+        "min": 1.045019902097506,
+        "max": 1.8178502244920989
+      },
+      "posterior_mean_rmse": {
+        "mean": 0.4981112936096667,
+        "sd": 0.2753446069133296,
+        "min": 0.20516295463810802,
+        "max": 1.1974937169343323
+      },
+      "mean_distinct_count": {
+        "mean": 45.58999999999999,
+        "sd": 5.917906782778449,
+        "min": 32.95,
+        "max": 58.2
+      },
+      "runtime_s": {
+        "mean": 0.0030300666636321693,
+        "sd": 0.0002596617924104322,
+        "min": 0.002425499988021329,
+        "max": 0.003458099963609129
+      },
+      "fitness_evaluations": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "likelihood_evaluations": {
+        "mean": 10000.0,
+        "sd": 0.0,
+        "min": 10000.0,
+        "max": 10000.0
+      },
+      "candidate_distance_evaluations": {
+        "mean": 10000.0,
+        "sd": 0.0,
+        "min": 10000.0,
+        "max": 10000.0
+      },
+      "binary_dimensions_processed": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "mean_sampling_ess": {
+        "mean": 19.58966308729311,
+        "sd": 2.8207533041822623,
+        "min": 13.708343519652749,
+        "max": 25.7922398883656
+      },
+      "mean_logfitness_gap": null
+    }
+  },
+  "primary_paired_comparisons": [
+    {
+      "comparison": "source_ecqpf_operator minus ellipse_exact_fitness",
+      "mean_paired_rmse_difference": 2.935676310042231,
+      "bootstrap95_ci": [
+        2.7872340319725253,
+        3.0720631114271093
+      ],
+      "paired_dz": 7.1597138325245355,
+      "permutation_p_uncorrected": 1.999960000799984e-05,
+      "bootstrap_samples": 20000,
+      "permutation_samples": 50000,
+      "paired_rmse_differences": [
+        2.627616781078007,
+        2.9596193519881666,
+        3.217479055702552,
+        3.1602585448543827,
+        1.7437330985777213,
+        2.769406937237925,
+        3.2329323035112094,
+        2.9438853710225326,
+        2.762045935958663,
+        2.735926652311468,
+        3.439177714223846,
+        3.046701623075405,
+        3.164341129088192,
+        3.010485364900597,
+        3.3787965543956346,
+        2.61008907753095,
+        2.1600797285671236,
+        2.353713837371725,
+        3.317510249652927,
+        3.371985693167017,
+        2.345615217224289,
+        3.020836671539726,
+        2.9270844827368805,
+        3.084788311977432,
+        2.7704965051394224,
+        3.3045543244261735,
+        2.6151039086840164,
+        3.2694238996950875,
+        3.463105191677105,
+        3.2634957839507397
+      ],
+      "permutation_p_holm": 3.999920001599968e-05
+    },
+    {
+      "comparison": "source_ecqpf_operator minus ellipse_systematic_fitness",
+      "mean_paired_rmse_difference": -0.17190408357624254,
+      "bootstrap95_ci": [
+        -0.18681436994552633,
+        -0.1567384647862127
+      ],
+      "paired_dz": -4.022373603433635,
+      "permutation_p_uncorrected": 1.999960000799984e-05,
+      "bootstrap_samples": 20000,
+      "permutation_samples": 50000,
+      "paired_rmse_differences": [
+        -0.09472617013222617,
+        -0.17908703873790977,
+        -0.1552365583985802,
+        -0.19030903323687554,
+        -0.14977682785739255,
+        -0.25806522152446654,
+        -0.22264533119417873,
+        -0.15126498545700073,
+        -0.15392701283403198,
+        -0.1413327271649587,
+        -0.20384120522117843,
+        -0.23791274837781895,
+        -0.1611166317684205,
+        -0.19126522534949686,
+        -0.101884689594117,
+        -0.15245827941295165,
+        -0.11475562891099944,
+        -0.21237093123322381,
+        -0.13484258501864854,
+        -0.2276259710901538,
+        -0.19725769911749058,
+        -0.1868941295840454,
+        -0.18776286310547263,
+        -0.23003031524319528,
+        -0.10400820351417117,
+        -0.17887723581183312,
+        -0.19701151933501126,
+        -0.17711305907504826,
+        -0.11426921743304597,
+        -0.1494534625533328
+      ],
+      "permutation_p_holm": 3.999920001599968e-05
+    }
+  ],
+  "source_probability_convention_ambiguity": "Literal Eq12 probability-zero orientation; no sensitivity variant was run.",
+  "original_algorithm_efficacy_conclusion": "NOT_ASSESSED",
+  "equivalence_conclusion": "NOT_ASSESSED"
+}

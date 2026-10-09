@@ -1,0 +1,146 @@
+{
+  "status": "PASS",
+  "truth_used_only_by_evaluator": true,
+  "checks": [
+    {
+      "update": 0,
+      "same_ellipse_for_primary_comparators": true,
+      "finite_estimates": true,
+      "source_fitness_bounded_by_classical_exact": true,
+      "source_indices_in_ellipse": true
+    },
+    {
+      "update": 1,
+      "same_ellipse_for_primary_comparators": true,
+      "finite_estimates": true,
+      "source_fitness_bounded_by_classical_exact": true,
+      "source_indices_in_ellipse": true
+    },
+    {
+      "update": 2,
+      "same_ellipse_for_primary_comparators": true,
+      "finite_estimates": true,
+      "source_fitness_bounded_by_classical_exact": true,
+      "source_indices_in_ellipse": true
+    },
+    {
+      "update": 3,
+      "same_ellipse_for_primary_comparators": true,
+      "finite_estimates": true,
+      "source_fitness_bounded_by_classical_exact": true,
+      "source_indices_in_ellipse": true
+    },
+    {
+      "update": 4,
+      "same_ellipse_for_primary_comparators": true,
+      "finite_estimates": true,
+      "source_fitness_bounded_by_classical_exact": true,
+      "source_indices_in_ellipse": true
+    },
+    {
+      "update": 5,
+      "same_ellipse_for_primary_comparators": true,
+      "finite_estimates": true,
+      "source_fitness_bounded_by_classical_exact": true,
+      "source_indices_in_ellipse": true
+    },
+    {
+      "update": 6,
+      "same_ellipse_for_primary_comparators": true,
+      "finite_estimates": true,
+      "source_fitness_bounded_by_classical_exact": true,
+      "source_indices_in_ellipse": true
+    },
+    {
+      "update": 7,
+      "same_ellipse_for_primary_comparators": true,
+      "finite_estimates": true,
+      "source_fitness_bounded_by_classical_exact": true,
+      "source_indices_in_ellipse": true
+    },
+    {
+      "update": 8,
+      "same_ellipse_for_primary_comparators": true,
+      "finite_estimates": true,
+      "source_fitness_bounded_by_classical_exact": true,
+      "source_indices_in_ellipse": true
+    },
+    {
+      "update": 9,
+      "same_ellipse_for_primary_comparators": true,
+      "finite_estimates": true,
+      "source_fitness_bounded_by_classical_exact": true,
+      "source_indices_in_ellipse": true
+    },
+    {
+      "update": 10,
+      "same_ellipse_for_primary_comparators": true,
+      "finite_estimates": true,
+      "source_fitness_bounded_by_classical_exact": true,
+      "source_indices_in_ellipse": true
+    },
+    {
+      "update": 11,
+      "same_ellipse_for_primary_comparators": true,
+      "finite_estimates": true,
+      "source_fitness_bounded_by_classical_exact": true,
+      "source_indices_in_ellipse": true
+    },
+    {
+      "update": 12,
+      "same_ellipse_for_primary_comparators": true,
+      "finite_estimates": true,
+      "source_fitness_bounded_by_classical_exact": true,
+      "source_indices_in_ellipse": true
+    },
+    {
+      "update": 13,
+      "same_ellipse_for_primary_comparators": true,
+      "finite_estimates": true,
+      "source_fitness_bounded_by_classical_exact": true,
+      "source_indices_in_ellipse": true
+    },
+    {
+      "update": 14,
+      "same_ellipse_for_primary_comparators": true,
+      "finite_estimates": true,
+      "source_fitness_bounded_by_classical_exact": true,
+      "source_indices_in_ellipse": true
+    },
+    {
+      "update": 15,
+      "same_ellipse_for_primary_comparators": true,
+      "finite_estimates": true,
+      "source_fitness_bounded_by_classical_exact": true,
+      "source_indices_in_ellipse": true
+    },
+    {
+      "update": 16,
+      "same_ellipse_for_primary_comparators": true,
+      "finite_estimates": true,
+      "source_fitness_bounded_by_classical_exact": true,
+      "source_indices_in_ellipse": true
+    },
+    {
+      "update": 17,
+      "same_ellipse_for_primary_comparators": true,
+      "finite_estimates": true,
+      "source_fitness_bounded_by_classical_exact": true,
+      "source_indices_in_ellipse": true
+    },
+    {
+      "update": 18,
+      "same_ellipse_for_primary_comparators": true,
+      "finite_estimates": true,
+      "source_fitness_bounded_by_classical_exact": true,
+      "source_indices_in_ellipse": true
+    },
+    {
+      "update": 19,
+      "same_ellipse_for_primary_comparators": true,
+      "finite_estimates": true,
+      "source_fitness_bounded_by_classical_exact": true,
+      "source_indices_in_ellipse": true
+    }
+  ]
+}

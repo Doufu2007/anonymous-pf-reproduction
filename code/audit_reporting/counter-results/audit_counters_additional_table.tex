@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrr}
+\toprule
+Audit & $A_b$ & $F$ & $D$ & $G$ \\
+\midrule
+Native Bootstrap PF & $0$ & $0$ & $0$ & $0^{\dagger}$ \\
+Native QM-HPF-like & $0$ & $0$ & $0$ & $82,438^{\dagger}$ \\
+Budget Bootstrap PF & $0$ & $0$ & $0$ & $0$ \\
+Budget resample-move & $0$ & $0$ & $0$ & $0$ \\
+Budget QM-HPF-like & $0$ & $0$ & $0$ & $18,831.3^{\dagger}$ \\
+QGPF-context Bootstrap & $0$ & $0$ & $0$ & $0$ \\
+QGPF-like & \textit{unavailable} & $0$ & $0$ & $64,000^{\dagger}$ \\
+EC-QPF selection module & $39,187.8^{\dagger}$ & $111.7$ & $7.7$ & $223.4$ \\
+Same-ellipse exact & $0$ & $7.7$ & $7.7$ & $0$ \\
+Same-fitness systematic & $0$ & $7.7$ & $7.7$ & $0$ \\
+Full-cloud systematic & $0$ & $0$ & $10$ & $0$ \\
+\bottomrule
+\end{tabular}
+\caption{Operation-count means per seed dataset (30 datasets per row); counts are in thousands except $G$, which is unscaled. Each PF trajectory has 200 updates for native/budget audits or 100 updates for QGPF; each EC-QPF seed dataset has 20 independent one-step module updates. $\dagger$ denotes a code-based derivation from retained counters/configuration rather than direct instrumentation. Different columns and audit units do not represent equal costs.}
+\label{tab:audit-counts-additional}
+\end{table}

@@ -1,0 +1,40 @@
+{
+  "method": "ecqpf_source_module",
+  "seed": 2,
+  "status": "completed",
+  "scientific_outputs_identical": true,
+  "scientific_output_sha256": "3a1f340292912ecbe0646c480124161ce0fe2c2ab7afd3cf6c225548c8672df7",
+  "uninstrumented_wall_s": 2.2205784000107087,
+  "instrumented_wall_s": 2.0710469000041485,
+  "profiler_overhead_s": -0.14953150000656024,
+  "profiler_overhead_percent": -6.733898699808982,
+  "cprofile_exclusive_total_s": 2.0709007999999995,
+  "bucket_exclusive_time_s": {
+    "likelihood": 0.0,
+    "rotation_crossover_encoding": 0.0,
+    "measurement": 0.0232346,
+    "probability_fitness": 1.3378746000000001,
+    "rng": 0.0,
+    "sorting_resampling": 0.0003692,
+    "other": 0.7094223999999996
+  },
+  "bucket_exclusive_percent": {
+    "likelihood": 0.0,
+    "rotation_crossover_encoding": 0.0,
+    "measurement": 1.121956203793055,
+    "probability_fitness": 64.60350973837087,
+    "rng": 0.0,
+    "sorting_resampling": 0.017827990601964133,
+    "other": 34.25670606723411
+  },
+  "measurement_separable": true,
+  "measurement_unavailable_reason": null,
+  "plan_sha256": "fbded4c1f3236dae4b20dc03900c4832af255045540beab5b6ce13f9c83f254f",
+  "source_code_sha256": {
+    "code/qm_hpf_reproduction/qm_hpf.py": "d39bfd4f6697f2ca94782d74661bbaa10ad3ee3d3fd6e6909994e850416e3609",
+    "code/qm_hpf_reproduction/budget_benchmark.py": "1187944daeb3fca937e2bd6dd7552b13ee05aaf81a9f12bc6fde155863a0ae27",
+    "code/qgpf_reproduction/qgpf.py": "89556a29bfdf0e572a77d988f9ce15dc3f3251010214f810ebde2fd174f96829",
+    "code/source_aligned_audit/ecqpf_operator.py": "7fd1fa87dc4e429debf5b992302bf8f0ad5b07a2bd741dddb27a13ee2409e9f2",
+    "code/audit_reporting/profile_runner.py": "136337481d737d6b644bd4de915f3f27e0374e4549d535a9ff19d1dd4b644c8e"
+  }
+}

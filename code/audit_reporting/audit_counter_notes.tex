@@ -1,0 +1,31 @@
+The operation inventory in Tables~\ref{tab:audit-counts} and
+\ref{tab:audit-counts-additional} distinguishes retained raw counters from
+exact code-based derivations. One likelihood evaluation ($L$) concerns one
+particle state, including a four-dimensional state in QGPF-like; vectorized
+calls count their particle entries. $C$ counts generated candidate states or
+binary subsets submitted to scoring. $P$ preserves each implementation's
+historical counter: a candidate attempt for QM-HPF-like and the budget audits,
+but an offspring search episode for QGPF-like, which contains four candidate
+generations. $R_b$, $X$, and $M_b$ denote classical bit rotation routine calls,
+arithmetic crossover proposals, and Bernoulli bit observations, respectively.
+QM bit routine counts include zero-angle/no-change branches. $A_b$ counts
+persistent probability-entry updates, excluding initialization; the local
+probability computations in QM-HPF-like do not maintain such a persistent
+state. $F$ and $D$ retain the EC-QPF search-fitness and candidate-distance
+counter conventions, excluding final diagnostic recomputations. The exact
+classical comparator's $F$ is an argmin scan over singleton entries, rather
+than one exponentiation per entry. $G$ counts a low-particle generation for
+QM-HPF-like, an offspring generation for QGPF-like, and a full swarm generation
+for the EC-QPF module.
+
+Branch-level totals absent from the original logs remain
+\textit{unavailable}; supplementary seed-0 instrumentation does not replace
+missing 30-seed means. A transparent-wrapper replay recovered the historical
+native and QGPF-like seed-0 estimates and recorded counters without consuming
+additional random numbers. All bit operations are classical simulations, and
+these counts concern the audited implementations and selection module. The
+columns overlap and their units differ: an EC-QPF generated mask is also a
+fitness evaluation, while a QGPF rotation also updates a probability entry.
+Consequently, these counts are neither additive operation equivalents nor
+evidence of physical quantum acceleration. Equal likelihood budgets do not
+imply equal wall-clock costs.

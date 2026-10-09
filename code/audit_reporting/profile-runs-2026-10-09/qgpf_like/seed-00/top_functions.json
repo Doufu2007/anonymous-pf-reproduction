@@ -1,0 +1,222 @@
+[
+  {
+    "file": "code/qgpf_reproduction/qgpf.py",
+    "line": 126,
+    "function": "qgpf_resample",
+    "primitive_calls": 100,
+    "total_calls": 100,
+    "exclusive_time_s": 12.4486696,
+    "cumulative_time_s": 38.826897900000006,
+    "bucket": "other",
+    "exclusive_total_share_percent": 32.01076894607733
+  },
+  {
+    "file": "<runtime>/site-packages/numpy/_core/_methods.py",
+    "line": 96,
+    "function": "_clip",
+    "primitive_calls": 1933532,
+    "total_calls": 1933532,
+    "exclusive_time_s": 5.1662008,
+    "cumulative_time_s": 5.1662008,
+    "bucket": "other",
+    "exclusive_total_share_percent": 13.284476610885381
+  },
+  {
+    "file": "code/qgpf_reproduction/qgpf.py",
+    "line": 114,
+    "function": "_rotate_probability",
+    "primitive_calls": 950766,
+    "total_calls": 950766,
+    "exclusive_time_s": 4.4932642000000005,
+    "cumulative_time_s": 20.8799733,
+    "bucket": "rotation_crossover_encoding",
+    "exclusive_total_share_percent": 11.554073386274226
+  },
+  {
+    "file": "<runtime>/site-packages/numpy/_core/fromnumeric.py",
+    "line": 2207,
+    "function": "clip",
+    "primitive_calls": 1933532,
+    "total_calls": 1933532,
+    "exclusive_time_s": 2.6105358,
+    "cumulative_time_s": 15.2384389,
+    "bucket": "other",
+    "exclusive_total_share_percent": 6.71278626587239
+  },
+  {
+    "file": "<runtime>/site-packages/numpy/_core/fromnumeric.py",
+    "line": 48,
+    "function": "_wrapfunc",
+    "primitive_calls": 1933732,
+    "total_calls": 1933732,
+    "exclusive_time_s": 2.221647,
+    "cumulative_time_s": 12.630864800000001,
+    "bucket": "other",
+    "exclusive_total_share_percent": 5.712789485291332
+  },
+  {
+    "file": "<runtime>/site-packages/numpy/_core/fromnumeric.py",
+    "line": 38,
+    "function": "_wrapit",
+    "primitive_calls": 950766,
+    "total_calls": 950766,
+    "exclusive_time_s": 1.9466666000000001,
+    "cumulative_time_s": 5.9430201,
+    "bucket": "other",
+    "exclusive_total_share_percent": 5.005699142954676
+  },
+  {
+    "file": "code/qgpf_reproduction/qgpf.py",
+    "line": 94,
+    "function": "encode_state",
+    "primitive_calls": 32000,
+    "total_calls": 32000,
+    "exclusive_time_s": 1.6253682,
+    "cumulative_time_s": 1.9948576000000002,
+    "bucket": "rotation_crossover_encoding",
+    "exclusive_total_share_percent": 4.179505728266867
+  },
+  {
+    "file": "~",
+    "line": 0,
+    "function": "<method 'clip' of 'numpy.generic' objects>",
+    "primitive_calls": 950766,
+    "total_calls": 950766,
+    "exclusive_time_s": 1.3364612,
+    "cumulative_time_s": 3.9208731,
+    "bucket": "other",
+    "exclusive_total_share_percent": 3.4366042358933875
+  },
+  {
+    "file": "code/qgpf_reproduction/qgpf.py",
+    "line": 105,
+    "function": "decode_state",
+    "primitive_calls": 64000,
+    "total_calls": 64000,
+    "exclusive_time_s": 1.0734187000000002,
+    "cumulative_time_s": 1.5117277,
+    "bucket": "rotation_crossover_encoding",
+    "exclusive_total_share_percent": 2.760211258888155
+  },
+  {
+    "file": "code/qgpf_reproduction/qgpf.py",
+    "line": 77,
+    "function": "likelihood",
+    "primitive_calls": 80200,
+    "total_calls": 80200,
+    "exclusive_time_s": 0.9072839,
+    "cumulative_time_s": 1.3931008,
+    "bucket": "likelihood",
+    "exclusive_total_share_percent": 2.333008765161213
+  },
+  {
+    "file": "~",
+    "line": 0,
+    "function": "<method 'clip' of 'numpy.ndarray' objects>",
+    "primitive_calls": 982766,
+    "total_calls": 982766,
+    "exclusive_time_s": 0.6818214,
+    "cumulative_time_s": 3.2636103000000003,
+    "bucket": "other",
+    "exclusive_total_share_percent": 1.753249784851786
+  },
+  {
+    "file": "~",
+    "line": 0,
+    "function": "<built-in method builtins.getattr>",
+    "primitive_calls": 2884698,
+    "total_calls": 2884698,
+    "exclusive_time_s": 0.6391356,
+    "cumulative_time_s": 0.6391356,
+    "bucket": "other",
+    "exclusive_total_share_percent": 1.6434866274234239
+  },
+  {
+    "file": "code/qgpf_reproduction/qgpf.py",
+    "line": 52,
+    "function": "observation",
+    "primitive_calls": 80200,
+    "total_calls": 80200,
+    "exclusive_time_s": 0.43450930000000004,
+    "cumulative_time_s": 0.43450930000000004,
+    "bucket": "likelihood",
+    "exclusive_total_share_percent": 1.1173062868679398
+  },
+  {
+    "file": "<runtime>/site-packages/numpy/_core/fromnumeric.py",
+    "line": 2202,
+    "function": "_clip_dispatcher",
+    "primitive_calls": 1933532,
+    "total_calls": 1933532,
+    "exclusive_time_s": 0.37816120000000003,
+    "cumulative_time_s": 0.37816120000000003,
+    "bucket": "other",
+    "exclusive_total_share_percent": 0.9724116059415167
+  },
+  {
+    "file": "~",
+    "line": 0,
+    "function": "<built-in method math.sqrt>",
+    "primitive_calls": 1981732,
+    "total_calls": 1981732,
+    "exclusive_time_s": 0.3663537,
+    "cumulative_time_s": 0.3663537,
+    "bucket": "other",
+    "exclusive_total_share_percent": 0.9420495538929341
+  },
+  {
+    "file": "~",
+    "line": 0,
+    "function": "<method 'wrap' of 'numpy._core._multiarray_umath._array_converter' objects>",
+    "primitive_calls": 950766,
+    "total_calls": 950766,
+    "exclusive_time_s": 0.32929980000000003,
+    "cumulative_time_s": 0.32929980000000003,
+    "bucket": "other",
+    "exclusive_total_share_percent": 0.8467683817224514
+  },
+  {
+    "file": "~",
+    "line": 0,
+    "function": "<method 'as_arrays' of 'numpy._core._multiarray_umath._array_converter' objects>",
+    "primitive_calls": 950766,
+    "total_calls": 950766,
+    "exclusive_time_s": 0.3075975,
+    "cumulative_time_s": 0.3075975,
+    "bucket": "other",
+    "exclusive_total_share_percent": 0.7909626343437552
+  },
+  {
+    "file": "~",
+    "line": 0,
+    "function": "<built-in method math.cos>",
+    "primitive_calls": 950766,
+    "total_calls": 950766,
+    "exclusive_time_s": 0.2600789,
+    "cumulative_time_s": 0.2600789,
+    "bucket": "other",
+    "exclusive_total_share_percent": 0.6687723140832617
+  },
+  {
+    "file": "~",
+    "line": 0,
+    "function": "<built-in method numpy.asarray>",
+    "primitive_calls": 192003,
+    "total_calls": 192003,
+    "exclusive_time_s": 0.24283860000000002,
+    "cumulative_time_s": 0.24283860000000002,
+    "bucket": "other",
+    "exclusive_total_share_percent": 0.6244402466741422
+  },
+  {
+    "file": "~",
+    "line": 0,
+    "function": "<built-in method builtins.max>",
+    "primitive_calls": 1037537,
+    "total_calls": 1037537,
+    "exclusive_time_s": 0.2139433,
+    "cumulative_time_s": 0.2139433,
+    "bucket": "other",
+    "exclusive_total_share_percent": 0.5501382689007431
+  }
+]

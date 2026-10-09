@@ -1,0 +1,19 @@
+{
+  "schema": "particle-filter.profile-validation.v1",
+  "status": "PASS",
+  "original_manifest_artifact_hashes_match": true,
+  "sanitized_raw_profiles": 15,
+  "absolute_filenames_or_caller_paths": 0,
+  "science_identity_pairs_passed": 15,
+  "archive_replay_workloads_passed": 15,
+  "archive_outputs_all_bitwise_equal": true,
+  "elapsed_bundle_seconds": 213.517499,
+  "within_frozen_1200s_budget": true,
+  "output_coverage": "5 methods x3 seeds, ordinary and cProfile outputs retained",
+  "additional_report_sha256": {
+    "profile_measurement_limits.json": "54003d4cbb1fae34ee8fb34cd5c85ecd41e694b8cd3057c60e793893ea547545",
+    "profile_findings.md": "b80043de8f358e2729618541ef987eb45a77fbf9651f8a63530e867ef7956119",
+    "profile_excerpt.tex": "70e79d4849814b9465314453a7c5e15215cc5db6cef96fb889a7b12111826ae5",
+    "profile_archive_replay_check.json": "aa1ee128de7248d1854c9d9c4ccf9cd0f984c7114d6e2a3ac7fb3a5f322162af"
+  }
+}

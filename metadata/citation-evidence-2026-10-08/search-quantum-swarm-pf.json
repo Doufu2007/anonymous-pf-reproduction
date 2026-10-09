@@ -1,0 +1,6 @@
+{
+  "endpoint": "https://api.crossref.org/works?query.bibliographic=quantum+particle+swarm+particle+filter&rows=50",
+  "http_status": 429,
+  "checked_at": "2026-10-08T15:50:24.368042+00:00",
+  "text": ""
+}

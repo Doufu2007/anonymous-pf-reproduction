@@ -1,0 +1,21 @@
+{
+  "frameworks": [
+    "numpy"
+  ],
+  "uses_dataloader": false,
+  "uses_gpu": false,
+  "required": [
+    "pythonhashseed",
+    "numpy_seed"
+  ],
+  "set": [
+    "numpy_seed",
+    "pythonhashseed"
+  ],
+  "missing": [],
+  "missing_critical": [],
+  "delegated_to_unscanned_helper": false,
+  "has_randomness": true,
+  "syntax_errors": [],
+  "ok": true
+}

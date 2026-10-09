@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "missing_launch_hash_seed_exit_code": 1,
+  "created_no_output_directory": true,
+  "expected_failure_message_present": true,
+  "limitation": "static audit does not prove seed control; all actual run environments separately record launch-time PYTHONHASHSEED=0"
+}

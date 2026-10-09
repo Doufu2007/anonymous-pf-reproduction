@@ -1,0 +1,58 @@
+{
+  "schema": "particle-filter.profiling-plan.v1",
+  "frozen_at": "2026-10-09T05:27:08.358054+00:00",
+  "status": "FROZEN_BEFORE_NEW_MEASUREMENTS",
+  "analysis_mode": "descriptive supplementary profiling; prior main results already observed",
+  "authorization": "User requested a short profiling supplement; local CPU only",
+  "question": "Where does explicitly attributable function-exclusive CPU profile time accrue in unchanged fixed-seed audit implementations?",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "methods": [
+    "bootstrap_200",
+    "resample_move_100",
+    "qm_hpf_like_100",
+    "qgpf_like",
+    "ecqpf_source_module"
+  ],
+  "repetitions_per_method_seed": {
+    "uninstrumented": 1,
+    "cprofile": 1,
+    "warmup": 0
+  },
+  "model_config": "Original audited defaults; budget 200-step horizon, QGPF 100-step horizon, EC source module20 updates; preserve original RNG streams",
+  "order": "Method-major and seed0,1,2; uninstrumented then cProfile; no timing-based exclusions",
+  "time_origin": "Around unchanged filtering/module call; includes algorithm initialization and configured RNG creation, excludes input generation, JSON serialization, hashing, imports and I/O",
+  "time_estimand": "Descriptive mean of each seed run function-exclusive percentages; not a phase-inclusive cost or benchmark estimate",
+  "bucket_method": "Every cProfile function-exclusive time assigned once by declared function label; generic/shared NumPy helpers and mixed-purpose loop self time remain other. No inference from cumulative time.",
+  "primary_guardrail": "Scientific output hash, including predictions, counters, histories and summaries, identical between instrumented and uninstrumented call after removing runtime_s and ess_per_second",
+  "failure_rule": "Stop and preserve failure if any identity, frozen source hash, finite-output or threadpool check fails; no substitute seeds",
+  "wall_budget_s": 1200,
+  "source_code_sha256": {
+    "code/qm_hpf_reproduction/qm_hpf.py": "d39bfd4f6697f2ca94782d74661bbaa10ad3ee3d3fd6e6909994e850416e3609",
+    "code/qm_hpf_reproduction/budget_benchmark.py": "1187944daeb3fca937e2bd6dd7552b13ee05aaf81a9f12bc6fde155863a0ae27",
+    "code/qgpf_reproduction/qgpf.py": "89556a29bfdf0e572a77d988f9ce15dc3f3251010214f810ebde2fd174f96829",
+    "code/source_aligned_audit/ecqpf_operator.py": "7fd1fa87dc4e429debf5b992302bf8f0ad5b07a2bd741dddb27a13ee2409e9f2"
+  },
+  "environment": {
+    "device": "CPU",
+    "dtype": "float64",
+    "threads": 1,
+    "PYTHONHASHSEED": "0",
+    "numpy_rng": "Explicit default_rng/SeedSequence streams of original runners",
+    "GPU": "not used",
+    "training": "not applicable",
+    "remote_or_paid": "none"
+  },
+  "limitations": [
+    "Only3seed workloads and one paired timing per workload; elapsed durations vary with scheduler, caches and profiler overhead.",
+    "cProfile overhead is separately measured; profile shares must not replace original30seed wallclock results.",
+    "Function-exclusive labels are conservative: shared NumPy internals and mixed-purpose loops remain other; bucket shares do not measure complete algorithm phases.",
+    "QM rotate_bit_toward combines rotation and measurement; separate measurement timing unavailable. QGPF measurement and selection are inline in qgpf_resample and cannot be separately attributed.",
+    "EC source module is a20update one-step selection audit, not a complete EC-QPF filter.",
+    "Equal likelihood budgets do not imply equal wallclock costs. No equal-wallclock experiment, GPU or quantum hardware claim.",
+    "Same-environment deterministic identity is tested, not cross-platform reproduction."
+  ]
+}

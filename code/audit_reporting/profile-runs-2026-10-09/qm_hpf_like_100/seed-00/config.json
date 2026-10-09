@@ -1,0 +1,23 @@
+{
+  "method": "qm_hpf_like_100",
+  "seed": 0,
+  "algorithm_rng_seed": 3000009,
+  "model": {
+    "horizon": 200,
+    "initial_state": 1.0,
+    "observation_variance": 1.0,
+    "gamma_shape": 0.5,
+    "gamma_base_scale": 0.5
+  },
+  "filter_defaults": {
+    "particle_count": 100,
+    "initial_particle_std": 1.0,
+    "generation_count": 20,
+    "bit_length": 16,
+    "state_min": -10.0,
+    "state_max": 10.0,
+    "rotation_angle_max_pi": 0.04,
+    "rotation_angle_min_pi": 0.01
+  },
+  "inputs_sha256": "0094235f6ca81846585c8ec2cd5343028f32e74e60d96660b1fd0116ad7798b7"
+}

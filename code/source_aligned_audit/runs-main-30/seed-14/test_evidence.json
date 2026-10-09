@@ -1,0 +1,11 @@
+{
+  "suite": "test_operator.py",
+  "tests": 9,
+  "green_exit_code": 0,
+  "red_before_implementation": true,
+  "red_log_sha256": "301732b58a8e6be382bf05a82af00ab64c75ed6230d9f26eddcdb8e4d24fb43b",
+  "green_log_sha256": "ed87b0a21d52a07351671b70c8e01dea6ddc96622adcb9ec22fa3864a71ef7f8",
+  "limitations": "formula/unit tests plus runtime guards, not original-algorithm validation",
+  "original_private_red_log_sha256": "d38a38b6f4b26daf064f7d3dea49915b214bb15a50d90bb4602043385a710d97",
+  "redaction": "Machine-local traceback paths removed from public red log after execution; pass/fail counts unchanged."
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "light.repro_comparison.v1",
+  "first": "fixed-repro-final-a/seed-00/manifest.json",
+  "second": "fixed-repro-final-b/seed-00/manifest.json",
+  "same_seed_exact": true,
+  "compared_artifacts": {
+    "predictions": {
+      "first": "062d1da350d5d2bcf0c7cc96bb770bfd8bf8ca3ddfc61f686385aa5008c68c1f",
+      "second": "062d1da350d5d2bcf0c7cc96bb770bfd8bf8ca3ddfc61f686385aa5008c68c1f",
+      "match": true
+    },
+    "raw_metrics": {
+      "first": "b5f0bf75618ddf8f2ed2e86ccd9f25802757429afffb54f530e6d3411cf0db7b",
+      "second": "b5f0bf75618ddf8f2ed2e86ccd9f25802757429afffb54f530e6d3411cf0db7b",
+      "match": true
+    }
+  },
+  "errors": []
+}

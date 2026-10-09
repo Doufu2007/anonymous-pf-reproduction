@@ -1,0 +1,646 @@
+{
+  "schema": "particle-filter.profile-archive-replay-check.v1",
+  "status": "PASS",
+  "workloads": 15,
+  "all_bitwise_equal": true,
+  "tolerance": {
+    "rtol": 1e-12,
+    "atol": 1e-12
+  },
+  "timing_fields_excluded": [
+    "runtime_s",
+    "ess_per_second"
+  ],
+  "checks": [
+    {
+      "method": "bootstrap_200",
+      "seed": 0,
+      "passed": true,
+      "all_bitwise_equal": true,
+      "checks": [
+        {
+          "output": "estimate",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-00/bootstrap_200/estimate.npy",
+          "archive_sha256": "bda677cd6fe343a4e4d7a65a1b80a26b2a12105ffdf63b8c91969c96990998ad",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "final_particles",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-00/bootstrap_200/final_particles.npy",
+          "archive_sha256": "c8b77e3a45fcc85b7ce451df0c7999589cb52d1b69dc0efb8677ec889b607b9e",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "step_likelihood_evals",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-00/bootstrap_200/step_likelihood_evals.npy",
+          "archive_sha256": "30f6426e56d6406a20b46f09096d28488c547b7db3be1157e7023b16fe29fec0",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "step_proposal_attempts",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-00/bootstrap_200/step_proposal_attempts.npy",
+          "archive_sha256": "4e07aca4ad9eb1b8a0f03548a5f0cdc1d11b6b824744bec2aa2b41a782207020",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "scientific_metrics",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-00/bootstrap_200/raw_metrics.json",
+          "archive_sha256": "fc2f9d7f879d48fe5775b16505d647cf3b48fa1456f121cf5afc9d629cdbca47",
+          "bitwise_equal": true,
+          "within_tolerance": true
+        }
+      ]
+    },
+    {
+      "method": "bootstrap_200",
+      "seed": 1,
+      "passed": true,
+      "all_bitwise_equal": true,
+      "checks": [
+        {
+          "output": "estimate",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-01/bootstrap_200/estimate.npy",
+          "archive_sha256": "8658363d89c5d1ada553f1e65536fb2dd9d77ff956359d4b3158fae4db581a8f",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "final_particles",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-01/bootstrap_200/final_particles.npy",
+          "archive_sha256": "410d53cb5bf0a2a65ed98cd57cf7b810e29808ce12fd47973cabb709158fae84",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "step_likelihood_evals",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-01/bootstrap_200/step_likelihood_evals.npy",
+          "archive_sha256": "30f6426e56d6406a20b46f09096d28488c547b7db3be1157e7023b16fe29fec0",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "step_proposal_attempts",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-01/bootstrap_200/step_proposal_attempts.npy",
+          "archive_sha256": "4e07aca4ad9eb1b8a0f03548a5f0cdc1d11b6b824744bec2aa2b41a782207020",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "scientific_metrics",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-01/bootstrap_200/raw_metrics.json",
+          "archive_sha256": "ac3478d96be059a0b2c82df87fb24ff7390665e1faf350279a944017eaa9a273",
+          "bitwise_equal": true,
+          "within_tolerance": true
+        }
+      ]
+    },
+    {
+      "method": "bootstrap_200",
+      "seed": 2,
+      "passed": true,
+      "all_bitwise_equal": true,
+      "checks": [
+        {
+          "output": "estimate",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-02/bootstrap_200/estimate.npy",
+          "archive_sha256": "6534daa24857687d3836d317acb07360c4439ea35e1ca350d13ccdcbc12bf8f0",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "final_particles",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-02/bootstrap_200/final_particles.npy",
+          "archive_sha256": "ad871975067066d950d3334d089ff797a9fd05ad1f22e5f2615a2d0541ee1f0c",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "step_likelihood_evals",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-02/bootstrap_200/step_likelihood_evals.npy",
+          "archive_sha256": "30f6426e56d6406a20b46f09096d28488c547b7db3be1157e7023b16fe29fec0",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "step_proposal_attempts",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-02/bootstrap_200/step_proposal_attempts.npy",
+          "archive_sha256": "4e07aca4ad9eb1b8a0f03548a5f0cdc1d11b6b824744bec2aa2b41a782207020",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "scientific_metrics",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-02/bootstrap_200/raw_metrics.json",
+          "archive_sha256": "9ad4256eca2991cefdaaef40fb9a3d399d260b76222ff37b0f32305e6dbb9ecd",
+          "bitwise_equal": true,
+          "within_tolerance": true
+        }
+      ]
+    },
+    {
+      "method": "resample_move_100",
+      "seed": 0,
+      "passed": true,
+      "all_bitwise_equal": true,
+      "checks": [
+        {
+          "output": "estimate",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-00/resample_move_100/estimate.npy",
+          "archive_sha256": "02b6e43808466ec621061a60321d9080f117d6d2e764322ad2ecd12ced84f01a",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "final_particles",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-00/resample_move_100/final_particles.npy",
+          "archive_sha256": "f82cb86fbf5fee73619682aaa64b789c3d0f597edbaa2310b676f10e422db58d",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "step_likelihood_evals",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-00/resample_move_100/step_likelihood_evals.npy",
+          "archive_sha256": "30f6426e56d6406a20b46f09096d28488c547b7db3be1157e7023b16fe29fec0",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "step_proposal_attempts",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-00/resample_move_100/step_proposal_attempts.npy",
+          "archive_sha256": "5a32844242489979481b8f969208ab4fcd2b611287e6d8f7478a38a1b741f34f",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "scientific_metrics",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-00/resample_move_100/raw_metrics.json",
+          "archive_sha256": "70204e870ef9433af71d89ae4974df46c7ac6c646bfef7de56f816d856712340",
+          "bitwise_equal": true,
+          "within_tolerance": true
+        }
+      ]
+    },
+    {
+      "method": "resample_move_100",
+      "seed": 1,
+      "passed": true,
+      "all_bitwise_equal": true,
+      "checks": [
+        {
+          "output": "estimate",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-01/resample_move_100/estimate.npy",
+          "archive_sha256": "8ae2efb8e8973040e08f6e83960ec6224520ba3d4e079b06c44b653e20e2f5ac",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "final_particles",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-01/resample_move_100/final_particles.npy",
+          "archive_sha256": "041691f72eced89c60bd675bb6818fa39b72b32aadb51fdd17c0b86799604087",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "step_likelihood_evals",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-01/resample_move_100/step_likelihood_evals.npy",
+          "archive_sha256": "30f6426e56d6406a20b46f09096d28488c547b7db3be1157e7023b16fe29fec0",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "step_proposal_attempts",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-01/resample_move_100/step_proposal_attempts.npy",
+          "archive_sha256": "5a32844242489979481b8f969208ab4fcd2b611287e6d8f7478a38a1b741f34f",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "scientific_metrics",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-01/resample_move_100/raw_metrics.json",
+          "archive_sha256": "7948a3a56a4f09890a2454e130fb796a55f1c364d7eac0482fa135048135bd81",
+          "bitwise_equal": true,
+          "within_tolerance": true
+        }
+      ]
+    },
+    {
+      "method": "resample_move_100",
+      "seed": 2,
+      "passed": true,
+      "all_bitwise_equal": true,
+      "checks": [
+        {
+          "output": "estimate",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-02/resample_move_100/estimate.npy",
+          "archive_sha256": "b39583d829e9febd85a2b131ac4cbcdad4e269b8bfabc03572057515b36d3fe9",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "final_particles",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-02/resample_move_100/final_particles.npy",
+          "archive_sha256": "ff5d54997c484668737bf55d83a97f7a0faf411ba4ce7f387ec47badc30134a5",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "step_likelihood_evals",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-02/resample_move_100/step_likelihood_evals.npy",
+          "archive_sha256": "30f6426e56d6406a20b46f09096d28488c547b7db3be1157e7023b16fe29fec0",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "step_proposal_attempts",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-02/resample_move_100/step_proposal_attempts.npy",
+          "archive_sha256": "5a32844242489979481b8f969208ab4fcd2b611287e6d8f7478a38a1b741f34f",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "scientific_metrics",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-02/resample_move_100/raw_metrics.json",
+          "archive_sha256": "b618a7dcd0cd89a3419d097e14a978d5136820b896fbd8dcfcc7260cfe25b2a4",
+          "bitwise_equal": true,
+          "within_tolerance": true
+        }
+      ]
+    },
+    {
+      "method": "qm_hpf_like_100",
+      "seed": 0,
+      "passed": true,
+      "all_bitwise_equal": true,
+      "checks": [
+        {
+          "output": "estimate",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-00/qm_hpf_like_100/estimate.npy",
+          "archive_sha256": "06016a51de6fdad492f7a29ee444acaeb11f344656cba0995f14aa3869275d68",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "final_particles",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-00/qm_hpf_like_100/final_particles.npy",
+          "archive_sha256": "8d5f2a36caa662a56e0dba9e4c802c00f247b75202cbe811f8106a42ef8c565b",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "step_likelihood_evals",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-00/qm_hpf_like_100/step_likelihood_evals.npy",
+          "archive_sha256": "4a2d8bb3d5f5827cfd1d1397b16f7a2fcb5268d0f0c65c8ed012f05fa47b64d1",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "step_proposal_attempts",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-00/qm_hpf_like_100/step_proposal_attempts.npy",
+          "archive_sha256": "727295ed0adcde8a33450f8110a15da6b7888bb0885e42b454b765642bd906e5",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "scientific_metrics",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-00/qm_hpf_like_100/raw_metrics.json",
+          "archive_sha256": "888edab43c91a18d1e7aa418706b08d1ef0ce9bec0bc2fc7f475a6a1d7a36b44",
+          "bitwise_equal": true,
+          "within_tolerance": true
+        }
+      ]
+    },
+    {
+      "method": "qm_hpf_like_100",
+      "seed": 1,
+      "passed": true,
+      "all_bitwise_equal": true,
+      "checks": [
+        {
+          "output": "estimate",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-01/qm_hpf_like_100/estimate.npy",
+          "archive_sha256": "6057cbb37147d897c29eadcf67e1f15bdf927f1bf23de424adbab27a065456d2",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "final_particles",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-01/qm_hpf_like_100/final_particles.npy",
+          "archive_sha256": "beabdc7a2e79b5f84b290ba2ca875de02873d89ac253a2a96eea1ebade8cc72c",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "step_likelihood_evals",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-01/qm_hpf_like_100/step_likelihood_evals.npy",
+          "archive_sha256": "0c2c375cefce2f2f5282d77b144e912887a663029ed6e561990fd580d7c5d082",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "step_proposal_attempts",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-01/qm_hpf_like_100/step_proposal_attempts.npy",
+          "archive_sha256": "f531a1bfa2f5b5aade0f8868b9cd062a6abfb348e39e9bcf73b8d8ec6340ad86",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "scientific_metrics",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-01/qm_hpf_like_100/raw_metrics.json",
+          "archive_sha256": "c759c79fbfe1771feb2cb0d88dbff86a3488380af3d84e87caffd309b47f482f",
+          "bitwise_equal": true,
+          "within_tolerance": true
+        }
+      ]
+    },
+    {
+      "method": "qm_hpf_like_100",
+      "seed": 2,
+      "passed": true,
+      "all_bitwise_equal": true,
+      "checks": [
+        {
+          "output": "estimate",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-02/qm_hpf_like_100/estimate.npy",
+          "archive_sha256": "f26a2f82c91e55bde07bf9ee05bd6bdf0b68af3ca5d40ff652e510120409ac53",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "final_particles",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-02/qm_hpf_like_100/final_particles.npy",
+          "archive_sha256": "28df02d7779acd5cb355d8dfd2b40b20b9748f529d95e369e24890cd2de41e67",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "step_likelihood_evals",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-02/qm_hpf_like_100/step_likelihood_evals.npy",
+          "archive_sha256": "ed12984eb0566f9e3e5d77d5e660b10a6032b49e589f870f775869dbaed11cb3",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "step_proposal_attempts",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-02/qm_hpf_like_100/step_proposal_attempts.npy",
+          "archive_sha256": "1d3d126976a91cc47ebebb7259ea9ff00fb7a8abbdbc96f55320165d2e2c781c",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "scientific_metrics",
+          "archive": "code/qm_hpf_reproduction/runs/fair-budget-30/runs/seed-02/qm_hpf_like_100/raw_metrics.json",
+          "archive_sha256": "d561bed90ac006e13089f72019cbacbf4c36592bab686f65b189d4ca396c54c9",
+          "bitwise_equal": true,
+          "within_tolerance": true
+        }
+      ]
+    },
+    {
+      "method": "qgpf_like",
+      "seed": 0,
+      "passed": true,
+      "all_bitwise_equal": true,
+      "checks": [
+        {
+          "output": "estimate",
+          "archive": "code/qgpf_reproduction/runs-main-30/estimate_qgpf_seed0.npy",
+          "archive_sha256": "772a396c7fe33620629fd03538c02961c952bfad16971da634155305db7800b0",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "scientific_metrics",
+          "archive": "code/qgpf_reproduction/runs-main-30/raw_metrics.csv",
+          "archive_sha256": "44de5d424cf22aba87e52cb7a5def9370f13ed132f39860d64ae7a5b2ede9a6e",
+          "bitwise_equal": true,
+          "within_tolerance": true
+        }
+      ]
+    },
+    {
+      "method": "qgpf_like",
+      "seed": 1,
+      "passed": true,
+      "all_bitwise_equal": true,
+      "checks": [
+        {
+          "output": "estimate",
+          "archive": "code/qgpf_reproduction/runs-main-30/estimate_qgpf_seed1.npy",
+          "archive_sha256": "e4d6f13d232d1c9d06c40d6e00e67b8b71fc176b3cd4d0f98a059434a23365ed",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "scientific_metrics",
+          "archive": "code/qgpf_reproduction/runs-main-30/raw_metrics.csv",
+          "archive_sha256": "44de5d424cf22aba87e52cb7a5def9370f13ed132f39860d64ae7a5b2ede9a6e",
+          "bitwise_equal": true,
+          "within_tolerance": true
+        }
+      ]
+    },
+    {
+      "method": "qgpf_like",
+      "seed": 2,
+      "passed": true,
+      "all_bitwise_equal": true,
+      "checks": [
+        {
+          "output": "estimate",
+          "archive": "code/qgpf_reproduction/runs-main-30/estimate_qgpf_seed2.npy",
+          "archive_sha256": "4ee76d3f87975d8d939da94de78647dce57594f42588c33a0759262757b1cd15",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "scientific_metrics",
+          "archive": "code/qgpf_reproduction/runs-main-30/raw_metrics.csv",
+          "archive_sha256": "44de5d424cf22aba87e52cb7a5def9370f13ed132f39860d64ae7a5b2ede9a6e",
+          "bitwise_equal": true,
+          "within_tolerance": true
+        }
+      ]
+    },
+    {
+      "method": "ecqpf_source_module",
+      "seed": 0,
+      "passed": true,
+      "all_bitwise_equal": true,
+      "checks": [
+        {
+          "output": "source_estimates",
+          "archive": "code/source_aligned_audit/runs-main-30/seed-00/source_ecqpf_operator_estimates.npy",
+          "archive_sha256": "075e05e30cbb25f0b431a9d1478dd01a388eb5d8d753d07a00be19c6ebb0ed20",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "source_indices",
+          "archive": "code/source_aligned_audit/runs-main-30/seed-00/source_ecqpf_operator_indices.npy",
+          "archive_sha256": "66ee9f604e25b0b155b44b32820bc3f467ccd8157a6d72a0cff2056c3301ffd6",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "source_scientific_metrics",
+          "archive": "code/source_aligned_audit/runs-main-30/seed-00/raw_metrics.jsonl",
+          "archive_sha256": "b5f0bf75618ddf8f2ed2e86ccd9f25802757429afffb54f530e6d3411cf0db7b",
+          "bitwise_equal": true,
+          "within_tolerance": true
+        }
+      ]
+    },
+    {
+      "method": "ecqpf_source_module",
+      "seed": 1,
+      "passed": true,
+      "all_bitwise_equal": true,
+      "checks": [
+        {
+          "output": "source_estimates",
+          "archive": "code/source_aligned_audit/runs-main-30/seed-01/source_ecqpf_operator_estimates.npy",
+          "archive_sha256": "9fa447b44c181e29455878029aa4f837efb4bd2e4f6ef4e744a14f875fb1ab76",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "source_indices",
+          "archive": "code/source_aligned_audit/runs-main-30/seed-01/source_ecqpf_operator_indices.npy",
+          "archive_sha256": "f0fc65eb4ac36913bad21c47f22e191a5ad27234a1af7d59f6e23a0399d030ef",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "source_scientific_metrics",
+          "archive": "code/source_aligned_audit/runs-main-30/seed-01/raw_metrics.jsonl",
+          "archive_sha256": "ddd15612fd3f8bccb20c446f2923b033e878a7110d791f05eda98e389c64a345",
+          "bitwise_equal": true,
+          "within_tolerance": true
+        }
+      ]
+    },
+    {
+      "method": "ecqpf_source_module",
+      "seed": 2,
+      "passed": true,
+      "all_bitwise_equal": true,
+      "checks": [
+        {
+          "output": "source_estimates",
+          "archive": "code/source_aligned_audit/runs-main-30/seed-02/source_ecqpf_operator_estimates.npy",
+          "archive_sha256": "971fe0c59370e7aba6c09424ea2f0aa1ab108cb47428f8bd2aae09ff7defec9f",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "source_indices",
+          "archive": "code/source_aligned_audit/runs-main-30/seed-02/source_ecqpf_operator_indices.npy",
+          "archive_sha256": "8113d1b539214a8bc958272bd38049ce1aea38a210a04281b6225cb390f1ea4a",
+          "shape_matches": true,
+          "bitwise_equal": true,
+          "within_tolerance": true,
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "output": "source_scientific_metrics",
+          "archive": "code/source_aligned_audit/runs-main-30/seed-02/raw_metrics.jsonl",
+          "archive_sha256": "4ae89a79036bfbd461bda625c9fea8316107d5aa91347dfdf86826b5cdb4854f",
+          "bitwise_equal": true,
+          "within_tolerance": true
+        }
+      ]
+    }
+  ]
+}

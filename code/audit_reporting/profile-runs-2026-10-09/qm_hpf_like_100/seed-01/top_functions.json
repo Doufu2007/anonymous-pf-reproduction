@@ -1,0 +1,222 @@
+[
+  {
+    "file": "code/qm_hpf_reproduction/budget_benchmark.py",
+    "line": 61,
+    "function": "qm_budget_update",
+    "primitive_calls": 200,
+    "total_calls": 200,
+    "exclusive_time_s": 0.3319538,
+    "cumulative_time_s": 1.2750485,
+    "bucket": "other",
+    "exclusive_total_share_percent": 24.95447429842609
+  },
+  {
+    "file": "code/qm_hpf_reproduction/qm_hpf.py",
+    "line": 38,
+    "function": "observation",
+    "primitive_calls": 18600,
+    "total_calls": 18600,
+    "exclusive_time_s": 0.1738923,
+    "cumulative_time_s": 0.18449880000000002,
+    "bucket": "likelihood",
+    "exclusive_total_share_percent": 13.072273705088474
+  },
+  {
+    "file": "code/qm_hpf_reproduction/qm_hpf.py",
+    "line": 79,
+    "function": "particle_logweights",
+    "primitive_calls": 18600,
+    "total_calls": 18600,
+    "exclusive_time_s": 0.1171447,
+    "cumulative_time_s": 0.30537040000000004,
+    "bucket": "likelihood",
+    "exclusive_total_share_percent": 8.80629896493679
+  },
+  {
+    "file": "code/qm_hpf_reproduction/qm_hpf.py",
+    "line": 103,
+    "function": "rotate_bit_toward",
+    "primitive_calls": 51920,
+    "total_calls": 51920,
+    "exclusive_time_s": 0.08277090000000001,
+    "cumulative_time_s": 0.0891691,
+    "bucket": "rotation_crossover_encoding",
+    "exclusive_total_share_percent": 6.222264353375668
+  },
+  {
+    "file": "code/qm_hpf_reproduction/qm_hpf.py",
+    "line": 151,
+    "function": "crossover_candidate",
+    "primitive_calls": 15155,
+    "total_calls": 15155,
+    "exclusive_time_s": 0.07307910000000001,
+    "cumulative_time_s": 0.0763989,
+    "bucket": "rotation_crossover_encoding",
+    "exclusive_total_share_percent": 5.493687744204494
+  },
+  {
+    "file": "~",
+    "line": 0,
+    "function": "<method 'reduce' of 'numpy.ufunc' objects>",
+    "primitive_calls": 20608,
+    "total_calls": 20608,
+    "exclusive_time_s": 0.0688318,
+    "cumulative_time_s": 0.0688318,
+    "bucket": "other",
+    "exclusive_total_share_percent": 5.174398919411089
+  },
+  {
+    "file": "code/qm_hpf_reproduction/qm_hpf.py",
+    "line": 120,
+    "function": "quantum_rotation_candidate",
+    "primitive_calls": 3245,
+    "total_calls": 3245,
+    "exclusive_time_s": 0.0667223,
+    "cumulative_time_s": 0.3432814,
+    "bucket": "rotation_crossover_encoding",
+    "exclusive_total_share_percent": 5.015818226758888
+  },
+  {
+    "file": "<runtime>/site-packages/numpy/_core/fromnumeric.py",
+    "line": 66,
+    "function": "_wrapreduction",
+    "primitive_calls": 19601,
+    "total_calls": 19601,
+    "exclusive_time_s": 0.0565459,
+    "cumulative_time_s": 0.14612450000000002,
+    "bucket": "other",
+    "exclusive_total_share_percent": 4.2508120353837535
+  },
+  {
+    "file": "code/qm_hpf_reproduction/qm_hpf.py",
+    "line": 91,
+    "function": "encode_scalar",
+    "primitive_calls": 6490,
+    "total_calls": 6490,
+    "exclusive_time_s": 0.0401831,
+    "cumulative_time_s": 0.1354046,
+    "bucket": "rotation_crossover_encoding",
+    "exclusive_total_share_percent": 3.0207460682211957
+  },
+  {
+    "file": "~",
+    "line": 0,
+    "function": "<built-in method numpy.array>",
+    "primitive_calls": 28135,
+    "total_calls": 28135,
+    "exclusive_time_s": 0.036065200000000006,
+    "cumulative_time_s": 0.036065200000000006,
+    "bucket": "other",
+    "exclusive_total_share_percent": 2.711184828935824
+  },
+  {
+    "file": "<runtime>/site-packages/numpy/_core/fromnumeric.py",
+    "line": 3287,
+    "function": "prod",
+    "primitive_calls": 18400,
+    "total_calls": 18400,
+    "exclusive_time_s": 0.024674500000000002,
+    "cumulative_time_s": 0.1636323,
+    "bucket": "other",
+    "exclusive_total_share_percent": 1.8548941933380925
+  },
+  {
+    "file": "code/qm_hpf_reproduction/qm_hpf.py",
+    "line": 99,
+    "function": "<genexpr>",
+    "primitive_calls": 55165,
+    "total_calls": 55165,
+    "exclusive_time_s": 0.0239568,
+    "cumulative_time_s": 0.0239568,
+    "bucket": "other",
+    "exclusive_total_share_percent": 1.800941425802428
+  },
+  {
+    "file": "<runtime>/site-packages/numpy/_core/_methods.py",
+    "line": 96,
+    "function": "_clip",
+    "primitive_calls": 6490,
+    "total_calls": 6490,
+    "exclusive_time_s": 0.022788100000000002,
+    "cumulative_time_s": 0.022788100000000002,
+    "bucket": "other",
+    "exclusive_total_share_percent": 1.7130849406151203
+  },
+  {
+    "file": "~",
+    "line": 0,
+    "function": "<built-in method builtins.getattr>",
+    "primitive_calls": 33388,
+    "total_calls": 33388,
+    "exclusive_time_s": 0.0225891,
+    "cumulative_time_s": 0.0225891,
+    "bucket": "other",
+    "exclusive_total_share_percent": 1.6981252071058586
+  },
+  {
+    "file": "<runtime>/site-packages/numpy/_core/fromnumeric.py",
+    "line": 38,
+    "function": "_wrapit",
+    "primitive_calls": 6490,
+    "total_calls": 6490,
+    "exclusive_time_s": 0.017092800000000002,
+    "cumulative_time_s": 0.0533042,
+    "bucket": "other",
+    "exclusive_total_share_percent": 1.2849433815432674
+  },
+  {
+    "file": "<runtime>/site-packages/numpy/_core/fromnumeric.py",
+    "line": 48,
+    "function": "_wrapfunc",
+    "primitive_calls": 7690,
+    "total_calls": 7690,
+    "exclusive_time_s": 0.014047800000000001,
+    "cumulative_time_s": 0.07716590000000001,
+    "bucket": "other",
+    "exclusive_total_share_percent": 1.0560369064894874
+  },
+  {
+    "file": "~",
+    "line": 0,
+    "function": "<built-in method builtins.sum>",
+    "primitive_calls": 3245,
+    "total_calls": 3245,
+    "exclusive_time_s": 0.012538500000000001,
+    "cumulative_time_s": 0.0364953,
+    "bucket": "other",
+    "exclusive_total_share_percent": 0.942575972893865
+  },
+  {
+    "file": "<runtime>/site-packages/numpy/_core/fromnumeric.py",
+    "line": 2207,
+    "function": "clip",
+    "primitive_calls": 6490,
+    "total_calls": 6490,
+    "exclusive_time_s": 0.011118900000000001,
+    "cumulative_time_s": 0.07851230000000001,
+    "bucket": "other",
+    "exclusive_total_share_percent": 0.8358581955584476
+  },
+  {
+    "file": "code/qm_hpf_reproduction/budget_benchmark.py",
+    "line": 119,
+    "function": "run_budget_filter",
+    "primitive_calls": 1,
+    "total_calls": 1,
+    "exclusive_time_s": 0.0108509,
+    "cumulative_time_s": 1.3300556000000001,
+    "bucket": "other",
+    "exclusive_total_share_percent": 0.8157114187721051
+  },
+  {
+    "file": "~",
+    "line": 0,
+    "function": "<built-in method numpy.asarray>",
+    "primitive_calls": 56004,
+    "total_calls": 56004,
+    "exclusive_time_s": 0.0103,
+    "cumulative_time_s": 0.0103,
+    "bucket": "other",
+    "exclusive_total_share_percent": 0.7742977645497316
+  }
+]

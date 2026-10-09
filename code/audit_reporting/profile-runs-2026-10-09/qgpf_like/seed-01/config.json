@@ -1,0 +1,54 @@
+{
+  "method": "qgpf_like",
+  "seed": 1,
+  "algorithm_rng_seed": 2000007,
+  "model": {
+    "horizon": 100,
+    "initial_truth": [
+      70.0,
+      5.0,
+      23.0,
+      8.0
+    ],
+    "process_std": [
+      1.5,
+      1.5,
+      0.9,
+      0.03
+    ],
+    "observation_std": 1.0
+  },
+  "filter": {
+    "particle_count": 200,
+    "initial_mean": [
+      71.0,
+      8.66,
+      18.9,
+      7.8
+    ],
+    "initial_std": [
+      8.0,
+      1.0,
+      5.0,
+      1.0
+    ],
+    "state_min": [
+      -1000.0,
+      -100.0,
+      -1000.0,
+      -100.0
+    ],
+    "state_max": [
+      1000.0,
+      100.0,
+      1000.0,
+      100.0
+    ],
+    "bit_length": 10,
+    "generation_count": 4,
+    "elite_fraction": 0.2,
+    "rotation_angle_max_pi": 0.08,
+    "rotation_angle_min_pi": 0.01
+  },
+  "inputs_sha256": "2830d4e71de18040067bc5098ba984870c9eb13f62fdd1aae208e6d307eae858"
+}

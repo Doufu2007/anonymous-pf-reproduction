@@ -1,0 +1,40 @@
+{
+  "method": "resample_move_100",
+  "seed": 2,
+  "status": "completed",
+  "scientific_outputs_identical": true,
+  "scientific_output_sha256": "0eb9579bf15535f73fcc42807a4d61fb9246f8a5a2d23f178758bc4a3d037c4b",
+  "uninstrumented_wall_s": 0.03605559999414254,
+  "instrumented_wall_s": 0.0514746999979252,
+  "profiler_overhead_s": 0.01541910000378266,
+  "profiler_overhead_percent": 42.76478551539176,
+  "cprofile_exclusive_total_s": 0.051406800000000016,
+  "bucket_exclusive_time_s": {
+    "likelihood": 0.0063272,
+    "rotation_crossover_encoding": 0.0,
+    "measurement": 0.0,
+    "probability_fitness": 0.0044972,
+    "rng": 0.0,
+    "sorting_resampling": 0.0040312,
+    "other": 0.03655120000000001
+  },
+  "bucket_exclusive_percent": {
+    "likelihood": 12.308099317600002,
+    "rotation_crossover_encoding": 0.0,
+    "measurement": 0.0,
+    "probability_fitness": 8.748258985192617,
+    "rng": 0.0,
+    "sorting_resampling": 7.84176412459052,
+    "other": 71.10187757261686
+  },
+  "measurement_separable": false,
+  "measurement_unavailable_reason": "No separate measurement function; none for classical baselines, embedded in rotation/loop for QM/QGPF.",
+  "plan_sha256": "fbded4c1f3236dae4b20dc03900c4832af255045540beab5b6ce13f9c83f254f",
+  "source_code_sha256": {
+    "code/qm_hpf_reproduction/qm_hpf.py": "d39bfd4f6697f2ca94782d74661bbaa10ad3ee3d3fd6e6909994e850416e3609",
+    "code/qm_hpf_reproduction/budget_benchmark.py": "1187944daeb3fca937e2bd6dd7552b13ee05aaf81a9f12bc6fde155863a0ae27",
+    "code/qgpf_reproduction/qgpf.py": "89556a29bfdf0e572a77d988f9ce15dc3f3251010214f810ebde2fd174f96829",
+    "code/source_aligned_audit/ecqpf_operator.py": "7fd1fa87dc4e429debf5b992302bf8f0ad5b07a2bd741dddb27a13ee2409e9f2",
+    "code/audit_reporting/profile_runner.py": "136337481d737d6b644bd4de915f3f27e0374e4549d535a9ff19d1dd4b644c8e"
+  }
+}

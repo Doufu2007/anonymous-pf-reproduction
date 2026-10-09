@@ -1,0 +1,42 @@
+{
+  "schema": "particle-filter.profiling-observability.v1",
+  "methods": {
+    "bootstrap_200": {
+      "measurement": "not_applicable",
+      "rotation": "not_applicable",
+      "rng": "unavailable",
+      "likelihood": "available helper-only"
+    },
+    "resample_move_100": {
+      "measurement": "not_applicable",
+      "rotation": "not_applicable",
+      "rng": "unavailable",
+      "likelihood": "available helper-only"
+    },
+    "qm_hpf_like_100": {
+      "measurement": "unavailable, embedded in joint/helper or mixed loop",
+      "rotation": "available helper-only; QM includes joint rotate-and-measure",
+      "rng": "unavailable",
+      "likelihood": "available helper-only"
+    },
+    "qgpf_like": {
+      "measurement": "unavailable, embedded in joint/helper or mixed loop",
+      "rotation": "available helper-only; QM includes joint rotate-and-measure",
+      "rng": "unavailable",
+      "likelihood": "available helper-only"
+    },
+    "ecqpf_source_module": {
+      "measurement": "available helper-only",
+      "rotation": "not_applicable",
+      "rng": "unavailable",
+      "likelihood": "not_applicable"
+    }
+  },
+  "all_numeric_partitions_sum_to_100_before_rounding": true,
+  "rng": {
+    "independent_time": "unavailable",
+    "raw_zero_meaning": "no separately visible cProfile Generator function; not absence of random draws",
+    "attribution": "RNG time remains in caller self time, potentially joint rotation, fitness or mixed/other buckets"
+  },
+  "probability_fitness": "named-helper exclusive time only; inline logic and shared NumPy internals not separately attributable"
+}

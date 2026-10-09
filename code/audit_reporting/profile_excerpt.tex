@@ -1,0 +1,62 @@
+% Generated from the retained three-seed profiling supplement; optional insertion.
+\paragraph{Descriptive implementation profiling.}
+A separate, frozen CPU profiling supplement replayed seeds 0--2 with one
+ordinary and one \texttt{cProfile} execution per audit workload. The original
+model, algorithm functions and RNG streams were unchanged. All 15 pairs had
+identical scientific outputs after timing-derived fields were removed; each
+ordinary replay also matched its corresponding archived scientific outputs
+exactly. The environment was Windows 11, AMD Ryzen 9 7940H, Python 3.13.7,
+NumPy 2.4.2 and float64, with OpenBLAS constrained to one thread.
+Table~\ref{tab:profile-exclusive} reports arithmetic means of per-seed
+function-exclusive time shares, each assigned once. It is a conservative
+function-label partition, not a complete phase-cost decomposition.
+
+\begin{table}[tb]
+\centering
+\scriptsize
+\caption{Descriptive mean exclusive profiling shares (\%, three seeds).
+L: named likelihood/observation helpers; R: rotation/crossover/encoding,
+including QM joint rotation--measurement; M: separately named measurement;
+P: probability/fitness helpers; S: named sorting/resampling; O: mixed/other.
+U means unavailable as an independent timing; NA means not applicable.
+RNG has no independently visible Generator timing in this NumPy build, and
+its cost remains in caller self times. Numeric shares sum to 100\% before
+rounding; U cells must not be interpreted as absence of the operation.}
+\label{tab:profile-exclusive}
+\begin{tabular}{@{}lrrrrrrr@{}}
+\toprule
+Workload & L & R & M & P & S & RNG & O \\
+\midrule
+Bootstrap (200) & 8.72 & NA & NA & 6.36 & 9.86 & U & 75.06 \\
+Resample-move (100) & 11.92 & NA & NA & 8.62 & 8.21 & U & 71.25 \\
+QM-HPF-like (100) & 21.19 & 21.81 & U & 0.50 & 0.65 & U & 55.86 \\
+QGPF-like (200) & 3.45 & 18.50 & U & 0.01 & 0.03 & U & 78.02 \\
+EC source module & NA & NA & 1.13 & 64.22 & 0.02 & U & 34.64 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The two largest function self-time shares were \texttt{run\_budget\_filter}
+(14.99\%) and NumPy reduction (8.67\%) for Bootstrap;
+\texttt{run\_budget\_filter} (10.22\%) and \texttt{resample\_move} (8.44\%)
+for resample-move; \texttt{qm\_budget\_update} (23.93\%) and
+\texttt{observation} (12.67\%) for QM-HPF-like;
+\texttt{qgpf\_resample} (32.01\%) and NumPy \texttt{\_clip} (13.25\%)
+for QGPF-like; and \texttt{update\_swarm} (53.53\%) and
+\texttt{source\_select} (23.50\%) for the EC module. In particular,
+the QGPF-like mixed loop and shared NumPy functions explain much of its
+78.02\% residual share; independently attributing their measurement, RNG
+and acceptance costs would require additional instrumentation.
+QM's \texttt{rotate\_bit\_toward} jointly rotates and measures (6.96\%),
+already included in R. EC's \texttt{subset\_logfitness} contributed 10.69\%
+and its separate \texttt{observe\_binary} helper 1.13\%.
+
+The ordinary mean elapsed times were 0.0352, 0.0381, 0.9933, 25.0750 and
+1.9992~s for these five workloads, respectively; the EC workload consists
+of 20 one-step updates. Timing includes algorithm/RNG initialization and
+implemented diagnostics, but excludes input generation and I/O. Mean
+profiling overhead was 31.30\%, 41.57\%, 34.14\%, 53.87\% and 2.30\%,
+respectively, and was not used to infer uninstrumented phase times. These
+three-seed measurements are descriptive and do not replace the original
+30-seed runtime results. Equal likelihood-evaluation budgets do not imply
+equal wall-clock costs; no equal-wall-clock comparison was conducted.

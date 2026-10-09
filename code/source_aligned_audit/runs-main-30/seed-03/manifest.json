@@ -1,0 +1,158 @@
+{
+  "schema": "light.run_manifest.v3",
+  "run_id": "EC-MODULE__seed-03__runs-main-30",
+  "matrix_row": "EC-MODULE",
+  "status": "completed",
+  "termination": {
+    "reason": "natural_exit",
+    "exit_code": 0,
+    "signal": null
+  },
+  "seed": {
+    "role": "randomness_estimation",
+    "value": 3
+  },
+  "command": [
+    "python",
+    "run_audit.py",
+    "--seed",
+    "3",
+    "--out",
+    "runs-main-30"
+  ],
+  "started_at": "2026-10-09T04:06:22.390639+00:00",
+  "ended_at": "2026-10-09T04:06:24.633765+00:00",
+  "config": {
+    "path": "config.json",
+    "sha256": "78e85c1f781864a2fc397cf3575fb4c8ceb6173b0d4f5886295baad07591f694"
+  },
+  "environment": {
+    "path": "environment.json",
+    "sha256": "9f38c486a7e661f8cf055f8856ada5e8488516d5e8ea8c1b4f707d6997303c54"
+  },
+  "code": {
+    "commit": "be588ded0cd84199ce45cf79abc7f9c43dc4c3e2",
+    "dirty": true,
+    "diff_sha256": "7c2f4773d625a5affa76dde50f6060fd5fc9f223fd8d3cbbe781f87a0efa6504",
+    "files": [
+      {
+        "path": "ecqpf_operator.py",
+        "sha256": "7fd1fa87dc4e429debf5b992302bf8f0ad5b07a2bd741dddb27a13ee2409e9f2"
+      },
+      {
+        "path": "run_audit.py",
+        "sha256": "f8b07c84541c91c9a17caca4a19e688a1bffd17471137212c2af5160fe88110a"
+      },
+      {
+        "path": "test_operator.py",
+        "sha256": "eaf391a6f6688184589f289687e9f1064d2dd4bf34474c5d1a1add3be380b44e"
+      }
+    ],
+    "diff_capture": "Verification-time git diff hash; executed code snapshots archived in run; original execution-time diff was not captured."
+  },
+  "inputs": [
+    {
+      "role": "synthetic_candidate_particles",
+      "path": "particles.npy",
+      "sha256": "b64b3cb96cc681d79768a60bb6f2a3559022cd2f69e4ab119cff7ba36675f6c9",
+      "source_revision": "f3abddfe4d4ce6d2359c7cadb57805eeb6beba14e60fdf209569a43069d41258"
+    },
+    {
+      "role": "observed_noisy_center",
+      "path": "centers.npy",
+      "sha256": "a9be902497e482150db7e0f4ee1e6b964373e1ff0cb28646e90f479eda5579c1",
+      "source_revision": "f3abddfe4d4ce6d2359c7cadb57805eeb6beba14e60fdf209569a43069d41258"
+    },
+    {
+      "role": "evaluation_truth_only",
+      "path": "truth.npy",
+      "sha256": "4b2997ef6f1c671a6b9969e59543a0150e02de41a443b5c597f76ff9300442ef",
+      "source_revision": "f3abddfe4d4ce6d2359c7cadb57805eeb6beba14e60fdf209569a43069d41258"
+    }
+  ],
+  "artifacts": {
+    "stdout": {
+      "path": "stdout.log",
+      "sha256": "562633bea441ee519b9abc2a185418a1fff17ef801e646e3c53ed31321c49a07"
+    },
+    "stderr": {
+      "path": "stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "raw_metrics": {
+      "path": "raw_metrics.jsonl",
+      "sha256": "0c9d0f9698bcc9ea3c999629bd684fe77c1753cd0c1ed56bd18d7db94d82da94"
+    },
+    "predictions": {
+      "path": "predictions.csv",
+      "sha256": "cf7fc38fcf64fbcaa9cceea6f3d5796c4ce167b33232788d5c4a2757edf84888"
+    },
+    "test_evidence": {
+      "path": "test_evidence.json",
+      "sha256": "ae81446f5447b07f48cc9eed392a351b96ff9ebfb315da83e5358c8d7630895a"
+    },
+    "guardrail_evidence": {
+      "path": "guardrails.json",
+      "sha256": "94de9684a7c9c18ebc6db54e78b3da3bcd49f668ec9a08ee951529a5ec399289"
+    },
+    "failure": null
+  },
+  "completion": {
+    "status": "PASS",
+    "oracle": [
+      "nine source-operator tests passed",
+      "shared-ellipse and source-fitness bounds checked",
+      "all20 updates retained"
+    ],
+    "evidence_artifacts": [
+      "test_evidence",
+      "raw_metrics",
+      "predictions",
+      "guardrail_evidence"
+    ]
+  },
+  "reproducibility": {
+    "pair_id": null,
+    "comparison_role": "runs-main-30",
+    "compare_artifacts": [
+      "predictions",
+      "raw_metrics"
+    ]
+  },
+  "notes": [
+    "one-step source-operator audit only; completed local plan, not external preregistration",
+    "runtime is measured separately and intentionally excluded from deterministic output identity"
+  ],
+  "output_files": {
+    "centers.npy": "a9be902497e482150db7e0f4ee1e6b964373e1ff0cb28646e90f479eda5579c1",
+    "config.json": "78e85c1f781864a2fc397cf3575fb4c8ceb6173b0d4f5886295baad07591f694",
+    "costs.json": "680a2db7c1b64dd0001382e966e6a78684e8565c68b15f002f02908a2ef4c093",
+    "ecqpf_operator.py": "7fd1fa87dc4e429debf5b992302bf8f0ad5b07a2bd741dddb27a13ee2409e9f2",
+    "ellipse_exact_fitness_estimates.npy": "331d913272ff3cbdd6f7d984b28fdea5578e160ebfa8ad9430e404021e6774cd",
+    "ellipse_exact_fitness_indices.npy": "059162a30b11e98a8d47d58502f6ce0a6425dadde6b1c3ddd0814ee605898d27",
+    "ellipse_systematic_fitness_estimates.npy": "87070474711a04392be32257df68a5a7b96abe1af39fede8307e3d70945af801",
+    "ellipse_systematic_fitness_indices.npy": "217ecf42946b078d2d002e5e8a3ff86ec6136fb4d7a3c8eb672b2bb6337850a1",
+    "environment.json": "9f38c486a7e661f8cf055f8856ada5e8488516d5e8ea8c1b4f707d6997303c54",
+    "full_systematic_likelihood_estimates.npy": "6f1acabad3adcd870170e8493aef3a014af6837dc91fd5559fbe0d3d623b5e9e",
+    "full_systematic_likelihood_indices.npy": "bc43d08fc2b4af52c20001b6ee7733952a96342a1409f6bfcab451663fd48665",
+    "guardrails.json": "94de9684a7c9c18ebc6db54e78b3da3bcd49f668ec9a08ee951529a5ec399289",
+    "particles.npy": "b64b3cb96cc681d79768a60bb6f2a3559022cd2f69e4ab119cff7ba36675f6c9",
+    "predictions.csv": "cf7fc38fcf64fbcaa9cceea6f3d5796c4ce167b33232788d5c4a2757edf84888",
+    "raw_metrics.jsonl": "0c9d0f9698bcc9ea3c999629bd684fe77c1753cd0c1ed56bd18d7db94d82da94",
+    "run_audit.py": "f8b07c84541c91c9a17caca4a19e688a1bffd17471137212c2af5160fe88110a",
+    "seed_summary.json": "1f116ecb21597d3cf3e5138f28eb9f58f7208094df7ca16adcda5e8d734f848f",
+    "source_ecqpf_operator_estimates.npy": "4fca818cb96ad6d5f7c017c8b2b1d36365f9f596778bc7e3ef8a7808009a674e",
+    "source_ecqpf_operator_indices.npy": "938abbc2d2406e1281a31f4a5999c5ad7eba4865e25ae27b125bf87c9e2b961d",
+    "source_generation_history.json": "5b52a94bb6f2195094c6cdf34904962d0cde23260943e9d9787c056b586d6e04",
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "562633bea441ee519b9abc2a185418a1fff17ef801e646e3c53ed31321c49a07",
+    "test_evidence.json": "ae81446f5447b07f48cc9eed392a351b96ff9ebfb315da83e5358c8d7630895a",
+    "test_operator.py": "eaf391a6f6688184589f289687e9f1064d2dd4bf34474c5d1a1add3be380b44e",
+    "truth.npy": "4b2997ef6f1c671a6b9969e59543a0150e02de41a443b5c597f76ff9300442ef"
+  },
+  "provenance_completion": {
+    "completed_at": "2026-10-09T04:09:08.112417+00:00",
+    "original_manifest_sha256": "5e5fe85af42a6306d6669ba9febf777f0e90e6a3e40d3ad3f210a0b82b5b446d",
+    "changes": "Add missing dirty-diff hash honestly at verification time and redact private log locator; numeric outputs unchanged."
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "plan": {
+    "schema": "source_aligned_module_audit.v1",
+    "frozen_at": "2026-10-09T04:00:00.891992+00:00",
+    "study_status": "EXPLORATORY_LOCAL_PLAN_NOT_EXTERNALLY_PREREGISTERED",
+    "authorization": "User requested a more source-aligned supplementary implementation; parent chose EC-QPF module framing before execution.",
+    "source": {
+      "doi": "10.1109/JSEN.2021.3113364",
+      "pdf_sha256": "17125a01931b8809b8a1f6c425d41c3bb1aadccb5206e4c9dde730f20091d965",
+      "source_local_identifier": "Wan2021_ECQPF_QuantumParticleSwarm.pdf"
+    },
+    "question": "For a controlled one-step Gaussian state-estimation update, how do source EC-QPF selection operators compare with classical selection using the identical noisy center, ellipse, and fitness?",
+    "scope": "One-step resampling/selection operator only; not source tracking experiment or full PF reproduction; no quantum hardware.",
+    "estimand": "Mean across 30 independently generated seed datasets of within-dataset 2D state RMSE for returned ensemble mean; paired source operator minus each same-constraint baseline.",
+    "statistical_unit": "independently generated seed dataset with 20 independent one-step updates",
+    "analysis_unit": "seed-dataset RMSE; do not treat 600 updates as 600 independent method comparisons",
+    "seed_values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "updates_per_seed": 20,
+    "generator": {
+      "dimension": 2,
+      "prior_mean": [
+        0.0,
+        0.0
+      ],
+      "prior_variance": 25.0,
+      "observation_variance": 1.0,
+      "truth": "independent draw from prior each update",
+      "observation": "truth + N(0,I)",
+      "candidate_particles": "500 independent prior draws; identical candidate particles for all methods; truth never passed to algorithms"
+    },
+    "source_parameters": {
+      "particle_count": 500,
+      "swarm_size": 500,
+      "alpha": 0.8,
+      "c1": 0.2,
+      "c2": 0.2
+    },
+    "audit_completion_choices": {
+      "iteration_max": 20,
+      "ellipse_confidence": 0.95,
+      "ellipse_scale": 5.991464547107982,
+      "ellipse_center": "observed noisy state z; supplied shared operator input, not source IMU center construction",
+      "covariance": "unweighted candidate-cloud population covariance (ddof=0)",
+      "fitness_variance": "mean of the two coordinate population variances within shared ellipse",
+      "q_initialization": "independent U(0,1)",
+      "q_meaning": "probability of bit zero, following literal Eq.(12), despite selection-probability prose conflict",
+      "empty_subset": "invalid fitness -infinity; if every candidate subset empty, fail run rather than silently fill",
+      "duplication": "balanced cyclic repetition of selected indices to N=500; affects estimate when cardinality does not divide N",
+      "no_candidates_in_ellipse": "fail run, retain artifact, no replacement or exclusion",
+      "stopping": "max20 generations or no global-best fitness improvement for10 consecutive generations, following prose half-Iter_Max rule"
+    },
+    "methods": [
+      "source_ecqpf_operator",
+      "ellipse_exact_fitness",
+      "ellipse_systematic_fitness",
+      "full_systematic_likelihood"
+    ],
+    "primary_comparison_family": [
+      "source_ecqpf_operator minus ellipse_exact_fitness",
+      "source_ecqpf_operator minus ellipse_systematic_fitness"
+    ],
+    "contextual_baseline": "full_systematic_likelihood uses entire candidate cloud; does not share ellipse/fitness; not evidence of a quantum mechanism effect",
+    "baseline_contract": {
+      "ellipse_exact_fitness": "Identical ellipse and source Eq.22: nonempty-subset mean distance minimized by nearest singleton; exact classical maximum, no tuned parameters.",
+      "ellipse_systematic_fitness": "Identical ellipse and singleton source Eq.22 scores exp(-distance/(2V)), normalized, systematic resampling to500.",
+      "full_systematic_likelihood": "Gaussian observation likelihood exp(-squared distance/2), systematic resampling to500."
+    },
+    "endpoints": {
+      "primary": "sqrt(mean(sum((ensemble_mean-truth)^2,axis=coordinates),axis=20 updates))",
+      "secondary": [
+        "mean Euclidean absolute error",
+        "RMSE versus analytic Gaussian posterior mean 25/26*z",
+        "distinct selected particle count",
+        "source-fitness score and gap to exact classical optimum",
+        "fitness evaluations",
+        "candidate-distance evaluations",
+        "binary dimensions processed",
+        "CPU wall-clock seconds including module initialization"
+      ],
+      "ess": "ESS computed only from explicitly normalized sampling weights of systematic baselines; not defined for source/greedy binary selection and not replaced by subset size"
+    },
+    "analysis": {
+      "paired_bootstrap": "20000 resamples at independent seed-dataset level, fixed seed9301; percentile95%CI",
+      "paired_effect_size": "mean paired difference / sample SD of differences",
+      "paired_permutation": "50000 sign flips fixed seed9302 plus one correction",
+      "multiplicity": "Holm correction of two primary paired permutation p-values",
+      "interpretation": "no posterior-consistency/quantum-speedup/original-algorithm efficacy claim; source-faithful module comparison only"
+    },
+    "tuning": "zero outcome-driven tuning for all methods; source coefficients frozen; added parameters disclosed, no selection based on outputs",
+    "exclusion": "none; any nonfinite, empty ellipse/subset, invalid normalized weight terminates that run; failures retained and no default replacement seeds",
+    "budget": {
+      "maximum_seed_datasets": 30,
+      "maximum_updates": 600,
+      "maximum_generations_per_update": 20,
+      "maximum_local_wall_seconds": 900,
+      "remote_or_paid_execution": "none"
+    },
+    "failure_tree": {
+      "improvement": "CI below0: describe only this controlled module error difference; no algorithm efficacy attribution",
+      "worsening": "CI above0: describe only this completed operator/controlled-input result; no source algorithm rejection",
+      "inconclusive": "CI contains0: no observed difference in this setting; no equivalence claim",
+      "guardrails": "finite inputs/probabilities, valid selected subset, no truth at selection interface, consistent shared ellipse IDs, source fitness <= exact optimum within1e-12"
+    },
+    "reproducibility": "Two independent seed0 run directories; compare raw array/metrics hashes excluding CPU runtime; exact same environment only."
+  },
+  "plan_sha256": "f3abddfe4d4ce6d2359c7cadb57805eeb6beba14e60fdf209569a43069d41258",
+  "operator": {
+    "particle_count": 500,
+    "swarm_size": 500,
+    "iteration_max": 20,
+    "alpha": 0.8,
+    "c1": 0.2,
+    "c2": 0.2,
+    "ellipse_scale": 5.991464547107982
+  }
+}

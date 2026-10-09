@@ -1,0 +1,3 @@
+# Preserve exact source/artifact bytes used by the recorded SHA-256 contracts.
+# In particular, a checkout must not convert the archived code or JSON newlines.
+* -text

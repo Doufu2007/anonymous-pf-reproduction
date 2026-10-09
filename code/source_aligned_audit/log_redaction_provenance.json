@@ -1,0 +1,14 @@
+[
+  {
+    "file": "test-red.log",
+    "original_private_log_sha256": "d38a38b6f4b26daf064f7d3dea49915b214bb15a50d90bb4602043385a710d97",
+    "published_redacted_log_sha256": "301732b58a8e6be382bf05a82af00ab64c75ed6230d9f26eddcdb8e4d24fb43b",
+    "redaction": "remove machine-local absolute traceback paths; preserve test names/errors"
+  },
+  {
+    "file": "test-red-baseline.log",
+    "original_private_log_sha256": "79b67930aef185af8718e7d0d4310ea29c689829cd9d66af56471c623efd2248",
+    "published_redacted_log_sha256": "88a79168a48e16820c23353c3e712ced003e13698cd4b9723f7707019df9a1b6",
+    "redaction": "remove machine-local absolute traceback paths; preserve test names/errors"
+  }
+]

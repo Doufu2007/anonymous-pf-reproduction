@@ -1,0 +1,222 @@
+[
+  {
+    "file": "code/source_aligned_audit/ecqpf_operator.py",
+    "line": 48,
+    "function": "update_swarm",
+    "primitive_calls": 200,
+    "total_calls": 200,
+    "exclusive_time_s": 1.1188681,
+    "cumulative_time_s": 1.1188681,
+    "bucket": "probability_fitness",
+    "exclusive_total_share_percent": 54.028087680491524
+  },
+  {
+    "file": "code/source_aligned_audit/ecqpf_operator.py",
+    "line": 98,
+    "function": "source_select",
+    "primitive_calls": 20,
+    "total_calls": 20,
+    "exclusive_time_s": 0.4764702,
+    "cumulative_time_s": 2.0646431,
+    "bucket": "other",
+    "exclusive_total_share_percent": 23.00787174354272
+  },
+  {
+    "file": "code/source_aligned_audit/ecqpf_operator.py",
+    "line": 32,
+    "function": "subset_logfitness",
+    "primitive_calls": 220,
+    "total_calls": 220,
+    "exclusive_time_s": 0.21900650000000002,
+    "cumulative_time_s": 0.3158342,
+    "bucket": "probability_fitness",
+    "exclusive_total_share_percent": 10.575422057879356
+  },
+  {
+    "file": "~",
+    "line": 0,
+    "function": "<method 'reduce' of 'numpy.ufunc' objects>",
+    "primitive_calls": 1760,
+    "total_calls": 1760,
+    "exclusive_time_s": 0.14455500000000002,
+    "cumulative_time_s": 0.14455500000000002,
+    "bucket": "other",
+    "exclusive_total_share_percent": 6.980295724449961
+  },
+  {
+    "file": "~",
+    "line": 0,
+    "function": "<method 'astype' of 'numpy.ndarray' objects>",
+    "primitive_calls": 260,
+    "total_calls": 260,
+    "exclusive_time_s": 0.0373357,
+    "cumulative_time_s": 0.0373357,
+    "bucket": "other",
+    "exclusive_total_share_percent": 1.8028724504814526
+  },
+  {
+    "file": "code/source_aligned_audit/ecqpf_operator.py",
+    "line": 44,
+    "function": "observe_binary",
+    "primitive_calls": 220,
+    "total_calls": 220,
+    "exclusive_time_s": 0.0232346,
+    "cumulative_time_s": 0.0608681,
+    "bucket": "measurement",
+    "exclusive_total_share_percent": 1.121956203793055
+  },
+  {
+    "file": "code/audit_reporting/profile_runner.py",
+    "line": 158,
+    "function": "call",
+    "primitive_calls": 1,
+    "total_calls": 1,
+    "exclusive_time_s": 0.0061143000000000005,
+    "cumulative_time_s": 2.0708437,
+    "bucket": "other",
+    "exclusive_total_share_percent": 0.29524832865002526
+  },
+  {
+    "file": "<runtime>/site-packages/numpy/_core/_methods.py",
+    "line": 115,
+    "function": "_mean",
+    "primitive_calls": 300,
+    "total_calls": 300,
+    "exclusive_time_s": 0.0038333000000000004,
+    "cumulative_time_s": 0.0520163,
+    "bucket": "other",
+    "exclusive_total_share_percent": 0.18510302376627605
+  },
+  {
+    "file": "<runtime>/site-packages/numpy/_core/_methods.py",
+    "line": 73,
+    "function": "_count_reduce_items",
+    "primitive_calls": 320,
+    "total_calls": 320,
+    "exclusive_time_s": 0.0030323000000000004,
+    "cumulative_time_s": 0.0033825,
+    "bucket": "other",
+    "exclusive_total_share_percent": 0.1464242034191112
+  },
+  {
+    "file": "<runtime>/site-packages/numpy/_core/fromnumeric.py",
+    "line": 66,
+    "function": "_wrapreduction",
+    "primitive_calls": 460,
+    "total_calls": 460,
+    "exclusive_time_s": 0.0027858,
+    "cumulative_time_s": 0.039174,
+    "bucket": "other",
+    "exclusive_total_share_percent": 0.1345211706905517
+  },
+  {
+    "file": "<runtime>/site-packages/numpy/_core/numeric.py",
+    "line": 323,
+    "function": "full",
+    "primitive_calls": 240,
+    "total_calls": 240,
+    "exclusive_time_s": 0.0024171,
+    "cumulative_time_s": 0.0033643,
+    "bucket": "other",
+    "exclusive_total_share_percent": 0.11671732417120129
+  },
+  {
+    "file": "<runtime>/site-packages/numpy/_core/fromnumeric.py",
+    "line": 2304,
+    "function": "sum",
+    "primitive_calls": 460,
+    "total_calls": 460,
+    "exclusive_time_s": 0.0024036,
+    "cumulative_time_s": 0.042056500000000004,
+    "bucket": "other",
+    "exclusive_total_share_percent": 0.1160654339406311
+  },
+  {
+    "file": "<runtime>/site-packages/numpy/_core/fromnumeric.py",
+    "line": 86,
+    "function": "_wrapreduction_any_all",
+    "primitive_calls": 220,
+    "total_calls": 220,
+    "exclusive_time_s": 0.0022651,
+    "cumulative_time_s": 0.005320200000000001,
+    "bucket": "other",
+    "exclusive_total_share_percent": 0.10937752305663316
+  },
+  {
+    "file": "code/source_aligned_audit/ecqpf_operator.py",
+    "line": 16,
+    "function": "ellipse_indices",
+    "primitive_calls": 20,
+    "total_calls": 20,
+    "exclusive_time_s": 0.0017100000000000001,
+    "cumulative_time_s": 0.0080707,
+    "bucket": "other",
+    "exclusive_total_share_percent": 0.08257276253889131
+  },
+  {
+    "file": "~",
+    "line": 0,
+    "function": "<built-in method numpy.zeros>",
+    "primitive_calls": 40,
+    "total_calls": 40,
+    "exclusive_time_s": 0.0015392000000000001,
+    "cumulative_time_s": 0.0015392000000000001,
+    "bucket": "other",
+    "exclusive_total_share_percent": 0.07432514391804768
+  },
+  {
+    "file": "~",
+    "line": 0,
+    "function": "<method 'all' of 'numpy.ndarray' objects>",
+    "primitive_calls": 240,
+    "total_calls": 240,
+    "exclusive_time_s": 0.0013715,
+    "cumulative_time_s": 0.007313,
+    "bucket": "other",
+    "exclusive_total_share_percent": 0.06622721860940903
+  },
+  {
+    "file": "code/source_aligned_audit/ecqpf_operator.py",
+    "line": 80,
+    "function": "_summarize",
+    "primitive_calls": 20,
+    "total_calls": 20,
+    "exclusive_time_s": 0.0013013,
+    "cumulative_time_s": 0.0047501,
+    "bucket": "other",
+    "exclusive_total_share_percent": 0.062837389410444
+  },
+  {
+    "file": "<runtime>/site-packages/numpy/lib/_function_base_impl.py",
+    "line": 2674,
+    "function": "cov",
+    "primitive_calls": 20,
+    "total_calls": 20,
+    "exclusive_time_s": 0.0012758000000000001,
+    "cumulative_time_s": 0.0034749000000000004,
+    "bucket": "other",
+    "exclusive_total_share_percent": 0.06160604119714476
+  },
+  {
+    "file": "~",
+    "line": 0,
+    "function": "<method 'sum' of 'numpy.ndarray' objects>",
+    "primitive_calls": 440,
+    "total_calls": 440,
+    "exclusive_time_s": 0.0012398,
+    "cumulative_time_s": 0.0575258,
+    "bucket": "other",
+    "exclusive_total_share_percent": 0.059867667248957576
+  },
+  {
+    "file": "~",
+    "line": 0,
+    "function": "<built-in method numpy.asarray>",
+    "primitive_calls": 1120,
+    "total_calls": 1120,
+    "exclusive_time_s": 0.001052,
+    "cumulative_time_s": 0.001052,
+    "bucket": "other",
+    "exclusive_total_share_percent": 0.05079914981924775
+  }
+]

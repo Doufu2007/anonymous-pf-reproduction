@@ -1,0 +1,123 @@
+{
+  "schema": "source_to_code_operator_contract.v1",
+  "doi": "10.1109/JSEN.2021.3113364",
+  "source_pdf_sha256": "17125a01931b8809b8a1f6c425d41c3bb1aadccb5206e4c9dde730f20091d965",
+  "source_text_sha256": "8de6d47ef600badefcc77525b93a32f46f340800685a0f99d74475635deb0199",
+  "study_name": "EC-QPF source-aligned selection-operator audit with explicit completion choices",
+  "plan_sha256": "f3abddfe4d4ce6d2359c7cadb57805eeb6beba14e60fdf209569a43069d41258",
+  "strict_reproduction": false,
+  "full_tracking_reproduction": false,
+  "source_steps": [
+    {
+      "locator": "Sec III.A, Eq.(12), p24434; Algorithm1 step2.2, p24436",
+      "step": "binary observation d=1 iff q<uniform",
+      "code": "ecqpf_operator.observe_binary",
+      "status": "LITERAL_SOURCE_EQUATION",
+      "boundary": "q interpreted as probability of zero per SecIII.A; SecIII.C selection-probability prose conflicts. No silent convention correction."
+    },
+    {
+      "locator": "Sec III.B, Eqs.(17)-(21), p24435",
+      "step": "candidate-cloud covariance and rotated ellipse",
+      "code": "ecqpf_operator.ellipse_indices",
+      "status": "SOURCE_ALIGNED_WITH_COMPLETIONS",
+      "boundary": "Eigenvalues used as ellipse denominators; population covariance ddof0. Center set to observed z, not reconstructing source IMU estimated-center pipeline. Chi-square95% scale audit choice."
+    },
+    {
+      "locator": "Sec III.C Eq.(22), p24436",
+      "step": "fitness=exp(-mean selected Euclidean distance/(2V))",
+      "code": "ecqpf_operator.subset_logfitness",
+      "status": "SOURCE_EQUATION_WITH_UNSPECIFIED_SCALAR_V_COMPLETION",
+      "boundary": "V=mean of two coordinate variances of ellipse-retained particles. Empty subset invalid; no replacement."
+    },
+    {
+      "locator": "Sec III.C Eqs.(23)-(25), p24436",
+      "step": "personal/global best and persistent probability-swarm evolution",
+      "code": "ecqpf_operator.update_swarm; source_select",
+      "status": "LITERAL_SOURCE_EQUATIONS",
+      "boundary": "Probability array persists across generations within the one-step module; resets for independent one-step updates. Source update orientation preserved even where convention is ambiguous."
+    },
+    {
+      "locator": "SecIII.C Algorithm1 and stopping prose, p24436",
+      "step": "generation outside swarm-loop, max or unchanged half of IterMax",
+      "code": "ecqpf_operator.source_select",
+      "status": "SOURCE_ORDER_WITH_UNREPORTED_ITERATION_COUNT_COMPLETION",
+      "boundary": "IterMax=20 audit choice; unchanged-best count10. No full source IMU PF propagation."
+    },
+    {
+      "locator": "SecIII.C Algorithm1 duplication and estimation, p24436",
+      "step": "duplicate selected particles to N; estimate after duplication",
+      "code": "ecqpf_operator.duplicate_indices; _summarize",
+      "status": "SOURCE_TIMING_WITH_DUPLICATION_COMPLETION",
+      "boundary": "Balanced cyclic repetition; ensemble arithmetic mean is the equal-weight estimate. Source duplication allocation and final weighting unspecified."
+    },
+    {
+      "locator": "SecIII.C p24436; TableII p24437",
+      "step": "source coefficients and population sizes",
+      "code": "ecqpf_operator.OperatorConfig",
+      "status": "EXPLICIT_SOURCE_PARAMETER_VALUES",
+      "value": {
+        "N": 500,
+        "np": 500,
+        "alpha": 0.8,
+        "c1": 0.2,
+        "c2": 0.2
+      }
+    }
+  ],
+  "unrecovered_original_experiment": [
+    "Eq.(2) leaves state-transition f abstract and Markov jump probability matrix unspecified.",
+    "Original center from velocity/heading/step-size IMU pipeline is not uniquely defined by available equations.",
+    "Exact beta-to-scale relation, IterMax, scalar V convention, empty-subset policy and duplication allocation are not reported.",
+    "Literal Eq.(12) q probability-zero and SecIII.C probability-selected description are inconsistent; sensitivity to an alternative convention remains untested.",
+    "Source compares CMCR-PF/SR-PF on180step tracking; this audit uses20 independent one-step Gaussian updates per seed dataset."
+  ],
+  "controlled_data_contract": {
+    "truth": "N(0,25I)",
+    "observation": "z=x+N(0,I)",
+    "particles": "500 independent N(0,25I)",
+    "center": "z for all shared-constraint methods",
+    "no_truth_in_operator_inputs": true,
+    "posterior_mean_for_evaluation_only": "25/26*z"
+  },
+  "comparators": [
+    {
+      "name": "ellipse_exact_fitness",
+      "same_center_ellipse_fitness": true,
+      "operation": "minimum-distance singleton; exact nonempty-subset optimum of Eq.(22)",
+      "proof": "Mean of any nonempty subset distances >= minimum distance; exp is monotone in negative distance."
+    },
+    {
+      "name": "ellipse_systematic_fitness",
+      "same_center_ellipse_fitness": true,
+      "operation": "normalize singleton Eq.(22) fitness and systematic resample to500"
+    },
+    {
+      "name": "full_systematic_likelihood",
+      "same_center_ellipse_fitness": false,
+      "operation": "Gaussian likelihood on entire input cloud; contextual reference only"
+    }
+  ],
+  "cost_contract": "All counts reported separately: fitness-vector evaluations, candidate-distance evaluations, likelihood evaluations, binary dimensions processed, runtime. Fitness evaluation is not a likelihood evaluation; no operation-equivalence/quantum acceleration claim.",
+  "ess_contract": "Normalized-weight sampling ESS applies only to systematic comparators. ESS for binary source/greedy selection is not defined; subset count is not ESS.",
+  "tests": {
+    "suite": "test_operator.py",
+    "count": 9,
+    "evidence": "test-red.log, test-red-baseline.log, test-green.log",
+    "gold": "ellipse, Eq12, Eq22, Eqs23-25, exact fitness optimum, balanced duplication",
+    "properties": "probability range, same shared ellipse, selected identity, source fitness optimum bound",
+    "metamorphic": "rigid-motion ellipse invariance",
+    "numerical_tolerance": {
+      "rtol": 0,
+      "atol": 1e-14
+    }
+  },
+  "allowed_conclusion": "Mechanism and computational counts of this completed selection module under specified synthetic inputs.",
+  "disallowed_conclusions": [
+    "original EC-QPF efficacy or failure",
+    "full tracking/PF reproduction",
+    "SMC posterior consistency",
+    "quantum hardware speedup",
+    "constraint effect attributable to quantum-inspired swarm",
+    "ESS increase for binary selection"
+  ]
+}

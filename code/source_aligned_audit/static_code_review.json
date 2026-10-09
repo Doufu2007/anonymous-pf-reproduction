@@ -1,0 +1,16 @@
+{
+  "schema": "light.findings.v1",
+  "producer": "experiment-coding",
+  "target": "code_diff",
+  "verdict": "pass",
+  "gates": [
+    {
+      "gate": "review_gate",
+      "status": "pass",
+      "severity": "info",
+      "findings": []
+    }
+  ],
+  "summary": "交付前安全+反模式扫描：2文件/0问题",
+  "fresh_evidence": true
+}

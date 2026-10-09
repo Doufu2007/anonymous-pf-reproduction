@@ -1,0 +1,12 @@
+{
+  "source_unit_tests": 9,
+  "initial_dirty_manifest_check_exit": 1,
+  "dirty_manifest_fix": "Original main manifests explicitly label verification-time diff-hash completion; source numerical outputs unchanged. Final-repeat manifests capture diff at actual launch.",
+  "initial_static_seed_check_exit": 1,
+  "static_seed_limitation": "Scanner did not see external launch setting through os.environ.get; all actual run environment snapshots record PYTHONHASHSEED=0. Added fail-fast launch guard for future runs.",
+  "final_static_seed_check_exit": 0,
+  "final_static_review_exit": 0,
+  "final_artifact_validation_bundles": 34,
+  "final_same_seed_pair": "PASS",
+  "same_environment_only": true
+}
