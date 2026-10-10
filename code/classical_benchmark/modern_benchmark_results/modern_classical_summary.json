@@ -1,0 +1,188 @@
+{
+  "config": {
+    "model": {
+      "Q": 10.0,
+      "R": 1.0,
+      "T": 100,
+      "X0": 0.1,
+      "P0": 5.0
+    },
+    "particle_count": 100,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "methods": {
+      "bootstrap-systematic": {
+        "resampler": "systematic"
+      },
+      "bounded-weight-chopthin": {
+        "cap_factor": 2.0,
+        "resample_threshold": 0.5
+      },
+      "enkf-pf-hybrid": {
+        "correction": "stochastic scalar EnKF after systematic PF resampling"
+      },
+      "twisted-lookahead": {
+        "lookahead_steps": 1,
+        "twist_exponent": 0.5,
+        "offline": true
+      },
+      "soft-resampling-dpf-forward": {
+        "alpha": 0.9,
+        "gradient_training": false
+      }
+    },
+    "contract_boundary": "These are declared classical contracts, not claims of exact source-code reproduction."
+  },
+  "aggregate": {
+    "bootstrap-systematic": {
+      "runs": 30,
+      "n": 100,
+      "rmse_mean": 5.066972448917626,
+      "rmse_sd": 1.223528257541797,
+      "mae_mean": 3.0093782028908422,
+      "mean_ess": 36.5887941139564,
+      "mean_ess_over_n": 0.3658879411395641,
+      "mean_distinct": 41.25666666666667,
+      "mean_distinct_over_n": 0.4125666666666667,
+      "runtime_s_mean": 0.010443163333790532,
+      "likelihood_evals": [
+        10000
+      ],
+      "lookahead_evals": [
+        0
+      ],
+      "observation_evals": [
+        0
+      ],
+      "resampling_calls": [
+        100
+      ]
+    },
+    "bounded-weight-chopthin": {
+      "runs": 30,
+      "n": 100,
+      "rmse_mean": 8.077406366626752,
+      "rmse_sd": 0.5529702666769553,
+      "mae_mean": 6.720381777216215,
+      "mean_ess": 78.66101352622987,
+      "mean_ess_over_n": 0.7866101352622987,
+      "mean_distinct": 100.0,
+      "mean_distinct_over_n": 1.0,
+      "runtime_s_mean": 0.013823260001178521,
+      "likelihood_evals": [
+        10000
+      ],
+      "lookahead_evals": [
+        0
+      ],
+      "observation_evals": [
+        0
+      ],
+      "resampling_calls": [
+        0
+      ]
+    },
+    "enkf-pf-hybrid": {
+      "runs": 30,
+      "n": 100,
+      "rmse_mean": 4.943901253552069,
+      "rmse_sd": 1.1459821938906312,
+      "mae_mean": 2.935966003159186,
+      "mean_ess": 100.0,
+      "mean_ess_over_n": 1.0,
+      "mean_distinct": 99.14200000000001,
+      "mean_distinct_over_n": 0.9914200000000001,
+      "runtime_s_mean": 0.015951590000380142,
+      "likelihood_evals": [
+        10000
+      ],
+      "lookahead_evals": [
+        0
+      ],
+      "observation_evals": [
+        10000
+      ],
+      "resampling_calls": [
+        100
+      ]
+    },
+    "twisted-lookahead": {
+      "runs": 30,
+      "n": 100,
+      "rmse_mean": 5.229023733989355,
+      "rmse_sd": 1.223104064827617,
+      "mae_mean": 2.8506886291919233,
+      "mean_ess": 48.017312273452475,
+      "mean_ess_over_n": 0.4801731227345247,
+      "mean_distinct": 34.666000000000004,
+      "mean_distinct_over_n": 0.34665999999999997,
+      "runtime_s_mean": 0.013398393333773129,
+      "likelihood_evals": [
+        10000
+      ],
+      "lookahead_evals": [
+        9900
+      ],
+      "observation_evals": [
+        0
+      ],
+      "resampling_calls": [
+        100
+      ]
+    },
+    "soft-resampling-dpf-forward": {
+      "runs": 30,
+      "n": 100,
+      "rmse_mean": 4.764953222087128,
+      "rmse_sd": 0.9578547713339453,
+      "mae_mean": 2.874024376844383,
+      "mean_ess": 34.73992753562855,
+      "mean_ess_over_n": 0.3473992753562856,
+      "mean_distinct": 45.75899999999999,
+      "mean_distinct_over_n": 0.45758999999999994,
+      "runtime_s_mean": 0.011649506667163223,
+      "likelihood_evals": [
+        10000
+      ],
+      "lookahead_evals": [
+        0
+      ],
+      "observation_evals": [
+        0
+      ],
+      "resampling_calls": [
+        100
+      ]
+    }
+  }
+}

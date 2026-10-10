@@ -37,6 +37,9 @@ manuscript passed a new full semantic review.
 
 - `code/qm_hpf_reproduction/`: QM-HPF-like audit, source/completion choices,
   analysis code, and archived native outputs.
+- `code/qm_hpf_reproduction/source_strict/`: fail-closed source-faithful runner
+  for the recovered one-dimensional QM-HPF equations. It stops until the
+  source encoding, ordering, resampling and battery parameters are supplied.
 - `code/qm_hpf_reproduction/native_v4/qm_hpf.py`: native-run implementation
   recorded in the historical v4 manifest. Its SHA-256 is
   `312f3f5d4d9cac0d2758e5a7549ed7aa3fa6bffc832b49fb82ff622c82d89b36`.
@@ -45,10 +48,16 @@ manuscript passed a new full semantic review.
   not an exact equal-realized-cost or equal-wall-clock comparison.
 - `code/qgpf_reproduction/`: QGPF-like audit and archived outputs, with explicit
   departures and unresolved source parameters.
+- `code/qgpf_reproduction/source_strict/`: source-strict contract for the
+  N=400, m=10, four-generation QGPF route. It does not inherit the QGPF-like
+  completion choices.
 - `code/classical_benchmark/`: classical PF reference benchmark.
 - `code/source_aligned_audit/`: source-equation EC-QPF one-step selection-module
   audit, contracts, 30 seed datasets and fixed-seed replay. It is separate from
   the sequential PF likelihood-budget experiments.
+- `code/source_aligned_audit/source_strict/`: fail-closed contract for the full
+  180-step EC-QPF IMU tracking reproduction, retaining the source-literal
+  Eq. (22) convention.
 - `code/audit_reporting/`: operation-count aggregation and descriptive
   three-seed profiling, with retained per-run evidence and measurement limits.
   See `COUNTER_README.md` and `profile_README.md` in that directory.

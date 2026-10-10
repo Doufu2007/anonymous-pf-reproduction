@@ -1,0 +1,32 @@
+{
+  "schema": "source-inventory.v1",
+  "method": "QM-HPF",
+  "source_doi": "10.13195/j.kzyjc.2025.1074",
+  "source_locators": ["Eqs. (6)--(18)", "Table 2", "Sec. 3.1"],
+  "recovered": {
+    "one_dimensional_horizon": 200,
+    "particle_count": 100,
+    "initial_state": 1.0,
+    "observation_variance": 1.0,
+    "process_variances": [1.0, 2.0, 3.0],
+    "threshold_neff_partition": true,
+    "adaptive_probability": "lambda = 1 - N_eff/N",
+    "acceptance": "min(1, w_new/w_old)",
+    "weighted_estimate": true
+  },
+  "unresolved": [
+    "quantum_encoding_range",
+    "bit_length",
+    "continuous_state_decode_rule",
+    "amplitude_persistence_across_generations",
+    "low_weight_particle_iteration_order",
+    "random_number_consumption_order",
+    "recompute_all_weights_after_acceptance",
+    "final_systematic_resampling",
+    "battery_ocv_curve",
+    "battery_rc_parameters",
+    "battery_initial_state",
+    "battery_soc_data"
+  ],
+  "strict_status": "BLOCKED_PENDING_SOURCE_EVIDENCE"
+}

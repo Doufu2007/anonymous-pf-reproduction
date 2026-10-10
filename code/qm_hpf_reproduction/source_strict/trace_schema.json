@@ -1,0 +1,22 @@
+{
+  "schema": "qm-hpf-source-trace.v1",
+  "per_time_step": [
+    "time_index",
+    "predicted_particles",
+    "pre_update_weights",
+    "effective_sample_size",
+    "high_weight_indices",
+    "low_weight_indices",
+    "branch_random_values",
+    "candidate_particles",
+    "candidate_weights",
+    "acceptance_uniforms",
+    "accepted_flags",
+    "post_update_particles",
+    "post_update_weights",
+    "estimate",
+    "rng_state_after_step"
+  ],
+  "per_generation": ["generation", "quantum_amplitudes", "measured_bits", "rotation_angles", "target_bits"],
+  "source_claim_requires": ["source_config_sha256", "code_sha256", "input_sha256", "environment", "raw_metrics"]
+}

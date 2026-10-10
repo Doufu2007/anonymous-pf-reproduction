@@ -1,0 +1,22 @@
+{
+  "schema": "qgpf-source-trace.v1",
+  "per_time_step": [
+    "time_index",
+    "predicted_particles",
+    "raw_likelihoods",
+    "normalised_weights",
+    "chromosome_amplitudes_before",
+    "measured_chromosomes",
+    "fitness_values",
+    "rotation_angles",
+    "rotation_signs",
+    "retained_or_replaced_flags",
+    "post_optimization_particles",
+    "post_optimization_weights",
+    "estimate",
+    "covariance",
+    "rng_state_after_step"
+  ],
+  "per_generation": ["generation", "population_id", "amplitudes", "measured_bits", "fitness", "best_id"],
+  "source_claim_requires": ["source_config_sha256", "code_sha256", "input_sha256", "environment", "raw_metrics"]
+}

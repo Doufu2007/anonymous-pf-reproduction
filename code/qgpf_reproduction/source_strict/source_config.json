@@ -1,0 +1,17 @@
+{
+  "source_doi": "10.16526/j.cnki.11-4762/tp.2021.04.050",
+  "particle_count": 400,
+  "bit_length": 10,
+  "generation_count": 4,
+  "ratio_0_7_meaning": "REQUEST_AUTHOR",
+  "noise_matrix_convention": "REQUEST_AUTHOR",
+  "observation_noise_variance": "REQUEST_AUTHOR",
+  "replacement_retention_rule": "REQUEST_AUTHOR",
+  "recompute_weights_after_optimization": "REQUEST_AUTHOR",
+  "trajectory_reuse_across_99_runs": "REQUEST_AUTHOR",
+  "random_number_consumption_order": "REQUEST_AUTHOR",
+  "author_code_or_raw_data": "REQUEST_AUTHOR",
+  "execution_mode": "REQUEST_AUTHOR",
+  "repetitions": 99,
+  "state_transition_matrix": [[1, 1, 0, 0], [0, 1, 0, 0], [0, 0, 1, 1], [0, 0, 0, 1]]
+}

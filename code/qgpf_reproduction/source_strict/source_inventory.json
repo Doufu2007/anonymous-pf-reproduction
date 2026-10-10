@@ -1,0 +1,27 @@
+{
+  "schema": "source-inventory.v1",
+  "method": "QGPF",
+  "source_doi": "10.16526/j.cnki.11-4762/tp.2021.04.050",
+  "source_locators": ["Sec. 2", "Sec. 3", "Sec. 4", "Eq. (9)--(14)", "Table 1"],
+  "recovered": {
+    "particle_count": 400,
+    "bit_length": 10,
+    "generation_count": 4,
+    "initial_amplitude_pair": [0.7071067811865475, 0.7071067811865475],
+    "state_transition_matrix": [[1, 1, 0, 0], [0, 1, 0, 0], [0, 0, 1, 1], [0, 0, 0, 1]],
+    "observation": "sqrt(x^2+y^2)+v",
+    "reported_repetitions": 99,
+    "reported_ratio": 0.7
+  },
+  "unresolved": [
+    "meaning_of_ratio_0_7",
+    "noise_matrix_variance_or_standard_deviation",
+    "observation_noise_variance",
+    "exact_replacement_and_retention_rule",
+    "post_optimization_weight_recalculation",
+    "trajectory_reuse_across_99_runs",
+    "random_number_consumption_order",
+    "author_code_or_raw_data"
+  ],
+  "strict_status": "BLOCKED_PENDING_SOURCE_EVIDENCE"
+}

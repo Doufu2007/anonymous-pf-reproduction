@@ -1,0 +1,26 @@
+{
+  "schema": "ec-qpf-source-trace.v1",
+  "per_time_step": [
+    "time_index",
+    "imu_velocity",
+    "imu_heading",
+    "imu_step_size",
+    "predicted_particles",
+    "predicted_center",
+    "covariance",
+    "ellipse_parameters",
+    "eligible_indices",
+    "quantum_swarm_before",
+    "binary_measurements",
+    "fitness_values",
+    "personal_best",
+    "global_best",
+    "stopping_reason",
+    "selected_indices",
+    "duplicated_indices",
+    "estimate",
+    "rng_state_after_step"
+  ],
+  "dimensional_audit": ["distance_unit", "V_unit", "exponent_unit", "fitness_contract"],
+  "source_claim_requires": ["source_config_sha256", "code_sha256", "input_sha256", "environment", "raw_metrics"]
+}
