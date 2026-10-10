@@ -7,9 +7,9 @@ of the complete QM-HPF, QGPF or EC-QPF source algorithms.
 
 ## Version boundary
 
-The final local release for the current manuscript is `v1.3.3-modern-classical`,
-commit `609280ecdeab428e24ba059a4b37cee239d977bc`. Resolve the commit from a
-fresh checkout with `git rev-parse 'v1.3.3-modern-classical^{}'`. It includes the
+The final local release for the current manuscript is `v1.3.4-final`. Resolve the
+exact commit from a fresh checkout with `git rev-parse 'v1.3.4-final^{}'`; the
+manuscript records the resolved hash used for submission. It includes the
 modern-classical contracts and their raw results in addition to the M7 stress test,
 MR.CLAM transfer audit, operation counters and profiling supplement. Historical
 baselines remain available: `v1.0.0-submission`, `v1.1.0-audit-update`,
