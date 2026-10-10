@@ -118,6 +118,10 @@ python run_qgpf.py --seeds 0:29 --out-dir runs-main-30-rerun
 cd ../source_aligned_audit
 python -m unittest test_operator -v
 python run_audit.py --out runs-main-30-rerun
+
+cd ../classical_benchmark
+python -m unittest discover -s . -p 'test_*.py' -v
+python modern_classical_benchmark.py
 ```
 
 For counts and profiling, run from the repository root. The counter script
