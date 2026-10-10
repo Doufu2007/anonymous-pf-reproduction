@@ -13,14 +13,14 @@ fresh checkout with `git rev-parse 'v1.3.3-modern-classical^{}'`. It includes th
 modern-classical contracts and their raw results in addition to the M7 stress test,
 MR.CLAM transfer audit, operation counters and profiling supplement. Historical
 baselines remain available: `v1.0.0-submission`, `v1.1.0-audit-update`,
-`v1.2.0-q2-review`, `v1.2.1-q2-review`, and `v1.2.2-q2-m7-stress`.
+`v1.2.0-q2-review`, `v1.2.1-q2-review`, `v1.2.2-q2-m7-stress`, and `v1.3.3-modern-classical`.
 
 The manuscript revision dated 2026-10-09 is staged under
 `code/revision_20261009/` and `metadata/revision-2026-10-09/`. It contains the
 stable/retention QGPF-like audits, the EC-QPF probability-convention audit,
 their manifests, raw arrays, analysis tables, operation definitions and
 same-environment replay checks. These files are part of the current versioned
-release; the manuscript should cite the final `v1.3.3-modern-classical` commit
+release; the manuscript should cite the final `v1.3.4-final` commit
 rather than an earlier historical tag.
 
 The update adds the 30-seed EC-QPF selection-module audit, fair-likelihood-cap
