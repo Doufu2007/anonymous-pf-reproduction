@@ -1,0 +1,54 @@
+{
+  "schema": "external-qgpf-validation.batch.v1",
+  "status": "completed",
+  "methods": [
+    "B-stable",
+    "Q-stable",
+    "Q-stable-retain"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "protocol_sha256": "0aea9cab1b686997b3a4dcfe15ee8965834285e8c2ba42eaddc56ccfe7d36010",
+  "stable_code_sha256": "01d14e073da2b5ff4c10a5f9edaa51c7cfac24d458e12b8ad30de78d5c348dac",
+  "n_runs": 90,
+  "summary_sha256": "36da6a475473747bd9c149de763d1928fb0cd177eeb7f952618ff2cf1c97714e",
+  "raw_metrics_csv_sha256": "7c2205afce0fe9d63cc515cca557b2158fb2cbf6d17d8d646df9244820f263ce",
+  "git": {
+    "commit": "4a98da650fc1dfee27e136469fc8ee64307f59a9",
+    "dirty": true,
+    "status_repo_relative": [
+      "?? code/revision_20261010/"
+    ]
+  },
+  "external_input": "generated at run time; no archived trajectory files reused"
+}

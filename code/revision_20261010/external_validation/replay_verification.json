@@ -1,0 +1,22 @@
+{
+  "schema": "external-qgpf-validation.replay.v1",
+  "seed": 0,
+  "checks": [
+    {
+      "method": "B-stable",
+      "arrays_equal": true,
+      "metrics_excluding_timers_equal": true
+    },
+    {
+      "method": "Q-stable",
+      "arrays_equal": true,
+      "metrics_excluding_timers_equal": true
+    },
+    {
+      "method": "Q-stable-retain",
+      "arrays_equal": true,
+      "metrics_excluding_timers_equal": true
+    }
+  ],
+  "passed": true
+}

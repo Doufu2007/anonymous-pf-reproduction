@@ -1,0 +1,59 @@
+{
+  "seed": 22,
+  "method": "B-stable",
+  "trajectory_seed": 10022,
+  "filter_seed": 2000025,
+  "model": {
+    "horizon": 100,
+    "initial_truth": [
+      100.0,
+      -2.0,
+      -45.0,
+      5.0
+    ],
+    "process_std": [
+      2.0,
+      0.75,
+      1.25,
+      0.06
+    ],
+    "observation_std": 2.0
+  },
+  "filter": {
+    "particle_count": 200,
+    "initial_mean": [
+      95.0,
+      -1.5,
+      -40.0,
+      4.5
+    ],
+    "initial_std": [
+      12.0,
+      2.0,
+      10.0,
+      2.0
+    ],
+    "state_min": [
+      -1000.0,
+      -100.0,
+      -1000.0,
+      -100.0
+    ],
+    "state_max": [
+      1000.0,
+      100.0,
+      1000.0,
+      100.0
+    ],
+    "bit_length": 10,
+    "generation_count": 4,
+    "elite_fraction": 0.2,
+    "rotation_angle_max_pi": 0.08,
+    "rotation_angle_min_pi": 0.01
+  },
+  "primary_metric": "pre-move position RMSE over k=1..T and coordinates x,y",
+  "estimate_timing": "pre weighted-move estimate; post retained as diagnostic only",
+  "truth_not_passed_to_filter": true,
+  "protocol_sha256": "0aea9cab1b686997b3a4dcfe15ee8965834285e8c2ba42eaddc56ccfe7d36010",
+  "stable_code_sha256": "01d14e073da2b5ff4c10a5f9edaa51c7cfac24d458e12b8ad30de78d5c348dac"
+}

@@ -1,0 +1,72 @@
+{
+  "schema": "external-qgpf-validation.summary.v1",
+  "n_seeds": 30,
+  "unit": "trajectory seed",
+  "primary_outcome": "rmse_position",
+  "bootstrap_draws": 20000,
+  "bootstrap_seed": 20261010,
+  "comparisons": {
+    "Q-stable_minus_B-stable": {
+      "mean_difference": 39.95895152850015,
+      "sd_difference": 19.12950941336808,
+      "median_difference": 31.80169246431414,
+      "bootstrap_95ci": [
+        33.61317739606255,
+        47.01602725680113
+      ],
+      "dz": 2.088864417013018,
+      "wins_lower_rmse": 0,
+      "n": 30,
+      "interpretation": "paired exploratory contrast; CI crossing zero is inconclusive, not equivalence"
+    },
+    "Q-stable-retain_minus_B-stable": {
+      "mean_difference": 39.999097742089575,
+      "sd_difference": 18.932554218292264,
+      "median_difference": 38.28949271085264,
+      "bootstrap_95ci": [
+        33.78187966953071,
+        47.08141949733492
+      ],
+      "dz": 2.112715341041687,
+      "wins_lower_rmse": 0,
+      "n": 30,
+      "interpretation": "paired exploratory contrast; CI crossing zero is inconclusive, not equivalence"
+    }
+  },
+  "B-stable": {
+    "rmse_position_mean": 8.819942004567212,
+    "rmse_position_sd": 4.7955722032957935,
+    "rmse_position_median": 7.060956052636774,
+    "rmse_position_iqr": [
+      5.163089227014468,
+      11.23531585380506
+    ],
+    "velocity_rmse_mean": 0.8568752873875712,
+    "mean_ess_mean": 110.60656274445181,
+    "mean_distinct_mean": 119.00733333333332
+  },
+  "Q-stable": {
+    "rmse_position_mean": 48.77889353306737,
+    "rmse_position_sd": 17.196698824461325,
+    "rmse_position_median": 43.97591267084448,
+    "rmse_position_iqr": [
+      36.62676731323562,
+      57.169914301930405
+    ],
+    "velocity_rmse_mean": 7.232301030458487,
+    "mean_ess_mean": 15.382112409828618,
+    "mean_distinct_mean": 199.89766666666665
+  },
+  "Q-stable-retain": {
+    "rmse_position_mean": 48.81903974665678,
+    "rmse_position_sd": 17.249258766251227,
+    "rmse_position_median": 45.96498686442345,
+    "rmse_position_iqr": [
+      38.245338143618355,
+      54.11917436020312
+    ],
+    "velocity_rmse_mean": 6.9445528764577045,
+    "mean_ess_mean": 15.908041470738597,
+    "mean_distinct_mean": 199.9066666666667
+  }
+}

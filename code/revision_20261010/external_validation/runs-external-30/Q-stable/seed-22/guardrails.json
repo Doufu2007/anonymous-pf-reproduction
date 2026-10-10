@@ -1,0 +1,7 @@
+{
+  "finite_estimates": true,
+  "all_weights_normalized": true,
+  "counter_sum_matches": true,
+  "post_endpoint_readonly": true,
+  "truth_unavailable_to_filter": true
+}

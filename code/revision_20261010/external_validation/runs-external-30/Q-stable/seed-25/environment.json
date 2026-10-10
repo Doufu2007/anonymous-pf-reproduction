@@ -1,0 +1,22 @@
+{
+  "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.4.2",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cpu": "AMD64 Family 25 Model 116 Stepping 1, AuthenticAMD",
+  "device": "CPU",
+  "dtype": "float64",
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "git": {
+    "commit": "4a98da650fc1dfee27e136469fc8ee64307f59a9",
+    "dirty": true,
+    "status_repo_relative": [
+      "?? code/revision_20261010/"
+    ]
+  },
+  "timer_scope": "filter execution and in-memory diagnostics"
+}

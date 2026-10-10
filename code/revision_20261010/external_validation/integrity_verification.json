@@ -1,0 +1,8 @@
+{
+  "schema": "external-qgpf-validation.integrity.v1",
+  "run_manifests": 90,
+  "all_completed": true,
+  "all_guardrails_pass": true,
+  "per_seed_shared_observation_hash": true,
+  "seeds": 30
+}
