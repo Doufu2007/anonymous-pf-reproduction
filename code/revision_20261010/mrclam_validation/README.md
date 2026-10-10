@@ -2,8 +2,9 @@
 
 本目录实现的是 MR.CLAM 真实传感器输入上的**声明式审计合同**。它不是
 QM-HPF、QGPF 或 EC-QPF 源算法的完整复现。算法只接收里程计、地标地图和
-range-bearing 观测；`Groundtruth.dat` 只由 `run_mrclam.py` 的评估器读取，
-不会进入粒子初始化、状态转移或似然计算。
+range-bearing 观测；`Groundtruth.dat` 的数值只由 `run_mrclam.py` 的评估器读取，
+不会进入粒子初始化、状态转移或似然计算。其时间戳覆盖只用于预先保证保留事件
+都有可评分真值，避免运行后静默丢弃缺失事件。
 
 ## 方法标签
 

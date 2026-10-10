@@ -12,10 +12,12 @@
   "split": {
     "development": "dataset 1, robot 1, seed 0 smoke test only; no tuning or endpoint selection",
     "held_out": ["dataset 8, robot 1", "dataset 9, robot 1"],
-    "window": "first 1200 seconds supported jointly by odometry and landmark measurements after sensor-start overlap",
+    "window": "first 1200 seconds supported jointly by odometry, landmark measurements, and the timestamp support of Robot Groundtruth.dat; ground-truth values are used only for scoring, never by the filter",
     "observation_subsampling": "keep the first measurement timestamp at least 1.0 s after the preceding retained timestamp; retain every landmark row at that timestamp",
     "map": "all 15 static landmark coordinates from Landmark_Groundtruth.dat are shared known-map input",
     "odometry_interpretation": "piecewise-constant logged velocity commands are treated as right-continuous at each timestamp; this is fixed before evaluation because the public page does not specify an alternative interval convention",
+    "raw_ingest_repair": "if odometry timestamps are out of order, stable-sort odometry rows by timestamp and record the inversion count; non-odometry timestamp inversions are a hard failure",
+    "unresolvable_measurements": "drop measurement rows whose barcode is absent from Barcodes.dat because no landmark subject/map coordinate can be assigned; record the dropped row count and do not reinterpret the barcode",
     "truth": "Robot Groundtruth.dat is evaluator-only and is never used for initialization, window selection, map construction, or tuning"
   },
   "methods": ["B-stable", "RM-stable", "Q-stable", "Q-stable-retain"],

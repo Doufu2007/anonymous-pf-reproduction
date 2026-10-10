@@ -32,4 +32,9 @@ class IntakeTests(unittest.TestCase):
         self.assertNotIn('truth',filter_inputs(fake))
         self.assertNotIn('truth_valid',filter_inputs(fake))
 
+    def test_odometry_timestamp_repair_is_stable(self):
+        a=np.array([[2.,2.,0.],[1.,1.,0.],[1.,3.,0.]])
+        ordered=a[np.argsort(a[:,0],kind='stable')]
+        np.testing.assert_array_equal(ordered,[[1.,1.,0.],[1.,3.,0.],[2.,2.,0.]])
+
 if __name__=='__main__': unittest.main()

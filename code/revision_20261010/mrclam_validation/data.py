@@ -90,11 +90,20 @@ def load_sequence(raw_dir,dataset_id,robot_id=1,duration_s=1200.,min_interval_s=
         'measurements':folder/f'Robot{robot_id}_Measurement.dat',
         'truth':folder/f'Robot{robot_id}_Groundtruth.dat'}
     tables={k:np.atleast_2d(np.loadtxt(path,comments='#',dtype=np.float64)) for k,path in files.items()}
+    raw_timestamp_inversions={}
     for key,a in tables.items():
         if not np.isfinite(a).all():
             raise ValueError('Nonfinite raw '+key)
-        if key in ('odometry','measurements','truth') and np.any(np.diff(a[:,0])<0):
-            raise ValueError('Raw timestamps not nondecreasing: '+key)
+        if key in ('odometry','measurements','truth'):
+            inversions=int(np.count_nonzero(np.diff(a[:,0])<0))
+            raw_timestamp_inversions[key]=inversions
+            if inversions:
+                if key != 'odometry':
+                    raise ValueError('Raw timestamps not nondecreasing: '+key)
+                # MR.CLAM Dataset 9 contains one leading odometry inversion.
+                # Stable timestamp sorting is a deterministic data-ingest
+                # repair, recorded below; no truth or outcome is consulted.
+                tables[key]=a[np.argsort(a[:,0],kind='stable')]
     barcodes=barcode_to_subject(tables['barcodes'])
     map_ids=[int(row[0]) for row in tables['known_map']]
     if len(set(map_ids)) != len(map_ids):
@@ -102,16 +111,25 @@ def load_sequence(raw_dir,dataset_id,robot_id=1,duration_s=1200.,min_interval_s=
     landmarks={int(row[0]):row[1:3].copy() for row in tables['known_map']}
     odom=tables['odometry']
     measured=tables['measurements'].copy()
-    unknown=sum(int(code) not in barcodes for code in measured[:,1])
+    raw_measurement_count=len(measured)
+    unknown_mask=np.array([int(code) not in barcodes for code in measured[:,1]],dtype=bool)
+    unknown=int(unknown_mask.sum())
     if unknown:
-        raise ValueError(f'{unknown} measurements have unknown barcode IDs')
+        # A row with no barcode-to-subject/map entry has no defined
+        # range-bearing likelihood target. Drop it under this frozen ingest
+        # rule and retain the count in metadata; never silently reinterpret it.
+        measured=measured[~unknown_mask]
     measured[:,1]=[barcodes[int(code)] for code in measured[:,1]]
     landmark_obs=measured[np.isin(measured[:,1],list(landmarks))]
     if not len(landmark_obs) or np.any(landmark_obs[:,2]<0):
         raise ValueError('No valid real landmark observations')
-    # Robot truth positions do not determine window, initialization or inputs.
-    start=max(float(odom[0,0]),float(landmark_obs[0,0]))
-    end=min(start+duration_s,float(odom[-1,0]),float(landmark_obs[-1,0]))
+    # Ground-truth values do not determine initialization or inputs. Its
+    # timestamp support is used only to ensure every retained event can be
+    # scored without a silent missingness mask.
+    # The scoring channel must cover every retained event. Timestamps only
+    # determine support; no robot pose values are read by the filter.
+    start=max(float(odom[0,0]),float(landmark_obs[0,0]),float(tables['truth'][0,0]))
+    end=min(start+duration_s,float(odom[-1,0]),float(landmark_obs[-1,0]),float(tables['truth'][-1,0]))
     selected=select_batches(landmark_obs,start,end,min_interval_s)
     if not selected:
         raise ValueError('No selected observation batches')
@@ -131,7 +149,8 @@ def load_sequence(raw_dir,dataset_id,robot_id=1,duration_s=1200.,min_interval_s=
     hashes={key:{'name':path.name,'sha256':sha256(path)} for key,path in files.items()}
     metadata={
         'dataset_id':int(dataset_id),'robot_id':int(robot_id),'source_files':hashes,
-        'raw_measurement_rows':int(len(measured)),
+        'raw_measurement_rows':int(raw_measurement_count),
+        'unknown_barcode_rows_dropped':unknown,
         'raw_landmark_rows':int(len(landmark_obs)),
         'landmark_rows_in_window':int(len(within)),
         'raw_batches_in_window':int(len(np.unique(within[:,0]))),
@@ -144,8 +163,10 @@ def load_sequence(raw_dir,dataset_id,robot_id=1,duration_s=1200.,min_interval_s=
         'max_gap_s':float(np.diff(np.r_[start,times]).max()),
         'minimum_interval_s':float(min_interval_s),
         'barcode_mapping_applied':True,
+        'raw_timestamp_inversions':raw_timestamp_inversions,
+        'odometry_stably_sorted_if_needed':True,
         'raw_odometry_is_logged_velocity_commands':True,
-        'truth_for_scoring_only':True,'initialization_uses_map_only':True,
+        'truth_for_scoring_only':True,'truth_timestamp_support_only':True,'initialization_uses_map_only':True,
         'third_party_raw_redistribution':'not included in public repository',
     }
     return {'event_times':times,'odometry_segments':segments,
