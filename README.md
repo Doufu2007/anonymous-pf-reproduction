@@ -8,8 +8,9 @@ of the complete QM-HPF, QGPF or EC-QPF source algorithms.
 ## Version boundary
 
 Historical baseline: `v1.0.0-submission`; its tag and archived results are retained.
-The current revision is `v1.2.0-q2-review`; resolve the exact commit with
-`git rev-parse 'v1.2.0-q2-review^{}'`. The preceding audit release
+The current baseline revision is `v1.2.0-q2-review`; resolve the exact commit with
+`git rev-parse 'v1.2.0-q2-review^{}'`. The M7 stress-test update is released locally as
+`v1.2.2-q2-m7-stress` after the commit recorded by the manuscript. The preceding audit release
 `v1.1.0-audit-update` is retained for comparison.
 
 The manuscript revision dated 2026-10-09 is staged under
@@ -53,6 +54,11 @@ manuscript passed a new full semantic review.
   See `COUNTER_README.md` and `profile_README.md` in that directory.
 - `code/revision_20261009/`: revision batches for the QGPF-like numerical and
   retention contracts and the EC-QPF interpreted probability convention.
+- `code/revision_20261010/external_validation/`: frozen distribution-shift
+  synthetic stress test (30 paired trajectories, three contracts), raw run
+  bundles, guardrails, replay checks and machine-readable hashes. This is
+  transport evidence, not real-world external-data validation or a complete
+  source-algorithm reproduction.
 - `metadata/revision-2026-10-09/`: wrapper provenance for the revision release.
 - `metadata/search_ledger.csv`: search and screening ledger.
 - `metadata/citation_registry_2026-10-08.json`: historical registry export.
