@@ -1,0 +1,54 @@
+{
+  "schema": "mrclam-real-external-audit.v1",
+  "frozen_at": "2026-10-10T12:00:00+08:00",
+  "source": {
+    "name": "UTIAS Multi-Robot Cooperative Localization and Mapping Dataset",
+    "official_page": "https://asrl.utias.utoronto.ca/datasets/mrclam/",
+    "citation": "Leung K Y K, Halpern Y, Barfoot T D, Liu H H T. The UTIAS Multi-Robot Cooperative Localization and Mapping Dataset. International Journal of Robotic Research, 30(8):969-974, 2011.",
+    "raw_license_status": "The official page does not state a standardized open-source license. Raw archives are kept outside the public code repository and are not redistributed."
+  },
+  "question": "Under a fixed map-only localization contract and a matched likelihood-evaluation budget, how do a bootstrap PF, resample-move PF, and two QGPF-inspired transfer variants behave on two held-out real MR.CLAM robot sequences?",
+  "estimand": "For each fixed dataset/robot sequence, paired seed-level difference in primary radial position RMSE between each method and B-stable; seeds quantify algorithmic Monte Carlo variation, not independent trajectories.",
+  "split": {
+    "development": "dataset 1, robot 1, seed 0 smoke test only; no tuning or endpoint selection",
+    "held_out": ["dataset 8, robot 1", "dataset 9, robot 1"],
+    "window": "first 1200 seconds supported jointly by odometry, landmark measurements, and the timestamp support of Robot Groundtruth.dat; ground-truth values are used only for scoring, never by the filter",
+    "observation_subsampling": "keep the first measurement timestamp at least 1.0 s after the preceding retained timestamp; retain every landmark row at that timestamp",
+    "map": "all 15 static landmark coordinates from Landmark_Groundtruth.dat are shared known-map input",
+    "odometry_interpretation": "piecewise-constant logged velocity commands are treated as right-continuous at each timestamp; this is fixed before evaluation because the public page does not specify an alternative interval convention",
+    "raw_ingest_repair": "if odometry timestamps are out of order, stable-sort odometry rows by timestamp and record the inversion count; non-odometry timestamp inversions are a hard failure",
+    "unresolvable_measurements": "drop measurement rows whose barcode is absent from Barcodes.dat because no landmark subject/map coordinate can be assigned; record the dropped row count and do not reinterpret the barcode",
+    "truth": "Robot Groundtruth.dat is evaluator-only and is never used for initialization, window selection, map construction, or tuning"
+  },
+  "methods": ["B-stable", "RM-stable", "Q-stable", "Q-stable-retain"],
+  "seeds": {"values": "0..29", "purpose": "algorithmic Monte Carlo repetition on each fixed sequence", "independent_trajectory_n": 2},
+  "algorithm_config": {
+    "budget": 1200,
+    "quantum_particles": 200,
+    "process_std_per_sqrt_s": [0.05, 0.05, 0.03],
+    "range_std_m": 0.2,
+    "bearing_std_rad": 0.1,
+    "bit_length": 10,
+    "generation_count": 4,
+    "elite_fraction": 0.2,
+    "rotation_angle_max_pi": 0.08,
+    "rotation_angle_min_pi": 0.01
+  },
+  "budget_contract": {
+    "unit": "complete state/batch log-likelihood evaluations",
+    "B-stable": 1200,
+    "RM-stable": "600 predictive + 600 independent-prior proposal evaluations",
+    "Q-stable": "200 base + 160 incumbent + 640 candidates + 200 updated evaluations",
+    "Q-stable-retain": "200 base + 160 incumbent + 640 candidates + 200 updated evaluations",
+    "scalar_observation_evaluations": "reported separately as state x range-bearing-pair evaluations; it is not added to the state/batch budget"
+  },
+  "primary_endpoint": "radial position RMSE (m) of pre-move/post-assimilation weighted estimates at retained event timestamps",
+  "secondary_endpoints": ["wrapped-heading RMSE", "post-move diagnostic radial RMSE", "ESS fraction", "distinct-pose count", "runtime with parsing/evaluation/output excluded", "operation counters"],
+  "analysis": {
+    "paired": "Within each fixed dataset and seed, method minus B-stable",
+    "interval": "percentile bootstrap over the 30 paired seeds, conditional on each sequence",
+    "multiplicity": "descriptive; no claim of dataset-level generalization from two sequences",
+    "not_allowed": ["treating seeds as independent real trajectories", "using test truth for tuning", "calling Q variants a complete source-QGPF reproduction", "claiming quantum hardware acceleration"]
+  },
+  "raw_data_handling": "Raw third-party archives, truth arrays, and observation arrays remain in local-data outside the public repository; the repository publishes code, protocol, hashes, aggregate metrics and figures only."
+}

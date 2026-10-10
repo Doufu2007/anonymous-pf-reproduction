@@ -55,25 +55,43 @@ def _json(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def discover(runs: Path) -> list[dict]:
+def discover(runs: Path | Iterable[Path]) -> list[dict]:
+    """Discover metrics from one or more run roots and reject duplicate keys."""
+    if isinstance(runs, (str, os.PathLike, Path)):
+        roots = [Path(runs)]
+    else:
+        roots = [Path(x) for x in runs]
+    if not roots:
+        raise ValueError("at least one --runs directory is required")
+    resolved_roots = [p.resolve() for p in roots]
+    if len(set(resolved_roots)) != len(resolved_roots):
+        raise ValueError("--runs contains the same directory more than once")
     rows = []
-    for metrics_path in sorted(runs.rglob("raw_metrics.json")):
-        run = metrics_path.parent
-        try:
-            m = _json(metrics_path)
-        except Exception as exc:
-            raise ValueError(f"invalid raw metrics: {metrics_path}: {exc}") from exc
-        required = {"dataset_id", "robot_id", "seed", "method", *PRIMARY.values()}
-        missing = sorted(required - m.keys())
-        if missing:
-            raise ValueError(f"{metrics_path} missing {missing}")
-        if m["method"] not in METHODS:
-            raise ValueError(f"unknown method {m['method']} in {metrics_path}")
-        row = dict(m)
-        row["run_dir"] = str(run)
-        row["metrics_path"] = str(metrics_path)
-        row["manifest_path"] = str(run / "manifest.json")
-        rows.append(row)
+    seen = set()
+    for root in resolved_roots:
+        if not root.is_dir():
+            raise FileNotFoundError(f"run directory not found: {root}")
+        for metrics_path in sorted(root.rglob("raw_metrics.json")):
+            run = metrics_path.parent
+            try:
+                m = _json(metrics_path)
+            except Exception as exc:
+                raise ValueError(f"invalid raw metrics: {metrics_path}: {exc}") from exc
+            required = {"dataset_id", "robot_id", "seed", "method", *PRIMARY.values()}
+            missing = sorted(required - m.keys())
+            if missing:
+                raise ValueError(f"{metrics_path} missing {missing}")
+            if m["method"] not in METHODS:
+                raise ValueError(f"unknown method {m['method']} in {metrics_path}")
+            key = (int(m["dataset_id"]), int(m["robot_id"]), int(m["seed"]), str(m["method"]))
+            if key in seen:
+                raise ValueError(f"duplicate run key {key}; --runs roots overlap")
+            seen.add(key)
+            row = dict(m)
+            row["run_dir"] = str(run)
+            row["metrics_path"] = str(metrics_path)
+            row["manifest_path"] = str(run / "manifest.json")
+            rows.append(row)
     if not rows:
         raise FileNotFoundError(f"no raw_metrics.json below {runs}")
     return rows
@@ -135,6 +153,17 @@ def validate_runs(rows: list[dict], expected: int = 240) -> dict:
     """Validate manifests, file hashes, predictions and all endpoint metrics."""
     manifest_total = manifest_ok = hash_ok = metrics_ok = 0
     failures = []
+    keys = [(int(r["dataset_id"]), int(r["robot_id"]), int(r["seed"]), str(r["method"])) for r in rows]
+    duplicate_keys = sorted({k for k in keys if keys.count(k) > 1})
+    expected_layout = False
+    if expected == 240:
+        expected_keys = {(dataset, 1, seed, method)
+                         for dataset in (8, 9) for seed in range(30) for method in METHODS}
+        expected_layout = set(keys) == expected_keys and len(keys) == len(expected_keys)
+        if not expected_layout:
+            failures.append({"kind": "unexpected_240_run_layout",
+                             "missing": [list(k) for k in sorted(expected_keys - set(keys))[:20]],
+                             "extra": [list(k) for k in sorted(set(keys) - expected_keys)[:20]]})
     for row in rows:
         run = Path(row["run_dir"])
         manifest_path = run / "manifest.json"
@@ -171,7 +200,9 @@ def validate_runs(rows: list[dict], expected: int = 240) -> dict:
     return {"runs_discovered": len(rows), "expected_runs": expected,
             "manifest_count": manifest_total, "manifest_valid": manifest_ok,
             "file_hashes_valid": hash_ok, "metrics_recomputed": metrics_ok,
-            "all_expected_runs_present": len(rows) == expected,
+            "duplicate_run_keys": [list(k) for k in duplicate_keys],
+            "expected_240_layout": expected_layout if expected == 240 else None,
+            "all_expected_runs_present": len(rows) == expected and not duplicate_keys and (expected != 240 or expected_layout),
             "all_manifests_valid": manifest_total == expected and manifest_ok == expected,
             "all_hashes_valid": hash_ok == expected,
             "all_metrics_recomputed": metrics_ok == expected,
@@ -189,6 +220,12 @@ def compare_replay_dirs(first: Path, second: Path) -> dict:
     # Per-event elapsed timings are hardware/scheduler dependent and are not
     # scientific arrays. Runtime remains a secondary profiling outcome, while
     # replay equality concerns estimates, particles, weights and counters.
+    first = Path(first).resolve()
+    second = Path(second).resolve()
+    if first == second:
+        raise ValueError(f"refusing replay self-comparison: {first}")
+    if not first.is_dir() or not second.is_dir():
+        raise FileNotFoundError(f"replay directory missing: {first} or {second}")
     scientific_suffixes = {".npy", ".npz"}
     timing_arrays = {"step_elapsed_s.npy"}
     files_a = {p.relative_to(first).as_posix(): p for p in first.rglob("*")
@@ -320,7 +357,8 @@ def make_figure(delta_rows: list[dict], path: Path):
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--runs", type=Path, required=True)
+    ap.add_argument("--runs", type=Path, nargs="+", required=True,
+                    help="one or more disjoint run roots; duplicate run keys are rejected")
     ap.add_argument("--out-dir", type=Path, required=True)
     ap.add_argument("--expected-runs", type=int, default=240)
     ap.add_argument("--bootstrap-draws", type=int, default=20000)
@@ -342,14 +380,19 @@ def main(argv=None):
     figure = make_figure(deltas, figure_path)
     if (args.replay_a is None) != (args.replay_b is None):
         raise SystemExit("--replay-a and --replay-b must be supplied together")
-    replay = compare_replay_dirs(args.replay_a, args.replay_b) if args.replay_a else None
+    try:
+        replay = compare_replay_dirs(args.replay_a, args.replay_b) if args.replay_a else None
+    except (ValueError, FileNotFoundError) as exc:
+        raise SystemExit(str(exc)) from exc
     report = {"schema": "mrclam.analysis.v1", "analysis_unit": "seed paired within dataset/robot",
               "seeds_are_independent_trajectories": False, "bootstrap": "conditional Monte-Carlo over paired seeds",
               "p_values_or_significance_claims": False, "validation": validation, "replay_validation": replay,
               "figure": figure,
               "rows": {"primary": len(primary), "paired_delta": len(deltas), "secondary": len(secondary), "audit_counts": len(counts)},
-              "source_runs": str(args.runs.resolve())}
+              "source_runs": [str(Path(p).resolve()) for p in args.runs]}
     (args.out_dir / "analysis_report.json").write_text(json.dumps(report, indent=2, ensure_ascii=False, allow_nan=False), encoding="utf-8")
+    if replay is not None and not replay["exact"]:
+        raise SystemExit("replay validation failed; inspect analysis_report.json")
     if not all(validation[k] for k in ("all_expected_runs_present", "all_manifests_valid", "all_hashes_valid", "all_metrics_recomputed")):
         raise SystemExit("validation failed; inspect analysis_report.json")
 

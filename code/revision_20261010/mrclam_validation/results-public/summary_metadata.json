@@ -1,0 +1,43 @@
+{
+  "schema": "mrclam.public-summary.v1",
+  "source": "UTIAS MR.CLAM Dataset 8 and 9, Robot 1",
+  "analysis": {
+    "schema": "mrclam.analysis.v1",
+    "analysis_unit": "seed paired within dataset/robot",
+    "seeds_are_independent_trajectories": false,
+    "bootstrap": "conditional Monte-Carlo over paired seeds",
+    "p_values_or_significance_claims": false,
+    "validation": {
+      "runs_discovered": 240,
+      "expected_runs": 240,
+      "manifest_count": 240,
+      "manifest_valid": 240,
+      "file_hashes_valid": 240,
+      "metrics_recomputed": 240,
+      "duplicate_run_keys": [],
+      "expected_240_layout": true,
+      "all_expected_runs_present": true,
+      "all_manifests_valid": true,
+      "all_hashes_valid": true,
+      "all_metrics_recomputed": true,
+      "failures": []
+    },
+    "rows": {
+      "primary": 16,
+      "paired_delta": 12,
+      "secondary": 24,
+      "audit_counts": 8
+    }
+  },
+  "replay": {
+    "all_exact": true,
+    "scientific_arrays_compared": 120,
+    "scientific_arrays_exact": 120,
+    "non_timing_metrics_compared": 8,
+    "non_timing_metrics_exact": 8
+  },
+  "protocol_sha256": "667a62efb6ef93d95c7018e2197dbb44cdbbcf287a2caf7c4f3be1aae8bf4b35",
+  "archive_run_protocol_sha256": "3973f8bdb1b1a1025b9d34c8f88dd32a463c1734b2c420e4a85acd322ed81280",
+  "raw_data_redistributed": false,
+  "figure": "mrclam-realdata-audit.pdf"
+}

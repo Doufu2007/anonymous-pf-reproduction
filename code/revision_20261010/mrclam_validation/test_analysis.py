@@ -94,6 +94,20 @@ class AnalysisTests(unittest.TestCase):
             self.assertEqual(report["scientific_arrays_exact"], 1)
             self.assertEqual(report["non_timing_metrics_exact"], 1)
 
+            with self.assertRaises(ValueError):
+                compare_replay_dirs(a, a)
+
+    def test_multiple_run_roots_merge_and_overlap_is_rejected(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td); a = root / "a"; b = root / "b"
+            write_run(a, 8, "B-stable", 0, 1., 2.)
+            write_run(b, 8, "RM-stable", 0, 2., 3.)
+            self.assertEqual(len(discover([a, b])), 2)
+            with self.assertRaises(ValueError):
+                discover([a, a])
+            with self.assertRaises(ValueError):
+                discover([a, b, a])
+
 
 if __name__ == "__main__":
     unittest.main()
